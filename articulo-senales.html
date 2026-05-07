@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Los huesos no duelen... hasta que se rompen — C-Tech®</title>
+<meta name="description" content="La osteoporosis avanza en silencio. Conoce las señales de alerta que el cuerpo manda antes de la primera fractura.">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--pink:#E91E8C;--pink-light:#FF69B4;--pink-pale:#FFD6EC;--pink-glow:rgba(233,30,140,0.22);--dark:#0d0010;--dark-2:#180020;--dark-card:rgba(255,255,255,0.04);--text:#fff;--text-muted:rgba(255,255,255,0.62);--radius:16px}
+html{scroll-behavior:smooth}
+body{font-family:'Lexend',sans-serif;background:var(--dark);color:var(--text);overflow-x:hidden;line-height:1.7}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:66px;background:rgba(13,0,16,0.9);backdrop-filter:blur(20px);border-bottom:1px solid rgba(233,30,140,0.15)}
+.nav-logo{font-family:'Dancing Script',cursive;font-size:1.7rem;font-weight:700;background:linear-gradient(135deg,#fff,var(--pink-light),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none}
+.nav-back{color:var(--text-muted);text-decoration:none;font-size:0.78rem;font-weight:500;display:flex;align-items:center;gap:0.4rem;transition:color .3s}
+.nav-back:hover{color:var(--pink-light)}
+.nav-cta{background:linear-gradient(135deg,var(--pink),#c2157a);color:#fff;border:none;border-radius:50px;padding:.45rem 1.2rem;font-family:'Lexend',sans-serif;font-size:.75rem;font-weight:600;cursor:pointer;text-decoration:none;box-shadow:0 0 18px var(--pink-glow)}
+
+/* HERO */
+.article-hero{margin-top:66px;position:relative;height:60vh;min-height:420px;overflow:hidden;display:flex;align-items:flex-end}
+.article-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(13,0,16,1) 0%,rgba(13,0,16,0.5) 40%,rgba(13,0,16,0.1) 100%)}
+.hero-meta{position:relative;z-index:2;padding:0 8% 3rem;width:100%}
+.art-category{display:inline-block;background:linear-gradient(135deg,var(--pink),#c2157a);color:#fff;padding:.25rem .85rem;border-radius:50px;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1rem}
+.art-title{font-size:clamp(1.8rem,4vw,3.2rem);font-weight:800;line-height:1.15;max-width:800px;margin-bottom:1rem}
+.art-info{display:flex;gap:1.5rem;flex-wrap:wrap;font-size:.75rem;color:rgba(255,255,255,0.55)}
+
+/* BODY */
+.article-wrap{max-width:780px;margin:0 auto;padding:4rem 5%}
+.article-body h2{font-size:1.4rem;font-weight:700;margin:2.5rem 0 1rem;background:linear-gradient(135deg,var(--pink-light),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.article-body h3{font-size:1.1rem;font-weight:600;margin:2rem 0 .75rem;color:var(--pink-light)}
+.article-body p{color:rgba(255,255,255,0.78);margin-bottom:1.2rem;font-size:.97rem;font-weight:300;line-height:1.85}
+.article-body strong{color:#fff;font-weight:600}
+.article-body em{color:var(--pink-pale);font-style:normal}
+
+.stat-box{background:linear-gradient(135deg,rgba(233,30,140,0.12),rgba(180,0,100,0.06));border:1px solid rgba(233,30,140,0.25);border-radius:var(--radius);padding:1.5rem 2rem;margin:2rem 0;position:relative;overflow:hidden}
+.stat-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--pink),var(--pink-light))}
+.stat-box .stat-num{font-size:2.2rem;font-weight:900;background:linear-gradient(135deg,var(--pink-light),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
+.stat-box .stat-desc{font-size:.82rem;color:var(--text-muted);margin-top:.3rem}
+
+.signal-list{list-style:none;display:flex;flex-direction:column;gap:.85rem;margin:1.5rem 0}
+.signal-item{display:flex;gap:1rem;align-items:flex-start;background:var(--dark-card);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:1rem 1.25rem}
+.signal-icon{width:38px;height:38px;border-radius:10px;background:rgba(233,30,140,0.12);border:1px solid rgba(233,30,140,0.22);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
+.signal-text .signal-name{font-size:.88rem;font-weight:600;margin-bottom:.2rem}
+.signal-text .signal-desc{font-size:.78rem;color:var(--text-muted);font-weight:300;line-height:1.5}
+
+.quote-block{border-left:3px solid var(--pink);padding:1.2rem 1.5rem;margin:2rem 0;background:rgba(233,30,140,0.06);border-radius:0 12px 12px 0}
+.quote-block p{font-size:1.05rem;font-style:italic;color:var(--pink-pale);margin:0;font-weight:300}
+.quote-source{font-size:.72rem;color:var(--text-muted);margin-top:.5rem}
+
+/* CTA BOX */
+.cta-box{background:linear-gradient(135deg,rgba(233,30,140,0.15),rgba(180,0,100,0.08));border:1px solid rgba(233,30,140,0.3);border-radius:20px;padding:2rem 2.5rem;margin:3rem 0;text-align:center;position:relative;overflow:hidden}
+.cta-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--pink),var(--pink-light),var(--pink))}
+.cta-pill{width:70px;height:40px;background:linear-gradient(135deg,#ff80c4,var(--pink),#c2157a);border-radius:50px;margin:0 auto 1rem;box-shadow:0 0 25px var(--pink-glow);display:flex;align-items:center;justify-content:center;font-family:'Dancing Script',cursive;font-size:.75rem;color:rgba(255,255,255,.9);font-weight:700}
+.cta-box h3{font-size:1.2rem;font-weight:700;margin-bottom:.6rem}
+.cta-box p{color:var(--text-muted);font-size:.85rem;font-weight:300;margin-bottom:1.2rem}
+.btn-cta{background:linear-gradient(135deg,var(--pink),#c2157a);color:#fff;text-decoration:none;border-radius:50px;padding:.75rem 2rem;font-family:'Lexend',sans-serif;font-size:.82rem;font-weight:600;display:inline-block;box-shadow:0 0 25px var(--pink-glow);transition:all .3s}
+.btn-cta:hover{transform:translateY(-2px);box-shadow:0 0 40px var(--pink-glow)}
+
+/* DISCLAIMER */
+.disclaimer{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.2rem 1.5rem;margin:2rem 0;font-size:.72rem;color:rgba(255,255,255,.35);line-height:1.6}
+.disclaimer strong{color:rgba(255,255,255,.5)}
+
+/* RELATED */
+.related{padding:4rem 5%;border-top:1px solid rgba(255,255,255,0.07);max-width:1100px;margin:0 auto}
+.related-title{font-size:1.1rem;font-weight:700;margin-bottom:1.5rem;color:var(--pink-light)}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.2rem}
+.related-card{background:var(--dark-card);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius);overflow:hidden;text-decoration:none;color:inherit;display:block;transition:all .3s}
+.related-card:hover{border-color:rgba(233,30,140,0.35);transform:translateY(-4px)}
+.related-img{aspect-ratio:16/9;overflow:hidden}
+.related-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.related-card:hover .related-img img{transform:scale(1.05)}
+.related-body{padding:1rem}
+.related-cat{font-size:.65rem;font-weight:700;color:var(--pink);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem}
+.related-card-title{font-size:.85rem;font-weight:600;line-height:1.35}
+
+/* FOOTER */
+footer{background:rgba(0,0,0,.4);border-top:1px solid rgba(233,30,140,0.12);padding:2rem 5%;text-align:center}
+.footer-logo{font-family:'Dancing Script',cursive;font-size:1.6rem;font-weight:700;background:linear-gradient(135deg,#fff,var(--pink-light),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.4rem}
+.footer-legal{font-size:.68rem;color:rgba(255,255,255,.25);max-width:600px;margin:0 auto;line-height:1.6}
+
+@media(max-width:768px){.article-hero{height:50vh;min-height:320px}.hero-meta{padding:0 5% 2rem}.art-title{font-size:1.6rem}.article-wrap{padding:2.5rem 5%}.related-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="ctech-website.html">C-tech®</a>
+  <a class="nav-back" href="ctech-website.html">← Volver al inicio</a>
+  <a class="nav-cta" href="ctech-website.html#comunidad">Únete al Flow</a>
+</nav>
+
+<div class="article-hero">
+  <img src="art1-senales.png" alt="Mujer C-Tech con energía fluyendo">
+  <div class="hero-overlay"></div>
+  <div class="hero-meta">
+    <div class="art-category">🦴 Señales de alerta</div>
+    <h1 class="art-title">Los huesos no duelen... hasta que se rompen. Pero antes, el cuerpo manda señales.</h1>
+    <div class="art-info">
+      <span>📅 29 de abril, 2026</span>
+      <span>⏱ 5 min de lectura</span>
+      <span>🔬 Fuente: IOF 2026 · Medigraphic</span>
+      <span>✍ Redacción C-Tech</span>
+    </div>
+  </div>
+</div>
+
+<div class="article-wrap">
+  <div class="article-body">
+
+    <p>La osteoporosis tiene un apodo muy preciso entre los especialistas: <strong>"el ladrón silencioso."</strong> Y no es para menos. Durante años — a veces décadas — va debilitando el tejido óseo sin producir ningún síntoma. Sin dolor, sin aviso visible, sin señal de alarma obvia. Hasta que un día ocurre una fractura. Y entonces todo cambia.</p>
+
+    <p>Pero aquí viene la buena noticia: aunque la pérdida ósea en sí misma no duele, <strong>el cuerpo sí manda señales previas</strong> que muchas mujeres pasamos por alto porque no las asociamos con los huesos. Reconocerlas puede ser la diferencia entre actuar a tiempo y lamentar no haberlo hecho.</p>
+
+    <div class="stat-box">
+      <div class="stat-num">80%</div>
+      <div class="stat-desc">de las personas que sufren una fractura por osteoporosis nunca supieron que la tenían. La enfermedad avanza en silencio durante años. — International Osteoporosis Foundation, 2026</div>
+    </div>
+
+    <h2>¿Por qué no duele si los huesos se están debilitando?</h2>
+
+    <p>El hueso es un tejido vivo que se renueva constantemente. En un proceso llamado <strong>remodelación ósea</strong>, células especializadas destruyen tejido viejo (osteoclastos) y otras lo reconstruyen (osteoblastos). En la juventud, la reconstrucción supera a la destrucción. A partir de los <em>35 años</em>, ese equilibrio empieza a inclinarse del lado contrario.</p>
+
+    <p>El problema es que la estructura interna del hueso puede volverse porosa y frágil sin que las terminaciones nerviosas — que solo responden a presión extrema o inflamación — registren nada. El hueso simplemente se hace más delgado. Silenciosamente.</p>
+
+    <p>Lo que sí ocurre son cambios funcionales y físicos que muchas veces atribuimos al "cansancio", la edad, el estrés o el sedentarismo. Esos cambios son las señales que debemos aprender a leer.</p>
+
+    <h2>Las 6 señales que el cuerpo manda antes de la fractura</h2>
+
+    <ul class="signal-list">
+      <li class="signal-item">
+        <div class="signal-icon">📉</div>
+        <div class="signal-text">
+          <div class="signal-name">Pérdida de estatura (aunque sea pequeña)</div>
+          <div class="signal-desc">Perder más de 2 cm de altura en comparación con tu talla adulta puede indicar fracturas vertebrales por compresión — uno de los síntomas clásicos de osteoporosis avanzada que pasa desapercibido. Mídete en el médico, no solo en casa.</div>
+        </div>
+      </li>
+      <li class="signal-item">
+        <div class="signal-icon">🔙</div>
+        <div class="signal-text">
+          <div class="signal-name">Dolor de espalda crónico, especialmente en la zona dorsal</div>
+          <div class="signal-desc">El dolor de espalda baja o media persistente que empeora al estar de pie puede ser consecuencia de pequeñas fracturas vertebrales. La mayoría de las mujeres lo adjudican a "malas posturas" o trabajo de escritorio.</div>
+        </div>
+      </li>
+      <li class="signal-item">
+        <div class="signal-icon">🦷</div>
+        <div class="signal-text">
+          <div class="signal-name">Problemas dentales recurrentes y pérdida de hueso en la mandíbula</div>
+          <div class="signal-desc">¿Tu dentista te ha dicho que tienes pérdida ósea en la mandíbula o que tus dientes tienen poco soporte? El hueso dental responde igual que el esquelético a la deficiencia de calcio. Es una señal que muy pocas mujeres conectan con la osteoporosis.</div>
+        </div>
+      </li>
+      <li class="signal-item">
+        <div class="signal-icon">💅</div>
+        <div class="signal-text">
+          <div class="signal-name">Uñas frágiles que se rompen constantemente</div>
+          <div class="signal-desc">Las uñas y los huesos comparten muchos de los mismos nutrientes. La fragilidad extrema, la descamación o las estrías verticales frecuentes pueden reflejar deficiencias de calcio, vitamina D o proteínas que también afectan tu densidad ósea.</div>
+        </div>
+      </li>
+      <li class="signal-item">
+        <div class="signal-icon">💪</div>
+        <div class="signal-text">
+          <div class="signal-name">Debilidad muscular y calambres frecuentes</div>
+          <div class="signal-desc">El calcio no solo vive en los huesos — también regula la contracción muscular. La deficiencia de calcio y vitamina D se manifiesta en músculosque se cansan pronto, calambres nocturnos frecuentes y sensación general de debilidad física.</div>
+        </div>
+      </li>
+      <li class="signal-item">
+        <div class="signal-icon">🫀</div>
+        <div class="signal-text">
+          <div class="signal-name">Palpitaciones o ritmo cardíaco irregular</div>
+          <div class="signal-desc">Menos conocida pero documentada: el calcio regula también la función cardíaca. Niveles persistentemente bajos pueden provocar arritmias leves. Si las sientes junto con calambres o debilidad muscular, vale la pena hacer una revisión completa.</div>
+        </div>
+      </li>
+    </ul>
+
+    <h2>¿A partir de cuándo debo preocuparme?</h2>
+
+    <p>La respuesta corta: <strong>desde los 35 años</strong>, y especialmente si eres mujer. La pérdida ósea se acelera dramáticamente durante la perimenopausia y los primeros años tras la menopausia, cuando la caída de estrógenos elimina uno de los principales frenos al proceso de reabsorción ósea.</p>
+
+    <p>Pero no se trata de alarmarse — se trata de actuar. Existen factores de riesgo claramente identificados que multiplican tu probabilidad de desarrollar osteoporosis:</p>
+
+    <div class="quote-block">
+      <p>"Hasta el 80% de quienes sufren una fractura nunca supieron que tenían osteoporosis. La detección temprana y la suplementación adecuada pueden reducir el riesgo de fractura en un 40%."</p>
+      <div class="quote-source">— International Osteoporosis Foundation, World Osteoporosis Day Report 2026</div>
+    </div>
+
+    <h3>Factores de riesgo que debes conocer</h3>
+
+    <p>Ser mujer es, en sí mismo, el mayor factor de riesgo. Las mujeres tienen huesos naturalmente más pequeños y delgados que los hombres, y la caída hormonal de la menopausia acelera la pérdida ósea de forma drástica. Otros factores importantes incluyen: antecedentes familiares de osteoporosis o fracturas, bajo índice de masa corporal, tabaquismo, consumo de alcohol, uso prolongado de corticosteroides, sedentarismo, bajo consumo de calcio y vitamina D, y deficiencias nutricionales crónicas.</p>
+
+    <h2>El primer paso: la densitometría ósea</h2>
+
+    <p>La única manera de saber con certeza el estado de tu densidad ósea es a través de la <strong>densitometría ósea (DXA)</strong>, un estudio de imagen rápido, indoloro y de baja radiación que mide la densidad mineral en columna y cadera. La Organización Mundial de la Salud recomienda realizarla a partir de los 65 años, pero la IOF sugiere que las mujeres con factores de riesgo lo hagan desde los 50.</p>
+
+    <p>Si en tu chequeo anual con el ginecólogo o el médico familiar nunca te han mencionado la densitometría — <strong>pídela explícitamente</strong>. En México, el IMSS la cubre para mujeres postmenopáusicas desde los 60 años, pero puedes solicitarla antes si presentas factores de riesgo.</p>
+
+    <h2>Mientras esperas el estudio: lo que puedes hacer hoy</h2>
+
+    <p>La detección es fundamental, pero la acción no necesita esperar al diagnóstico. Hay hábitos que protegen tu densidad ósea desde hoy mismo: ejercicio con impacto (no solo yoga o natación), exposición solar moderada para activar la vitamina D, dieta rica en calcio biodisponible, reducción del consumo de tabaco y alcohol, y la suplementación adecuada con calcio y vitamina D3 cuando la dieta no es suficiente.</p>
+
+    <p>El calcio de la dieta promedio mexicana cubre apenas el 60-70% de los requerimientos diarios recomendados. Y en mujeres mayores de 40, la absorción intestinal de calcio disminuye de forma natural. Ahí es donde la suplementación inteligente marca la diferencia.</p>
+
+  </div>
+
+  <div class="cta-box">
+    <div class="cta-pill">C-tech</div>
+    <h3>El calcio que fluye en ti, para que tú fluyas</h3>
+    <p>C-Tech® Citrato de Calcio 1495 mg + Vitamina D3. Fácil de tomar, absorción efectiva. Para todos tus días.</p>
+    <a class="btn-cta" href="ctech-website.html#sobre-ctech">Conoce C-Tech ▸</a>
+  </div>
+
+  <div class="disclaimer">
+    <strong>Aviso importante:</strong> Este artículo es de carácter informativo y educativo. No constituye consejo médico ni sustituye la consulta con un profesional de la salud. Ante cualquier síntoma, consulta a tu médico. C-Tech® es un suplemento alimenticio de libre acceso (OTC). No es un medicamento de prescripción. Fuentes: International Osteoporosis Foundation 2026, Medigraphic, IMSS.
+  </div>
+</div>
+
+<div class="related">
+  <div class="related-title">También te puede interesar</div>
+  <div class="related-grid">
+    <a class="related-card" href="articulo-calcio-plato.html">
+      <div class="related-img"><img src="art2-calcio-plato.png" alt="Calcio en tu plato"></div>
+      <div class="related-body">
+        <div class="related-cat">🥗 Nutrición</div>
+        <div class="related-card-title">Calcio en tu plato: los alimentos que más te ayudan (y los que te lo roban)</div>
+      </div>
+    </a>
+    <a class="related-card" href="articulo-menopausia.html">
+      <div class="related-img"><img src="art3-menopausia.png" alt="Menopausia y huesos"></div>
+      <div class="related-body">
+        <div class="related-cat">🌸 Menopausia</div>
+        <div class="related-card-title">Lo que cambia en tus huesos durante la menopausia y cómo prepararte</div>
+      </div>
+    </a>
+    <a class="related-card" href="articulo-ejercicios.html">
+      <div class="related-img"><img src="art4-ejercicios.png" alt="Ejercicios para huesos"></div>
+      <div class="related-body">
+        <div class="related-cat">💪 Ejercicio</div>
+        <div class="related-card-title">Los 5 ejercicios que más fortalecen tus huesos (y por qué el yoga solo no es suficiente)</div>
+      </div>
+    </a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">C-tech®</div>
+  <div class="footer-legal">ctech.com.mx · Carnot Laboratorios · Este contenido es informativo y no sustituye la consulta médica. © 2026</div>
+</footer>
+
+</body>
+</html>

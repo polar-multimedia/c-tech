@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vitamina D y calcio: el dúo que tu cuerpo necesita todos los días — C-Tech®</title>
+<meta name="description" content="Sin vitamina D, el calcio no llega a donde debe. Aprende cómo optimizar esta sinergia esencial para tus huesos, músculos e inmunidad.">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--pink:#E91E8C;--pink-light:#FF69B4;--pink-pale:#FFD6EC;--pink-glow:rgba(233,30,140,0.22);--dark:#0d0010;--dark-2:#180020;--dark-card:rgba(255,255,255,0.04);--text:#fff;--text-muted:rgba(255,255,255,0.62);--radius:16px}
+html{scroll-behavior:smooth}
+body{font-family:'Lexend',sans-serif;background:var(--dark);color:var(--text);overflow-x:hidden;line-height:1.7}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:66px;background:rgba(13,0,16,0.9);backdrop-filter:blur(20px);border-bottom:1px solid rgba(233,30,140,0.15)}
+.nav-logo{font-family:'Dancing Script',cursive;font-size:1.7rem;font-weight:700;background:linear-gradient(135deg,#fff,var(--pink-light),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none}
+.nav-back{color:var(--text-muted);text-decoration:none;font-size:0.78rem;font-weight:500;display:flex;align-items:center;gap:0.4rem;transition:color .3s}
+.nav-back:hover{color:var(--pink-light)}
+.nav-cta{background:linear-gradient(135deg,var(--pink),#c2157a);color:#fff;border:none;border-radius:50px;padding:.45rem 1.2rem;font-family:'Lexend',sans-serif;font-size:.75rem;font-weight:600;cursor:pointer;text-decoration:none;box-shadow:0 0 18px var(--pink-glow)}
+.article-hero{margin-top:66px;position:relative;height:60vh;min-height:420px;overflow:hidden;display:flex;align-items:flex-end;background:linear-gradient(135deg,#1a0030 0%,#3a1a00 50%,#1a0030 100%)}
+.article-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(13,0,16,1) 0%,rgba(13,0,16,0.5) 40%,rgba(13,0,16,0.1) 100%)}
+.hero-meta{position:relative;z-index:2;padding:0 8% 3rem;width:100%}
+.art-category{display:inline-block;background:linear-gradient(135deg,var(--pink),#c2157a);color:#fff;padding:.25rem .85rem;border-radius:50px;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1rem}
+.art-title{font-size:clamp(1.8rem,4vw,3.2rem);font-weight:800;line-height:1.15;max-width:800px;margin-bottom:1rem}
+.art-info{display:flex;gap:1.5rem;flex-wrap:wrap;font-size:.75rem;color:rgba(255,255,255,0.55)}
+.article-wrap{max-width:780px;margin:0 auto;padding:4rem 5%}
+.article-body h2{font-size:1.4rem;font-weight:700;margin:2.5rem 0 1rem;background:linear-gradient(135deg,var(--pink-light),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.article-body h3{font-size:1.1rem;font-weight:600;margin:2rem 0 .75rem;color:var(--pink-light)}
+.article-body p{color:rgba(255,255,255,0.78);margin-bottom:1.2rem;font-size:.97rem;font-weight:300;line-height:1.85}
+.article-body strong{color:#fff;font-weight:600}
+.article-body em{color:var(--pink-pale);font-style:normal}
+.stat-box{background:linear-gradient(135deg,rgba(233,30,140,0.12),rgba(180,0,100,0.06));border:1px solid rgba(233,30,140,0.25);border-radius:var(--radius);padding:1.5rem 2rem;margin:2rem 0;position:relative;overflow:hidden}
+.stat-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--pink),var(--pink-light))}
+.stat-box .stat-num{font-size:2.2rem;font-weight:900;background:linear-gradient(135deg,var(--pink-light),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
+.stat-box .stat-desc{font-size:.82rem;color:var(--text-muted);margin-top:.3rem}
+.duo-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:1.5rem 0}
+.duo-card{border-radius:14px;padding:1.4rem;border:1px solid rgba(255,255,255,0.1);background:var(--dark-card)}
+.duo-icon{font-size:2rem;margin-bottom:.6rem}
+.duo-name{font-size:.95rem;font-weight:700;margin-bottom:.4rem}
+.duo-desc{font-size:.78rem;color:var(--text-muted);line-height:1.55}
+.food-list{list-style:none;display:flex;flex-direction:column;gap:.75rem;margin:1.5rem 0}
+.food-item{display:flex;align-items:center;gap:1rem;background:var(--dark-card);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:.85rem 1.2rem}
+.food-icon{font-size:1.1rem;width:32px;text-align:center;flex-shrink:0}
+.food-info{flex:1}
+.food-name{font-size:.85rem;font-weight:600}
+.food-amount{font-size:.72rem;color:var(--text-muted)}
+.food-bar-wrap{width:80px;height:6px;background:rgba(255,255,255,0.08);border-radius:3px;overflow:hidden}
+.food-bar{height:100%;background:linear-gradient(90deg,var(--pink),var(--pink-light));border-radius:3px}
+.myth-block{margin:1.5rem 0;display:flex;flex-direction:column;gap:1rem}
+.myth-item{display:grid;grid-template-columns:auto 1fr;gap:1rem;background:var(--dark-card);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:1rem 1.2rem;align-items:start}
+.myth-label{font-size:.65rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .6rem;border-radius:4px}
+.myth-item.false .myth-label{background:rgba(233,30,140,0.2);color:var(--pink-light)}
+.myth-item.true .myth-label{background:rgba(0,200,100,0.15);color:#00c864}
+.myth-text{font-size:.82rem;color:var(--text-muted);line-height:1.55}
+.myth-text strong{color:#fff}
+.quote-block{border-left:3px solid var(--pink);padding:1.2rem 1.5rem;margin:2rem 0;background:rgba(233,30,140,0.06);border-radius:0 12px 12px 0}
+.quote-block p{font-size:1.05rem;font-style:italic;color:var(--pink-pale);margin:0;font-weight:300}
+.quote-source{font-size:.72rem;color:var(--text-muted);margin-top:.5rem}
+.cta-box{background:linear-gradient(135deg,rgba(233,30,140,0.15),rgba(180,0,100,0.08));border:1px solid rgba(233,30,140,0.3);border-radius:20px;padding:2rem 2.5rem;margin:3rem 0;text-align:center;position:relative;overflow:hidden}
+.cta-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--pink),var(--pink-light),var(--pink))}
+.cta-pill{width:70px;height:40px;background:linear-gradient(135deg,#ff80c4,var(--pink),#c2157a);border-radius:50px;margin:0 auto 1rem;box-shadow:0 0 25px var(--pink-glow);display:flex;align-items:center;justify-content:center;font-family:'Dancing Script',cursive;font-size:.75rem;color:rgba(255,255,255,.9);font-weight:700}
+.cta-box h3{font-size:1.2rem;font-weight:700;margin-bottom:.6rem}
+.cta-box p{color:var(--text-muted);font-size:.85rem;font-weight:300;margin-bottom:1.2rem}
+.btn-cta{background:linear-gradient(135deg,var(--pink),#c2157a);color:#fff;text-decoration:none;border-radius:50px;padding:.75rem 2rem;font-family:'Lexend',sans-serif;font-size:.82rem;font-weight:600;display:inline-block;box-shadow:0 0 25px var(--pink-glow);transition:all .3s}
+.btn-cta:hover{transform:translateY(-2px);box-shadow:0 0 40px var(--pink-glow)}
+.disclaimer{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.2rem 1.5rem;margin:2rem 0;font-size:.72rem;color:rgba(255,255,255,.35);line-height:1.6}
+.disclaimer strong{color:rgba(255,255,255,.5)}
+.related{padding:4rem 5%;border-top:1px solid rgba(255,255,255,0.07);max-width:1100px;margin:0 auto}
+.related-title{font-size:1.1rem;font-weight:700;margin-bottom:1.5rem;color:var(--pink-light)}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.2rem}
+.related-card{background:var(--dark-card);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius);overflow:hidden;text-decoration:none;color:inherit;display:block;transition:all .3s}
+.related-card:hover{border-color:rgba(233,30,140,0.35);transform:translateY(-4px)}
+.related-img{aspect-ratio:16/9;overflow:hidden;background:linear-gradient(135deg,#1a0030,#2d004a)}
+.related-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.related-card:hover .related-img img{transform:scale(1.05)}
+.related-body{padding:1rem}
+.related-cat{font-size:.65rem;font-weight:700;color:var(--pink);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem}
+.related-card-title{font-size:.85rem;font-weight:600;line-height:1.35}
+footer{background:rgba(0,0,0,.4);border-top:1px solid rgba(233,30,140,0.12);padding:2rem 5%;text-align:center}
+.footer-logo{font-family:'Dancing Script',cursive;font-size:1.6rem;font-weight:700;background:linear-gradient(135deg,#fff,var(--pink-light),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.4rem}
+.footer-legal{font-size:.68rem;color:rgba(255,255,255,.25);max-width:600px;margin:0 auto;line-height:1.6}
+@media(max-width:768px){.article-hero{height:50vh;min-height:320px}.hero-meta{padding:0 5% 2rem}.art-title{font-size:1.6rem}.article-wrap{padding:2.5rem 5%}.related-grid{grid-template-columns:1fr}.duo-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="ctech-website.html">C-tech®</a>
+  <a class="nav-back" href="ctech-website.html">← Volver al inicio</a>
+  <a class="nav-cta" href="ctech-website.html#comunidad">Únete al Flow</a>
+</nav>
+
+<div class="article-hero">
+  <img src="art6-vitaminad.png" alt="Vitamina D y sol para la salud ósea">
+  <div class="hero-overlay"></div>
+  <div class="hero-meta">
+    <div class="art-category">🌞 Nutrición</div>
+    <h1 class="art-title">Vitamina D y calcio: el dúo que tu cuerpo necesita todos los días — y por qué uno sin el otro no funciona</h1>
+    <div class="art-info">
+      <span>📅 30 de abril, 2026</span>
+      <span>⏱ 7 min de lectura</span>
+      <span>🔬 Fuente: Journal of Bone & Mineral Research · ENSANUT 2024</span>
+      <span>✍ Redacción C-Tech</span>
+    </div>
+  </div>
+</div>
+
+<div class="article-wrap">
+  <div class="article-body">
+
+    <p>Si el calcio es el material de construcción de tus huesos, la vitamina D es la llave que abre la puerta para que entre. Sin ella, por mucho calcio que consumas — en la dieta o en suplemento — tu intestino simplemente no lo absorbe. Pasará de largo. Y todo ese esfuerzo nutricional habrá servido de poco.</p>
+
+    <p>Es una de las interdependencias más importantes de la biología humana, y también una de las más subestimadas. Este artículo explica exactamente cómo funciona este dúo, por qué la deficiencia de vitamina D es epidémica en México y qué puedes hacer hoy para asegurarte de que tu calcio llegue a donde debe.</p>
+
+    <div class="stat-box">
+      <div class="stat-num">7 de 10</div>
+      <div class="stat-desc">mujeres mexicanas mayores de 40 años presentan deficiencia o insuficiencia de vitamina D, según la Encuesta Nacional de Salud y Nutrición (ENSANUT 2024). Esto significa que incluso las que comen bien o toman calcio pueden no estar absorbiéndolo correctamente.</div>
+    </div>
+
+    <h2>¿Por qué necesitan trabajar juntos?</h2>
+
+    <div class="duo-grid">
+      <div class="duo-card">
+        <div class="duo-icon">🦴</div>
+        <div class="duo-name">Calcio</div>
+        <div class="duo-desc">El mineral más abundante del cuerpo. El 99% está en huesos y dientes. El 1% restante regula la contracción muscular, la transmisión nerviosa y la coagulación. Sin un aporte constante, el cuerpo lo "roba" de los huesos.</div>
+      </div>
+      <div class="duo-card">
+        <div class="duo-icon">☀️</div>
+        <div class="duo-name">Vitamina D3</div>
+        <div class="duo-desc">En realidad es una hormona. Regula la absorción intestinal de calcio (sin ella, solo absorbes el 10–15% del calcio ingerido). También modula el sistema inmune, el estado de ánimo y la función muscular.</div>
+      </div>
+    </div>
+
+    <p>La vitamina D actúa específicamente en el intestino delgado, donde promueve la síntesis de proteínas transportadoras que "cargan" el calcio y lo pasan al torrente sanguíneo. Con niveles óptimos de vitamina D, la absorción de calcio puede llegar al <strong>30–40%</strong> de lo ingerido. Con deficiencia, esa cifra cae a menos del 15%. Es decir: dos tercios de tu calcio se van por la borda.</p>
+
+    <h2>¿Por qué hay tanta deficiencia en México si tenemos sol todo el año?</h2>
+
+    <p>Es la pregunta que sorprende a todo el mundo. México tiene radiación solar suficiente para sintetizar vitamina D prácticamente los 365 días del año. Y aun así, la deficiencia es epidémica. Las razones son múltiples:</p>
+
+    <p><strong>El filtro solar:</strong> el SPF 30 bloquea el 97% de los rayos UVB necesarios para la síntesis de vitamina D. Usarlo en cara, brazos y piernas elimina prácticamente la producción cutánea — necesaria pero irónicamente contraindicada por las guías de cáncer de piel.</p>
+
+    <p><strong>El horario de trabajo y el estilo de vida urbano:</strong> la mayoría de las personas pasan 8–10 horas en interiores. La exposición solar efectiva para síntesis de vitamina D requiere entre <em>10 y 20 minutos de sol directo en brazos y piernas</em>, sin filtro, entre las 10 am y las 2 pm. Pocos lo hacen.</p>
+
+    <p><strong>La pigmentación de la piel:</strong> la melanina actúa como un filtro UV natural. Las personas de piel oscura producen hasta 6 veces menos vitamina D ante la misma exposición solar que las de piel clara.</p>
+
+    <p><strong>La edad:</strong> a partir de los 50 años, la capacidad de la piel para sintetizar vitamina D disminuye hasta en un 75% respecto a la juventud.</p>
+
+    <h2>¿Cuánta vitamina D necesitas realmente?</h2>
+
+    <p>El nivel sérico óptimo de vitamina D (25-OH-D) es de <strong>30–60 ng/mL</strong> según la IOF. Por debajo de 20 ng/mL se habla de deficiencia; entre 20 y 30, de insuficiencia. La dosis diaria recomendada para adultos es de <strong>600–800 UI</strong>, pero muchas guías actualizadas elevan esa cifra a <strong>1,000–2,000 UI</strong> para mujeres mayores de 50, especialmente si hay deficiencia comprobada.</p>
+
+    <div class="quote-block">
+      <p>"La combinación de calcio y vitamina D3 reduce el riesgo de fractura de cadera en un 26% en mujeres mayores. Pero ese beneficio desaparece si los niveles de vitamina D no son suficientes para garantizar la absorción del calcio."</p>
+      <div class="quote-source">— Journal of Bone and Mineral Research, 2025</div>
+    </div>
+
+    <h2>¿Los alimentos son suficientes?</h2>
+
+    <p>Lamentablemente, la vitamina D es uno de los nutrientes más difíciles de obtener solo de la dieta. Los alimentos que la contienen son pocos y en cantidades modestas:</p>
+
+    <ul class="food-list">
+      <li class="food-item">
+        <div class="food-icon">🐟</div>
+        <div class="food-info">
+          <div class="food-name">Salmón (100g)</div>
+          <div class="food-amount">~400–600 UI de vitamina D</div>
+        </div>
+        <div class="food-bar-wrap"><div class="food-bar" style="width:65%"></div></div>
+      </li>
+      <li class="food-item">
+        <div class="food-icon">🥚</div>
+        <div class="food-info">
+          <div class="food-name">Yema de huevo</div>
+          <div class="food-amount">~40 UI por yema</div>
+        </div>
+        <div class="food-bar-wrap"><div class="food-bar" style="width:15%"></div></div>
+      </li>
+      <li class="food-item">
+        <div class="food-icon">🥛</div>
+        <div class="food-info">
+          <div class="food-name">Leche entera (250 ml)</div>
+          <div class="food-amount">~100 UI (si está fortificada)</div>
+        </div>
+        <div class="food-bar-wrap"><div class="food-bar" style="width:20%"></div></div>
+      </li>
+      <li class="food-item">
+        <div class="food-icon">🍄</div>
+        <div class="food-info">
+          <div class="food-name">Hongos expuestos al sol</div>
+          <div class="food-amount">~200–400 UI (variable)</div>
+        </div>
+        <div class="food-bar-wrap"><div class="food-bar" style="width:40%"></div></div>
+      </li>
+    </ul>
+
+    <p>Para alcanzar las <strong>1,000 UI diarias</strong> solo con alimentos, tendrías que comer 200g de salmón todos los días. No es realista. Por eso la suplementación combinada calcio + vitamina D3 tiene tanto sentido — no es un capricho, es la solución a una brecha nutricional real.</p>
+
+    <h2>Mitos y realidades sobre el calcio y la vitamina D</h2>
+
+    <div class="myth-block">
+      <div class="myth-item false">
+        <span class="myth-label">Mito</span>
+        <div class="myth-text"><strong>"Con tomar leche es suficiente para el calcio."</strong> Un vaso de leche aporta ~300 mg. La recomendación diaria para mujeres adultas es de 1,000–1,200 mg. Necesitarías beber más de 3 vasos diarios solo de leche, sin contar lo que ya comerás en el día.</div>
+      </div>
+      <div class="myth-item false">
+        <span class="myth-label">Mito</span>
+        <div class="myth-text"><strong>"Si vivo en México no me puede faltar vitamina D."</strong> Como explicamos arriba, el estilo de vida moderno, el filtro solar y la pigmentación hacen que esto sea falso para la mayoría de las mujeres urbanas mayores de 40 años.</div>
+      </div>
+      <div class="myth-item false">
+        <span class="myth-label">Mito</span>
+        <div class="myth-text"><strong>"El carbonato de calcio y el citrato de calcio son lo mismo."</strong> El citrato no necesita ácido gástrico para absorberse — lo que lo hace superior en mujeres que toman antiácidos o inhibidores de bomba de protones (muy comunes en mayores de 50). La absorción del citrato es 2.5 veces mayor en condiciones de pH alto.</div>
+      </div>
+      <div class="myth-item true">
+        <span class="myth-label">Verdad</span>
+        <div class="myth-text"><strong>La suplementación combinada calcio + vitamina D3 reduce el riesgo de fractura.</strong> Múltiples metaanálisis confirman una reducción del 20–26% en fracturas de cadera y columna cuando ambos se toman de forma constante en las dosis correctas.</div>
+      </div>
+    </div>
+
+    <h3>¿Es posible tomar demasiada vitamina D?</h3>
+
+    <p>Sí, aunque es mucho más difícil de lo que la gente cree. La toxicidad por vitamina D solo ocurre con dosis sostenidas mayores a <strong>10,000 UI diarias</strong> durante meses. Las dosis de suplementación estándar (1,000–2,000 UI) están muy por debajo de ese umbral. Si tienes dudas, un análisis de sangre de 25-OH-D te dará el nivel exacto y tu médico podrá personalizar la dosis.</p>
+
+  </div>
+
+  <div class="cta-box">
+    <div class="cta-pill">C-tech</div>
+    <h3>Calcio y vitamina D3 en la fórmula correcta</h3>
+    <p>C-Tech® combina Citrato de Calcio 1495 mg + Vitamina D3 en una sola tableta diseñada para que el dúo funcione como debe. Absorción efectiva. Sin excusas.</p>
+    <a class="btn-cta" href="ctech-website.html#sobre-ctech">Conoce C-Tech ▸</a>
+  </div>
+
+  <div class="disclaimer">
+    <strong>Aviso importante:</strong> Este artículo es de carácter informativo y educativo. No constituye consejo médico ni sustituye la consulta con un profesional de la salud. Las dosis de suplementación deben personalizarse con tu médico. Fuentes: ENSANUT 2024, Journal of Bone and Mineral Research, IOF, NOF.
+  </div>
+</div>
+
+<div class="related">
+  <div class="related-title">También te puede interesar</div>
+  <div class="related-grid">
+    <a class="related-card" href="articulo-calcio-plato.html">
+      <div class="related-img"><img src="art2-calcio-plato.png" alt="Calcio en tu plato"></div>
+      <div class="related-body">
+        <div class="related-cat">🥗 Nutrición</div>
+        <div class="related-card-title">Calcio en tu plato: los alimentos que más aportan (y los 5 que te lo roban)</div>
+      </div>
+    </a>
+    <a class="related-card" href="articulo-densitometria.html">
+      <div class="related-img"><img src="art5-densitometria.png" alt="Densitometría ósea"></div>
+      <div class="related-body">
+        <div class="related-cat">🦴 Salud Ósea</div>
+        <div class="related-card-title">Densitometría ósea: cuándo hacerla y qué significa tu resultado</div>
+      </div>
+    </a>
+    <a class="related-card" href="articulo-senales.html">
+      <div class="related-img"><img src="art1-senales.png" alt="Señales de pérdida ósea"></div>
+      <div class="related-body">
+        <div class="related-cat">🦴 Señales</div>
+        <div class="related-card-title">Los huesos no duelen hasta que se rompen: 6 señales silenciosas</div>
+      </div>
+    </a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">C-tech®</div>
+  <div class="footer-legal">ctech.com.mx · Carnot Laboratorios · Este contenido es informativo y no sustituye la consulta médica. © 2026</div>
+</footer>
+
+</body>
+</html>
