@@ -19,9 +19,13 @@
 <body>
 <h1>🌱 Seed Firestore /content</h1>
 <p>Carga los artículos del Hub C-Tech en la colección <code>/content</code> de Firestore para que el algoritmo de personalización de MenoTrack los pueda leer.<br>Ejecutar una sola vez — los documentos se crean con <code>merge:true</code> para no duplicar.</p>
-<button onclick="runSeed()" id="btnSeed">▶ Ejecutar seed</button>
+<div id="authArea" style="margin-bottom:20px;">
+  <button onclick="signIn()" id="btnLogin" style="background:#4ECBCA;color:#0d0010;">🔑 Iniciar sesión con Google</button>
+  <span id="userLabel" style="color:rgba(255,255,255,0.5);font-size:12px;margin-left:12px;"></span>
+</div>
+<button onclick="runSeed()" id="btnSeed" disabled>▶ Ejecutar seed</button>
 <button onclick="clearLog()">🗑 Limpiar log</button>
-<div id="log"><span class="info">Esperando...</span></div>
+<div id="log"><span class="info">Inicia sesión primero para ejecutar el seed.</span></div>
 
 <script>
 const firebaseConfig = {
@@ -34,6 +38,24 @@ const firebaseConfig = {
 };
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
+const auth = firebase.auth();
+
+firebase.auth().onAuthStateChanged(user => {
+  if (user) {
+    document.getElementById('btnLogin').style.display = 'none';
+    document.getElementById('userLabel').textContent = '✅ ' + user.email;
+    document.getElementById('btnSeed').disabled = false;
+  } else {
+    document.getElementById('btnLogin').style.display = '';
+    document.getElementById('userLabel').textContent = '';
+    document.getElementById('btnSeed').disabled = true;
+  }
+});
+
+function signIn() {
+  const provider = new firebase.auth.GoogleAuthProvider();
+  firebase.auth().signInWithPopup(provider).catch(e => alert('Error: ' + e.message));
+}
 
 const BASE = 'https://polar-multimedia.github.io/c-tech/';
 
