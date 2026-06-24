@@ -77,6 +77,19 @@ footer{background:rgba(0,0,0,.4);border-top:1px solid rgba(233,30,140,0.12);padd
 .mt-sub{font-size:.75rem;color:rgba(255,255,255,.5);font-weight:300;line-height:1.4}
 .mt-btn{background:linear-gradient(135deg,#4ECBCA,#2aadac);color:#0d0010;text-decoration:none;border-radius:50px;padding:.55rem 1.3rem;font-size:.78rem;font-weight:700;white-space:nowrap;flex-shrink:0}
 @media(max-width:600px){.action-grid{grid-template-columns:1fr}.related-grid{grid-template-columns:1fr}.art-title{font-size:1.6rem}.article-wrap{padding:2.5rem 5%}.cycle-steps{flex-direction:column;align-items:flex-start}.menotrack-strip{flex-direction:column;align-items:flex-start}.mt-btn{width:100%;text-align:center}}
+.fuentes-wrap{margin:2rem 0 0}
+.fuentes-details{border:1px solid rgba(78,203,202,.2);border-radius:12px;overflow:hidden}
+.fuentes-summary{display:flex;align-items:center;gap:.75rem;padding:1rem 1.25rem;cursor:pointer;list-style:none;background:rgba(78,203,202,.05);font-size:.82rem;font-weight:600;color:var(--teal);transition:background .2s;user-select:none}
+.fuentes-summary::-webkit-details-marker{display:none}
+.fuentes-summary:hover{background:rgba(78,203,202,.1)}
+.fuentes-chevron{margin-left:auto;font-size:1rem;transition:transform .25s}
+.fuentes-details[open] .fuentes-chevron{transform:rotate(90deg)}
+.fuentes-body{padding:1.25rem 1.5rem;border-top:1px solid rgba(78,203,202,.12)}
+.fuentes-note{font-size:.72rem;color:rgba(255,255,255,.4);margin-bottom:.75rem;font-style:italic}
+.fuentes-list{padding-left:1.1rem;margin:0}
+.fuentes-list li{font-size:.76rem;color:rgba(255,255,255,.55);margin-bottom:.6rem;line-height:1.5}
+.fuentes-list li a{color:var(--teal);text-decoration:none;word-break:break-all}
+.fuentes-list li a:hover{text-decoration:underline}
 </style>
 </head>
 <body>
@@ -239,6 +252,21 @@ footer{background:rgba(0,0,0,.4);border-top:1px solid rgba(233,30,140,0.12);padd
 
   <div class="disclaimer">
     <strong>Aviso importante:</strong> Este artículo es informativo y no sustituye la consulta con tu médico o ginecólogo. Si sospechas hipotiroidismo, anemia u otra condición, consulta a un profesional de la salud. C-Tech® es un suplemento de libre acceso (OTC) — complementa, no sustituye, el plan terapéutico. Fuentes: NAMS 2023 · Santoro N et al. Menopause 2021 · Thurston RC, Joffe H. Psychiatr Clin North Am 2011.
+  </div>
+
+  <div class="fuentes-wrap">
+    <details class="fuentes-details">
+      <summary class="fuentes-summary">📚 Ver fuentes y referencias <span class="fuentes-chevron">›</span></summary>
+      <div class="fuentes-body">
+        <p class="fuentes-note">Las fuentes en otros idiomas se citan en su idioma original.</p>
+        <ol class="fuentes-list">
+          <li><a href="https://www.menopause.org/for-women/menopauseflashes/sleep-disorders-and-menopause" target="_blank" rel="noopener">North American Menopause Society (NAMS). <em>Sleep Problems and Menopause: What Can I Do?</em> 2023.</a></li>
+          <li><a href="https://pubmed.ncbi.nlm.nih.gov/21788145/" target="_blank" rel="noopener">Kravitz HM, Joffe H. <em>Sleep during the perimenopause: a SWAN story.</em> Obstet Gynecol Clin North Am. 2011. PMID 21788145.</a></li>
+          <li><a href="https://pubmed.ncbi.nlm.nih.gov/33853459/" target="_blank" rel="noopener">Epperson CN, et al. <em>Brain fog in menopause: a health-care professional's guide for decision-making.</em> Menopause. 2021. PMID 33853459.</a></li>
+          <li><a href="https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0016-38132015000100010" target="_blank" rel="noopener">Scielo México. <em>Trastornos del sueño en mujeres climatéricas.</em> Ginecol Obstet Méx. 2015.</a></li>
+        </ol>
+      </div>
+    </details>
   </div>
 </div>
 
