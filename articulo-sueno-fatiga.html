@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Insomnio, fatiga y niebla mental en el climaterio — C-Tech®</title>
+<meta name="description" content="El climaterio no solo interrumpe el sueño — también genera fatiga persistente y niebla mental. Entender la conexión hormonal es el primer paso para recuperar tu energía.">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--pink:#E91E8C;--pink-light:#FF69B4;--pink-pale:#FFD6EC;--pink-glow:rgba(233,30,140,0.22);--dark:#0d0010;--dark-card:rgba(255,255,255,0.04);--text:#fff;--text-muted:rgba(255,255,255,0.62);--radius:16px}
+html{scroll-behavior:smooth}
+body{font-family:'Lexend',sans-serif;background:var(--dark);color:var(--text);overflow-x:hidden;line-height:1.7}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:66px;background:rgba(13,0,16,0.9);backdrop-filter:blur(20px);border-bottom:1px solid rgba(233,30,140,0.15)}
+.nav-logo{font-family:'Dancing Script',cursive;font-size:1.7rem;font-weight:700;background:linear-gradient(135deg,#fff,var(--pink-light),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none}
+.nav-back{color:rgba(255,255,255,0.55);text-decoration:none;font-size:0.78rem;font-weight:500;transition:color .3s}
+.nav-back:hover{color:var(--pink-light)}
+.nav-cta{background:linear-gradient(135deg,var(--pink),#c2157a);color:#fff;border:none;border-radius:50px;padding:.45rem 1.2rem;font-family:'Lexend',sans-serif;font-size:.75rem;font-weight:600;cursor:pointer;text-decoration:none}
+.article-hero{margin-top:66px;position:relative;height:60vh;min-height:420px;overflow:hidden;display:flex;align-items:flex-end}
+.article-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(13,0,16,1) 0%,rgba(13,0,16,0.5) 40%,rgba(13,0,16,0.1) 100%)}
+.hero-meta{position:relative;z-index:2;padding:0 8% 3rem;width:100%}
+.art-category{display:inline-block;background:linear-gradient(135deg,var(--pink),#c2157a);color:#fff;padding:.25rem .85rem;border-radius:50px;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1rem}
+.art-title{font-size:clamp(1.8rem,4vw,3.2rem);font-weight:800;line-height:1.15;max-width:800px;margin-bottom:1rem}
+.art-info{display:flex;gap:1.5rem;flex-wrap:wrap;font-size:.75rem;color:rgba(255,255,255,0.5)}
+.article-wrap{max-width:780px;margin:0 auto;padding:4rem 5%}
+.article-body h2{font-size:1.4rem;font-weight:700;margin:2.5rem 0 1rem;background:linear-gradient(135deg,var(--pink-light),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.article-body h3{font-size:1.1rem;font-weight:600;margin:2rem 0 .75rem;color:var(--pink-light)}
+.article-body p{color:rgba(255,255,255,0.78);margin-bottom:1.2rem;font-size:.97rem;font-weight:300;line-height:1.85}
+.article-body strong{color:#fff;font-weight:600}
+.article-body em{color:var(--pink-pale);font-style:normal}
+.stat-box{background:linear-gradient(135deg,rgba(233,30,140,0.12),rgba(180,0,100,0.06));border:1px solid rgba(233,30,140,0.25);border-radius:var(--radius);padding:1.5rem 2rem;margin:2rem 0;position:relative;overflow:hidden}
+.stat-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--pink),var(--pink-light))}
+.stat-box .stat-num{font-size:2.2rem;font-weight:900;background:linear-gradient(135deg,var(--pink-light),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
+.stat-box .stat-desc{font-size:.82rem;color:var(--text-muted);margin-top:.3rem}
+.cycle-box{background:rgba(255,255,255,0.03);border:1px solid rgba(233,30,140,0.2);border-radius:var(--radius);padding:1.5rem 2rem;margin:2rem 0}
+.cycle-box .cycle-title{font-size:.75rem;font-weight:700;color:var(--pink);letter-spacing:.08em;text-transform:uppercase;margin-bottom:1rem}
+.cycle-steps{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.cycle-step{background:rgba(233,30,140,0.12);border:1px solid rgba(233,30,140,0.2);border-radius:50px;padding:.35rem .9rem;font-size:.78rem;font-weight:500;white-space:nowrap}
+.cycle-arrow{color:var(--pink);font-size:1rem;font-weight:700}
+.quote-block{border-left:3px solid var(--pink);padding:1.2rem 1.5rem;margin:2rem 0;background:rgba(233,30,140,0.06);border-radius:0 12px 12px 0}
+.quote-block p{font-size:1.05rem;font-style:italic;color:var(--pink-pale);margin:0;font-weight:300}
+.quote-source{font-size:.72rem;color:var(--text-muted);margin-top:.5rem}
+.action-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
+.action-card{background:var(--dark-card);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:1.1rem 1.25rem}
+.action-card .ac-icon{font-size:1.3rem;margin-bottom:.5rem}
+.action-card .ac-title{font-size:.85rem;font-weight:600;margin-bottom:.3rem}
+.action-card .ac-text{font-size:.75rem;color:rgba(255,255,255,.55);font-weight:300;line-height:1.5}
+.alert-list{list-style:none;margin:1rem 0}
+.alert-list li{display:flex;align-items:flex-start;gap:.75rem;padding:.6rem 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:.88rem;color:rgba(255,255,255,.72);font-weight:300}
+.alert-list li::before{content:'⚠️';flex-shrink:0;margin-top:.05rem}
+.cta-box{background:linear-gradient(135deg,rgba(233,30,140,0.15),rgba(180,0,100,0.08));border:1px solid rgba(233,30,140,0.3);border-radius:20px;padding:2rem 2.5rem;margin:3rem 0;text-align:center;position:relative;overflow:hidden}
+.cta-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--pink),var(--pink-light),var(--pink))}
+.cta-pill{width:70px;height:40px;background:linear-gradient(135deg,#ff80c4,var(--pink),#c2157a);border-radius:50px;margin:0 auto 1rem;box-shadow:0 0 25px var(--pink-glow);display:flex;align-items:center;justify-content:center;font-family:'Dancing Script',cursive;font-size:.75rem;color:rgba(255,255,255,.9);font-weight:700}
+.cta-box h3{font-size:1.2rem;font-weight:700;margin-bottom:.6rem}
+.cta-box p{color:var(--text-muted);font-size:.85rem;font-weight:300;margin-bottom:1.2rem}
+.btn-cta{background:linear-gradient(135deg,var(--pink),#c2157a);color:#fff;text-decoration:none;border-radius:50px;padding:.75rem 2rem;font-family:'Lexend',sans-serif;font-size:.82rem;font-weight:600;display:inline-block;box-shadow:0 0 25px var(--pink-glow)}
+.disclaimer{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.2rem 1.5rem;margin:2rem 0;font-size:.72rem;color:rgba(255,255,255,.35);line-height:1.6}
+.disclaimer strong{color:rgba(255,255,255,.5)}
+.related{padding:4rem 5%;border-top:1px solid rgba(255,255,255,0.07);max-width:1100px;margin:0 auto}
+.related-title{font-size:1.1rem;font-weight:700;margin-bottom:1.5rem;color:var(--pink-light)}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.2rem}
+.related-card{background:var(--dark-card);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius);overflow:hidden;text-decoration:none;color:inherit;display:block;transition:all .3s}
+.related-card:hover{border-color:rgba(233,30,140,0.35);transform:translateY(-4px)}
+.related-img{aspect-ratio:16/9;overflow:hidden;background:rgba(233,30,140,0.08)}
+.related-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.related-card:hover .related-img img{transform:scale(1.05)}
+.related-body{padding:1rem}
+.related-cat{font-size:.65rem;font-weight:700;color:var(--pink);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem}
+.related-card-title{font-size:.85rem;font-weight:600;line-height:1.35}
+footer{background:rgba(0,0,0,.4);border-top:1px solid rgba(233,30,140,0.12);padding:2rem 5%;text-align:center}
+.footer-logo{font-family:'Dancing Script',cursive;font-size:1.6rem;font-weight:700;background:linear-gradient(135deg,#fff,var(--pink-light),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.4rem}
+.footer-legal{font-size:.68rem;color:rgba(255,255,255,.25);max-width:600px;margin:0 auto;line-height:1.6}
+@media(max-width:600px){.action-grid{grid-template-columns:1fr}.related-grid{grid-template-columns:1fr}.art-title{font-size:1.6rem}.article-wrap{padding:2.5rem 5%}.cycle-steps{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html">C-tech®</a>
+  <a class="nav-back" href="index.html">← Volver al inicio</a>
+  <a class="nav-cta" href="index.html#sobre-ctech">Conoce C-Tech</a>
+</nav>
+
+<div class="article-hero">
+  <img src="art8-sueno.png" alt="Mujer reflexiva con taza de café, climaterio y energía">
+  <div class="hero-overlay"></div>
+  <div class="hero-meta">
+    <div class="art-category">😴 Energía y mente</div>
+    <h1 class="art-title">Insomnio, fatiga y niebla mental: cómo el climaterio afecta tu energía y tu mente</h1>
+    <div class="art-info">
+      <span>📅 Junio 2026</span><span>⏱ 7 min de lectura</span><span>🔬 NAMS 2023 · PubMed</span>
+    </div>
+  </div>
+</div>
+
+<div class="article-wrap">
+  <div class="article-body">
+
+    <p>Duermes siete horas, pero despiertas agotada. Buscas una palabra que conoces de sobra y no aparece. Entras a una habitación y olvidas para qué fuiste. Al final del día sientes que diste el doble de energía para lograr la mitad. Si esto te suena familiar, no es debilidad ni falta de organización. <strong>Es el climaterio hablándote de una forma que pocas veces reconocemos.</strong></p>
+
+    <h2>Tres síntomas que en realidad son uno</h2>
+
+    <p>El insomnio, la fatiga y la niebla mental no son tres problemas separados durante el climaterio — son tres expresiones del mismo proceso biológico que se retroalimenta en un ciclo continuo:</p>
+
+    <div class="cycle-box">
+      <div class="cycle-title">El ciclo que no para</div>
+      <div class="cycle-steps">
+        <span class="cycle-step">🌡️ Bochorno nocturno</span>
+        <span class="cycle-arrow">→</span>
+        <span class="cycle-step">😴 Sueño fragmentado</span>
+        <span class="cycle-arrow">→</span>
+        <span class="cycle-step">🪫 Fatiga persistente</span>
+        <span class="cycle-arrow">→</span>
+        <span class="cycle-step">🧠 Niebla mental</span>
+        <span class="cycle-arrow">→</span>
+        <span class="cycle-step">😰 Más estrés</span>
+        <span class="cycle-arrow">→</span>
+        <span class="cycle-step">🌡️ Más bochornos</span>
+      </div>
+    </div>
+
+    <p>Los bochornos nocturnos sacan al cerebro de las fases de sueño profundo aunque no siempre despiertes del todo. El sueño fragmentado no restaura. La fatiga resultante deteriora la función cognitiva. El estrés de "no poder con todo" activa el sistema nervioso simpático y amplifica la respuesta vasomotora. El ciclo continúa.</p>
+
+    <h2>La base hormonal: estrógeno, serotonina y dopamina</h2>
+
+    <p>El estrógeno no solo regula el ciclo menstrual. En el cerebro actúa como modulador de neurotransmisores clave:</p>
+
+    <p><strong>Serotonina:</strong> regula el estado de ánimo, el sueño y el apetito. Cuando los niveles de estrógeno bajan, también baja el tono serotoninérgico. Resultado: peor calidad de sueño, cambios de humor y mayor sensibilidad al dolor.</p>
+
+    <p><strong>Dopamina:</strong> involucrada en la motivación y la función ejecutiva — la capacidad de planificar, priorizar y concentrarse. El declive estrogénico afecta el sistema dopaminérgico en el córtex prefrontal, exactamente donde se procesa la memoria de trabajo.</p>
+
+    <p>Esto explica por qué la niebla mental del climaterio no es "estar distraída". Es una <em>alteración neurológica transitoria y reversible con base biológica precisa</em>.</p>
+
+    <div class="stat-box">
+      <div class="stat-num">60%</div>
+      <div class="stat-desc">de las mujeres en climaterio reporta dificultades de sueño. En la mayoría, la función cognitiva se estabiliza y mejora de forma espontánea una vez concluida la transición menopáusica. — NAMS 2023</div>
+    </div>
+
+    <h2>¿Cuándo consultar al médico?</h2>
+
+    <p>La mayoría de los casos son parte de la transición normal. Sin embargo, hay señales que merecen evaluación:</p>
+
+    <ul class="alert-list">
+      <li>Incapacidad para conciliar el sueño más de 3 noches por semana durante más de un mes</li>
+      <li>Ronquidos intensos o pausas en la respiración (posible apnea que se agrava con los cambios hormonales)</li>
+      <li>Fatiga intensa que no mejora con descanso por más de 4-6 semanas</li>
+      <li>Fatiga con sensación de frío permanente y aumento de peso (descartar hipotiroidismo, frecuente en esta etapa)</li>
+      <li>Olvidos que afectan la vida laboral o familiar de forma significativa</li>
+      <li>Deterioro cognitivo que progresa en lugar de mantenerse estable</li>
+    </ul>
+
+    <h2>Estrategias con respaldo científico</h2>
+
+    <h3>Para el sueño</h3>
+
+    <div class="action-grid">
+      <div class="action-card">
+        <div class="ac-icon">🕐</div>
+        <div class="ac-title">Horario fijo para dormir y despertar</div>
+        <div class="ac-text">Incluso los fines de semana. Ancla el ritmo circadiano. Es la intervención con mayor evidencia para consolidar el sueño.</div>
+      </div>
+      <div class="action-card">
+        <div class="ac-icon">📵</div>
+        <div class="ac-title">Sin pantallas 45-60 min antes</div>
+        <div class="ac-text">La luz azul suprime la melatonina. Alternativa: lectura en papel, estiramientos suaves o ducha tibia.</div>
+      </div>
+      <div class="action-card">
+        <div class="ac-icon">🌡️</div>
+        <div class="ac-title">Cuarto a 18-20°C</div>
+        <div class="ac-text">La temperatura ambiente baja reduce la intensidad de los bochornos nocturnos y mejora la arquitectura del sueño.</div>
+      </div>
+      <div class="action-card">
+        <div class="ac-icon">📝</div>
+        <div class="ac-title">Anotar pendientes antes de dormir</div>
+        <div class="ac-text">Escribir las tareas del día siguiente reduce la activación del sistema de alerta y el "ruido mental" nocturno.</div>
+      </div>
+    </div>
+
+    <h3>Para la fatiga y la niebla mental</h3>
+
+    <div class="action-grid">
+      <div class="action-card">
+        <div class="ac-icon">🚶‍♀️</div>
+        <div class="ac-title">Ejercicio por la mañana</div>
+        <div class="ac-text">20-30 min de caminata rápida mejora la calidad del sueño nocturno y aumenta la energía disponible durante el día.</div>
+      </div>
+      <div class="action-card">
+        <div class="ac-icon">🎯</div>
+        <div class="ac-title">Una cosa a la vez</div>
+        <div class="ac-text">El costo cognitivo de cambiar entre tareas se multiplica en el climaterio. Bloques de foco son más productivos que la multitarea.</div>
+      </div>
+      <div class="action-card">
+        <div class="ac-icon">🥚</div>
+        <div class="ac-title">Proteína en el desayuno</div>
+        <div class="ac-text">Estabiliza la glucosa y evita la caída de energía a media mañana que amplifica la fatiga.</div>
+      </div>
+      <div class="action-card">
+        <div class="ac-icon">📋</div>
+        <div class="ac-title">Externalizar la memoria</div>
+        <div class="ac-text">Listas, notas, recordatorios. No es señal de pérdida — es gestión inteligente de los recursos cognitivos disponibles.</div>
+      </div>
+    </div>
+
+    <div class="quote-block">
+      <p>"La niebla mental del climaterio no es un signo de demencia ni de pérdida de inteligencia. Es una alteración transitoria documentada, con causa hormonal identificable y con muy buen pronóstico de recuperación."</p>
+      <div class="quote-source">— Santoro N et al., Menopause 2021</div>
+    </div>
+
+    <h2>Lo que vale la pena registrar</h2>
+
+    <p>Llevar un diario de síntomas durante 2-4 semanas transforma una consulta de "me siento muy cansada" en una conversación médica con datos reales. Registra: horas de sueño y calidad percibida, nivel de energía en la mañana y en la tarde (escala 1-10), episodios de bochorno nocturno, y situaciones de niebla mental significativa.</p>
+
+    <p>Esa información le permite a tu médico ver si hay patrones claros — por ejemplo, mayor fatiga los días después de bochornos nocturnos intensos — y proponer un plan de manejo específico para ti.</p>
+
+  </div>
+
+  <div class="cta-box">
+    <div class="cta-pill">C-tech</div>
+    <h3>Acompañamiento nutricional para tu etapa</h3>
+    <p>C-Tech® es un suplemento OTC de libre acceso diseñado para acompañar a la mujer durante el climaterio. Sin receta.</p>
+    <a class="btn-cta" href="index.html#sobre-ctech">Conoce C-Tech ▸</a>
+  </div>
+
+  <div class="disclaimer">
+    <strong>Aviso importante:</strong> Este artículo es informativo y no sustituye la consulta con tu médico o ginecólogo. Si sospechas hipotiroidismo, anemia u otra condición, consulta a un profesional de la salud. C-Tech® es un suplemento de libre acceso (OTC) — complementa, no sustituye, el plan terapéutico. Fuentes: NAMS 2023 · Santoro N et al. Menopause 2021 · Thurston RC, Joffe H. Psychiatr Clin North Am 2011.
+  </div>
+</div>
+
+<div class="related">
+  <div class="related-title">También te puede interesar</div>
+  <div class="related-grid">
+    <a class="related-card" href="articulo-bochornos.html">
+      <div class="related-img"><img src="art7-bochornos.png" alt="Bochornos"></div>
+      <div class="related-body"><div class="related-cat">🌡️ Climaterio</div><div class="related-card-title">Bochornos: causas, señales de alerta y estrategias que sí funcionan</div></div>
+    </a>
+    <a class="related-card" href="articulo-menopausia.html">
+      <div class="related-img"><img src="art3-menopausia.png" alt="Menopausia y huesos"></div>
+      <div class="related-body"><div class="related-cat">🦴 Huesos</div><div class="related-card-title">Lo que cambia en tus huesos durante la menopausia — y cómo prepararte</div></div>
+    </a>
+    <a class="related-card" href="articulo-vitaminad.html">
+      <div class="related-img"><img src="art6-calcioyvitamina.png" alt="Vitamina D"></div>
+      <div class="related-body"><div class="related-cat">☀️ Nutrición</div><div class="related-card-title">Vitamina D y calcio: el dúo que tus huesos necesitan ahora</div></div>
+    </a>
+  </div>
+</div>
+<footer>
+  <div class="footer-logo">C-tech®</div>
+  <div class="footer-legal">ctech.com.mx · Carnot Laboratorios · Contenido informativo, no sustituye consulta médica. © 2026</div>
+</footer>
+</body>
+</html>
