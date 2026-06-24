@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los mitos del ejercicio en la menopausia: lo que sí funciona para tus huesos | FemeNews · C-Tech</title>
+  <meta name="description" content="¿Caminar es suficiente? ¿El yoga protege los huesos? ¿El dolor indica que funciona? Clara Díaz desmonta los 5 mitos del ejercicio en la menopausia con evidencia real.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --teal: #4ECBCA;
+      --pink: #E91E8C;
+      --dark: #0d0010;
+      --navy: #1A3A5C;
+      --body-text: #2C2C2C;
+      --font: 'Lexend', sans-serif;
+    }
+
+    body {
+      font-family: var(--font);
+      background: var(--dark);
+      color: #e8e8e8;
+      line-height: 1.7;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(13, 0, 16, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(78, 203, 202, 0.15);
+      padding: 0 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+
+    .nav-logo {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--teal);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+
+    .nav-logo span {
+      color: var(--pink);
+    }
+
+    .nav-back {
+      font-size: .8rem;
+      font-weight: 500;
+      color: rgba(255,255,255,.55);
+      text-decoration: none;
+      transition: color .2s;
+    }
+
+    .nav-back:hover { color: var(--teal); }
+
+    /* ── HERO ── */
+    .article-hero {
+      position: relative;
+      min-height: 420px;
+      display: flex;
+      align-items: flex-end;
+      padding: 3rem 1.5rem 2.5rem;
+      background:
+        linear-gradient(to bottom, rgba(13,0,16,0.3) 0%, rgba(13,0,16,0.85) 100%),
+        linear-gradient(135deg, #1a0a2a 0%, #2a1040 50%, #1a0a35 100%);
+      background-size: cover, cover;
+      overflow: hidden;
+    }
+
+    .article-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url('art-mitos-ejercicio.png');
+      background-size: cover;
+      background-position: center top;
+      opacity: 0.22;
+      mix-blend-mode: luminosity;
+    }
+
+    .hero-inner {
+      position: relative;
+      max-width: 780px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .hero-cat {
+      display: inline-block;
+      background: var(--pink);
+      color: #fff;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding: .3rem .85rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+
+    .hero-title {
+      font-size: clamp(1.75rem, 5vw, 2.8rem);
+      font-weight: 800;
+      line-height: 1.15;
+      color: #fff;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-meta {
+      font-size: .8rem;
+      color: rgba(255,255,255,.55);
+      display: flex;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .hero-meta span { display: flex; align-items: center; gap: .35rem; }
+
+    /* ── LAYOUT ── */
+    .article-wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+
+    /* ── BODY TEXT ── */
+    .article-body h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--teal);
+      margin: 2.2rem 0 .75rem;
+      line-height: 1.3;
+    }
+
+    .article-body h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #fff;
+      margin: 1.6rem 0 .5rem;
+    }
+
+    .article-body p {
+      font-size: .97rem;
+      color: rgba(255,255,255,.78);
+      margin-bottom: 1.1rem;
+    }
+
+    .article-body strong {
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .article-body em {
+      color: var(--teal);
+      font-style: normal;
+    }
+
+    /* ── MYTH CARD ── */
+    .myth-card {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(78,203,202,.18);
+      border-radius: 16px;
+      padding: 1.5rem 1.5rem 1.25rem;
+      margin: 1.75rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .myth-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 4px; height: 100%;
+      background: linear-gradient(180deg, var(--pink), var(--teal));
+      border-radius: 4px 0 0 4px;
+    }
+
+    .myth-label {
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--pink);
+      margin-bottom: .4rem;
+    }
+
+    .myth-false {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: rgba(255,255,255,.6);
+      margin-bottom: .85rem;
+      position: relative;
+      padding-left: 1.4rem;
+    }
+
+    .myth-false::before {
+      content: '✕';
+      position: absolute;
+      left: 0;
+      color: var(--pink);
+      font-weight: 800;
+    }
+
+    .truth-label {
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: .35rem;
+    }
+
+    .myth-truth {
+      font-size: .95rem;
+      color: rgba(255,255,255,.82);
+      line-height: 1.65;
+    }
+
+    /* ── MENOTRACK STRIP ── */
+    .menotrack-strip {
+      background: linear-gradient(135deg, rgba(78,203,202,.12) 0%, rgba(233,30,140,.1) 100%);
+      border: 1px solid rgba(78,203,202,.25);
+      border-radius: 16px;
+      padding: 1.5rem 1.75rem;
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      margin: 2.5rem 0;
+      flex-wrap: wrap;
+    }
+
+    .strip-icon { font-size: 2.2rem; flex-shrink: 0; }
+
+    .strip-copy {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .strip-copy strong {
+      display: block;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: .2rem;
+    }
+
+    .strip-copy p {
+      font-size: .82rem;
+      color: rgba(255,255,255,.6);
+      margin: 0;
+    }
+
+    .strip-btn {
+      display: inline-block;
+      background: var(--teal);
+      color: var(--dark);
+      font-family: var(--font);
+      font-size: .82rem;
+      font-weight: 700;
+      padding: .65rem 1.35rem;
+      border-radius: 999px;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: opacity .2s, transform .15s;
+    }
+
+    .strip-btn:hover { opacity: .88; transform: translateY(-1px); }
+
+    /* ── CTA BOX ── */
+    .cta-box {
+      text-align: center;
+      padding: 2.25rem 1.5rem;
+      background: linear-gradient(135deg, rgba(78,203,202,.08) 0%, rgba(233,30,140,.07) 100%);
+      border: 1px solid rgba(78,203,202,.2);
+      border-radius: 20px;
+      margin: 2.5rem 0;
+    }
+
+    .cta-box h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: .5rem;
+    }
+
+    .cta-box p {
+      font-size: .88rem;
+      color: rgba(255,255,255,.55);
+      margin-bottom: 1.4rem;
+    }
+
+    .cta-btns {
+      display: flex;
+      gap: .85rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: var(--teal);
+      color: var(--dark);
+      font-family: var(--font);
+      font-size: .88rem;
+      font-weight: 700;
+      padding: .8rem 1.75rem;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: opacity .2s, transform .15s;
+    }
+
+    .btn-primary:hover { opacity: .88; transform: translateY(-1px); }
+
+    .btn-secondary {
+      display: inline-block;
+      background: transparent;
+      color: var(--teal);
+      font-family: var(--font);
+      font-size: .88rem;
+      font-weight: 600;
+      padding: .8rem 1.75rem;
+      border-radius: 999px;
+      border: 1.5px solid rgba(78,203,202,.45);
+      text-decoration: none;
+      transition: border-color .2s, background .2s;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--teal);
+      background: rgba(78,203,202,.07);
+    }
+
+    /* ── DISCLAIMER ── */
+    .disclaimer {
+      background: rgba(255,255,255,.04);
+      border-left: 3px solid rgba(78,203,202,.4);
+      border-radius: 0 10px 10px 0;
+      padding: .9rem 1.1rem;
+      font-size: .78rem;
+      color: rgba(255,255,255,.45);
+      font-style: italic;
+      margin: 2rem 0;
+      line-height: 1.6;
+    }
+
+    /* ── FUENTES ── */
+    .fuentes-wrap{margin:2rem 0 0}.fuentes-details{border:1px solid rgba(78,203,202,.2);border-radius:12px;overflow:hidden}.fuentes-summary{display:flex;align-items:center;gap:.75rem;padding:1rem 1.25rem;cursor:pointer;list-style:none;background:rgba(78,203,202,.05);font-size:.82rem;font-weight:600;color:var(--teal);transition:background .2s;user-select:none}.fuentes-summary::-webkit-details-marker{display:none}.fuentes-summary:hover{background:rgba(78,203,202,.1)}.fuentes-chevron{margin-left:auto;font-size:1rem;transition:transform .25s}.fuentes-details[open] .fuentes-chevron{transform:rotate(90deg)}.fuentes-body{padding:1.25rem 1.5rem;border-top:1px solid rgba(78,203,202,.12)}.fuentes-note{font-size:.72rem;color:rgba(255,255,255,.4);margin-bottom:.75rem;font-style:italic}.fuentes-list{padding-left:1.1rem;margin:0}.fuentes-list li{font-size:.76rem;color:rgba(255,255,255,.55);margin-bottom:.6rem;line-height:1.5}.fuentes-list li a{color:var(--teal);text-decoration:none;word-break:break-all}.fuentes-list li a:hover{text-decoration:underline}
+
+    /* ── RELATED ── */
+    .related {
+      margin-top: 3.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,.08);
+    }
+
+    .related-title {
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.35);
+      margin-bottom: 1.25rem;
+    }
+
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .related-card {
+      display: block;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: 14px;
+      overflow: hidden;
+      text-decoration: none;
+      transition: border-color .2s, transform .2s;
+    }
+
+    .related-card:hover {
+      border-color: rgba(78,203,202,.3);
+      transform: translateY(-2px);
+    }
+
+    .related-img {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      background: rgba(78,203,202,.06);
+    }
+
+    .related-body { padding: .9rem 1rem; }
+
+    .related-cat {
+      font-size: .68rem;
+      font-weight: 700;
+      color: var(--pink);
+      letter-spacing: .04em;
+      margin-bottom: .35rem;
+    }
+
+    .related-card-title {
+      font-size: .84rem;
+      font-weight: 600;
+      color: rgba(255,255,255,.8);
+      line-height: 1.45;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: .75rem;
+      color: rgba(255,255,255,.22);
+      border-top: 1px solid rgba(255,255,255,.06);
+    }
+
+    footer a { color: var(--teal); text-decoration: none; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .article-hero { min-height: 340px; padding: 2rem 1.1rem 2rem; }
+      .menotrack-strip { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">C-Tech<span>®</span> | FemeNews</a>
+  <a href="index.html" class="nav-back">← Todos los artículos</a>
+</nav>
+
+<!-- HERO -->
+<header class="article-hero">
+  <div class="hero-inner">
+    <span class="hero-cat">💡 P1 · Mitos y realidades</span>
+    <h1 class="hero-title">Los mitos del ejercicio en la menopausia: lo que sí funciona para tus huesos</h1>
+    <div class="hero-meta">
+      <span>✍️ Clara Díaz · Periodista de salud femenina</span>
+      <span>📅 24 de junio de 2026</span>
+      <span>⏱ 5 min de lectura</span>
+    </div>
+  </div>
+</header>
+
+<!-- CONTENIDO -->
+<main class="article-wrap">
+  <article class="article-body">
+
+    <p>Hay una conversación que tengo constantemente con mujeres de entre 40 y 65 años: la que gira alrededor del ejercicio. Unas dicen que ya caminan todos los días y que con eso es suficiente. Otras evitan las pesas porque les preocupa "lastimarse los huesos". Algunas más hacen yoga tres veces por semana y se sienten protegidas. Y casi todas coinciden en que si no sienten el esfuerzo en los músculos —si no duele—, es señal de que no están trabajando lo suficiente.</p>
+
+    <p>El problema es que todas esas ideas, aunque muy extendidas, están en buena parte equivocadas. Y cuando hablamos de salud ósea durante el climaterio, los malentendidos tienen consecuencias reales: mujeres que no están haciendo lo que realmente protege sus huesos mientras creen que sí lo hacen.</p>
+
+    <p>Vamos a desmontar los cinco mitos más comunes sobre el ejercicio y la menopausia, con evidencia de organismos como la Fundación Internacional de Osteoporosis (IOF) y la Sociedad Norteamericana de Menopausia (NAMS).</p>
+
+    <!-- MITO 1 -->
+    <div class="myth-card">
+      <p class="myth-label">Mito 1 de 5</p>
+      <p class="myth-false">"A cierta edad, el ejercicio puede dañar los huesos"</p>
+      <p class="truth-label">✔ La realidad científica</p>
+      <p class="myth-truth">El ejercicio de <strong>impacto moderado y de resistencia</strong> no daña los huesos: los estimula activamente. Cuando el tejido óseo recibe carga mecánica —el impacto de correr, saltar o levantar peso—, activa a los osteoblastos, las células responsables de <em>formar hueso nuevo</em>. Este proceso es fundamental durante y después de la menopausia, cuando la caída de estrógenos acelera la pérdida de densidad ósea.</p>
+    </div>
+
+    <p>La IOF es categórica al respecto: el ejercicio con carga es uno de los pilares no farmacológicos para la prevención de la osteoporosis. Evitar el movimiento por miedo a lesionarse tiene el efecto contrario al deseado: el hueso que no recibe estímulo mecánico se debilita progresivamente. La clave no es evitar el ejercicio, sino elegir el tipo correcto y aprender la técnica adecuada, idealmente con orientación de un fisioterapeuta o entrenador especializado en salud femenina.</p>
+
+    <!-- MITO 2 -->
+    <div class="myth-card">
+      <p class="myth-label">Mito 2 de 5</p>
+      <p class="myth-false">"Caminar es suficiente para proteger los huesos"</p>
+      <p class="truth-label">✔ La realidad científica</p>
+      <p class="myth-truth">Caminar tiene beneficios reales: mejora la salud cardiovascular, el estado de ánimo y el equilibrio. Pero <strong>no genera el suficiente estímulo mecánico</strong> para mantener o aumentar la densidad ósea de forma significativa. Los huesos necesitan resistencia progresiva —es decir, peso— o impacto suficiente para activar la formación ósea. Caminar por una superficie plana a paso moderado no cumple ninguno de esos dos criterios.</p>
+    </div>
+
+    <p>Benedetti y colaboradores, en una revisión publicada en 2018 en <em>BioMed Research International</em> (PubMed PMID 29473877), documentaron que los programas de ejercicio más efectivos para la densidad mineral ósea en mujeres posmenopáusicas combinan <strong>ejercicio de resistencia</strong> (pesas, bandas elásticas, máquinas) con <strong>ejercicio de impacto</strong> (saltos controlados, trote, escaleras). Caminar puede ser el punto de partida para mujeres muy sedentarias, pero no el punto de llegada para quienes buscan proteger sus huesos activamente.</p>
+
+    <!-- MENOTRACK STRIP -->
+    <div class="menotrack-strip">
+      <div class="strip-icon">🏋️</div>
+      <div class="strip-copy">
+        <strong>Registra tu actividad física en MenoTrack</strong>
+        <p>Lleva un diario de síntomas y hábitos durante el climaterio. Recibe contenido personalizado según lo que tú estás viviendo.</p>
+      </div>
+      <a href="https://polar-multimedia.github.io/flowtrack/" class="strip-btn" target="_blank" rel="noopener">Descargar gratis →</a>
+    </div>
+
+    <!-- MITO 3 -->
+    <div class="myth-card">
+      <p class="myth-label">Mito 3 de 5</p>
+      <p class="myth-false">"Con osteoporosis ya no puedo hacer ejercicio"</p>
+      <p class="truth-label">✔ La realidad científica</p>
+      <p class="myth-truth">El diagnóstico de osteoporosis no es una señal de alto: es precisamente el momento en que el ejercicio se vuelve más necesario. Existen <strong>programas específicos, supervisados y validados</strong> para mujeres con baja densidad ósea que mejoran la masa muscular, el equilibrio y la coordinación —tres factores que reducen directamente el riesgo de caídas y, por tanto, de fracturas. La inmovilidad, por el contrario, acelera la pérdida ósea.</p>
+    </div>
+
+    <p>La NAMS lo establece con claridad en sus recursos para pacientes: incluso con osteoporosis establecida, ejercicios como el tai chi, el trabajo con bandas de resistencia ligera y los programas de equilibrio son seguros y beneficiosos cuando están bien diseñados. Lo que sí cambia con el diagnóstico es la necesidad de <strong>evitar ejercicios de alto impacto sin supervisión</strong> y de descartar movimientos que flexionen excesivamente la columna hacia adelante, como los abdominales clásicos o ciertos estiramientos. Siempre, bajo orientación médica.</p>
+
+    <!-- MITO 4 -->
+    <div class="myth-card">
+      <p class="myth-label">Mito 4 de 5</p>
+      <p class="myth-false">"El yoga es suficiente para proteger mis huesos"</p>
+      <p class="truth-label">✔ La realidad científica</p>
+      <p class="myth-truth">El yoga tiene virtudes indudables: mejora la flexibilidad, reduce el estrés, fortalece la musculatura profunda y —esto es muy valioso— <strong>mejora el equilibrio y la propiocepción</strong>, lo que reduce el riesgo de caídas. Pero en términos de formación ósea directa, su impacto es limitado. La mayoría de las posturas de yoga no generan la carga mecánica suficiente sobre el esqueleto para estimular la actividad osteoblástica de forma significativa.</p>
+    </div>
+
+    <p>Un estudio de SciELO México publicado en la <em>Revista de Investigación Clínica</em> sobre ejercicio y salud ósea en mujeres mexicanas en climaterio confirma que las intervenciones más efectivas para la densidad mineral ósea combinan carga progresiva con impacto moderado. El yoga puede ser un excelente complemento dentro de un programa integral —especialmente para trabajar equilibrio y prevenir caídas—, pero no debería ser el único tipo de actividad física si el objetivo principal es cuidar los huesos. La palabra clave aquí es <em>complemento</em>, no sustituto.</p>
+
+    <!-- MITO 5 -->
+    <div class="myth-card">
+      <p class="myth-label">Mito 5 de 5</p>
+      <p class="myth-false">"Si no me duele, no está funcionando"</p>
+      <p class="truth-label">✔ La realidad científica</p>
+      <p class="myth-truth">El dolor muscular post-ejercicio (agujetas) puede indicar que los músculos recibieron un estímulo nuevo, pero <strong>no es un indicador de efectividad para la salud ósea</strong>. El tejido óseo responde al estímulo mecánico de forma silenciosa y acumulativa, a lo largo de semanas y meses de práctica constante. Un programa que no duele pero que se realiza con regularidad, técnica correcta y carga progresiva es infinitamente más efectivo que uno que duele mucho pero se abandona a las dos semanas.</p>
+    </div>
+
+    <p>Este mito tiene consecuencias prácticas serias: mujeres que abandonan el ejercicio porque "no sienten que está funcionando" o que buscan sesiones dolorosas como validación de su esfuerzo. La evidencia apunta en dirección opuesta: la <strong>constancia a largo plazo</strong> es el factor predictor más robusto de mantenimiento de densidad ósea. Dos o tres sesiones de resistencia por semana, año tras año, con progresión gradual del peso, hacen más por tus huesos que cualquier semana intensa de entrenamiento.</p>
+
+    <h2>¿Qué ejercicio sí funciona, entonces?</h2>
+
+    <p>La evidencia señala con consistencia tres tipos de actividad como los más beneficiosos para la salud ósea en mujeres en climaterio:</p>
+
+    <p><strong>Ejercicio de resistencia progresiva</strong> (pesas libres, máquinas, bandas elásticas): estimula directamente la formación ósea en las zonas donde se aplica la carga —cadera, columna, muñecas, que son precisamente los sitios más frecuentes de fractura por osteoporosis.</p>
+
+    <p><strong>Ejercicio de impacto moderado</strong> (trote suave, saltos controlados, step, subir escaleras): genera fuerzas de compresión sobre el esqueleto que activan los osteoblastos. No hace falta correr maratones: 50 saltos al día distribuidos en series pequeñas ya muestran beneficios en estudios de corto plazo.</p>
+
+    <p><strong>Ejercicio de equilibrio y coordinación</strong> (tai chi, yoga, ejercicios de propiocepción): no forma hueso directamente, pero reduce el riesgo de caídas, que es la cadena de eventos que convierte la baja densidad ósea en una fractura real. Prevenir la caída es tan importante como fortalecer el hueso.</p>
+
+    <p>El programa ideal combina los tres. Y siempre con una nutrición adecuada que soporte ese trabajo: el hueso necesita calcio, vitamina D y proteína para responder al estímulo mecánico con formación de tejido nuevo. Sin los nutrientes necesarios, el ejercicio tiene un techo de efectividad. C-Tech puede <em>complementar</em> esa base nutricional cuando la dieta sola no alcanza a cubrir los requerimientos —algo frecuente en mujeres mexicanas, donde el consumo de lácteos y exposición solar suele estar por debajo de lo recomendado.</p>
+
+    <h2>El primer paso siempre es consultar</h2>
+
+    <p>Antes de iniciar cualquier programa de ejercicio —especialmente si tienes diagnóstico de osteopenia u osteoporosis, o llevas tiempo sin actividad física regular—, habla con tu médica o médico. Un profesional puede orientarte sobre qué tipo de ejercicio es más adecuado para tu situación particular, qué movimientos evitar y cómo progresar de forma segura.</p>
+
+    <p>Mover el cuerpo con intención y regularidad es una de las decisiones más poderosas que puedes tomar por tus huesos a partir de los 40. No hace falta hacerlo todo perfecto ni sufrir para que funcione. Hace falta hacerlo.</p>
+
+    <!-- DISCLAIMER -->
+    <p class="disclaimer">
+      Este contenido es de carácter informativo y no sustituye la consulta médica. Ante cualquier síntoma o duda relacionada con tu salud, consulta a tu médica o médico de confianza.
+    </p>
+
+    <!-- CTA BOX -->
+    <div class="cta-box">
+      <h3>Sigue informada con FemeNews</h3>
+      <p>Registra tus síntomas en MenoTrack y descubre contenido adaptado a lo que tú estás viviendo.</p>
+      <div class="cta-btns">
+        <a href="https://polar-multimedia.github.io/flowtrack/" class="btn-primary" target="_blank" rel="noopener">📲 Descarga MenoTrack</a>
+        <a href="index.html" class="btn-secondary">📰 Leer más artículos</a>
+      </div>
+    </div>
+
+    <!-- FUENTES -->
+    <div class="fuentes-wrap">
+      <details class="fuentes-details">
+        <summary class="fuentes-summary">
+          📚 Ver fuentes y referencias
+          <span class="fuentes-chevron">›</span>
+        </summary>
+        <div class="fuentes-body">
+          <p class="fuentes-note">Todas las fuentes utilizadas son de acceso público y provienen de organismos científicos o revistas indexadas.</p>
+          <ol class="fuentes-list">
+            <li>
+              International Osteoporosis Foundation (IOF). <em>Exercise for healthy bones.</em><br>
+              <a href="https://www.osteoporosis.foundation/patients/prevention/exercise-for-healthy-bones" target="_blank" rel="noopener">https://www.osteoporosis.foundation/patients/prevention/exercise-for-healthy-bones</a>
+            </li>
+            <li>
+              Benedetti MG, et al. (2018). <em>The Effectiveness of Physical Exercise on Bone Density in Osteoporotic Patients.</em> BioMed Research International. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/29473877/" target="_blank" rel="noopener">29473877</a>
+            </li>
+            <li>
+              North American Menopause Society (NAMS). <em>Exercise and menopause — MenopauseFlashes.</em><br>
+              <a href="https://www.menopause.org/for-women/menopauseflashes/exercise-and-menopause" target="_blank" rel="noopener">https://www.menopause.org/for-women/menopauseflashes/exercise-and-menopause</a>
+            </li>
+            <li>
+              SciELO México — Salud Pública de México. <em>Actividad física y salud ósea en mujeres mexicanas.</em><br>
+              <a href="https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0036-36342010000200007" target="_blank" rel="noopener">https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0036-36342010000200007</a>
+            </li>
+          </ol>
+        </div>
+      </details>
+    </div>
+
+  </article>
+
+  <!-- RELACIONADOS -->
+  <section class="related">
+    <p class="related-title">También te puede interesar</p>
+    <div class="related-grid">
+
+      <a href="articulo-mitos-menopausia.html" class="related-card">
+        <img src="art-mitos.png" alt="5 mitos sobre la menopausia" class="related-img" loading="lazy">
+        <div class="related-body">
+          <p class="related-cat">💡 Mitos</p>
+          <p class="related-card-title">5 mitos sobre la menopausia que ya es hora de dejar atrás</p>
+        </div>
+      </a>
+
+      <a href="articulo-ejercicios.html" class="related-card">
+        <img src="art4-ejercicios.png" alt="Los 5 ejercicios que más fortalecen tus huesos" class="related-img" loading="lazy">
+        <div class="related-body">
+          <p class="related-cat">🏋️ Ejercicio</p>
+          <p class="related-card-title">Los 5 ejercicios que más fortalecen tus huesos</p>
+        </div>
+      </a>
+
+      <a href="articulo-mitos-calcio.html" class="related-card">
+        <img src="art-mitos-calcio.png" alt="Los mitos del calcio que te impiden cuidar tus huesos" class="related-img" loading="lazy">
+        <div class="related-body">
+          <p class="related-cat">💡 Mitos</p>
+          <p class="related-card-title">Los mitos del calcio que te impiden cuidar tus huesos</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 C-Tech<sup>®</sup> · <a href="index.html">FemeNews</a> · Contenido de carácter informativo.</p>
+</footer>
+
+</body>
+</html>

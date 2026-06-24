@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cómo hablar con tu familia sobre los cambios del climaterio — C-Tech®</title>
+<meta name="description" content="El climaterio no se vive solo. Aprende cómo explicarle a tu pareja, tus hijos y tus amigas lo que estás atravesando — y por qué tu red de apoyo es parte del tratamiento.">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--teal:#4ECBCA;--teal-light:#7EDEDD;--teal-pale:#C8F0EF;--teal-glow:rgba(78,203,202,0.22);--pink:#E91E8C;--dark:#0d0010;--dark-card:rgba(255,255,255,0.04);--text:#fff;--text-muted:rgba(255,255,255,0.62);--radius:16px}
+html{scroll-behavior:smooth}
+body{font-family:'Lexend',sans-serif;background:var(--dark);color:var(--text);overflow-x:hidden;line-height:1.7}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:66px;background:rgba(13,0,16,0.9);backdrop-filter:blur(20px);border-bottom:1px solid rgba(78,203,202,0.15)}
+.nav-logo{font-family:'Dancing Script',cursive;font-size:1.7rem;font-weight:700;background:linear-gradient(135deg,#fff,var(--teal-light),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none}
+.nav-back{color:rgba(255,255,255,0.55);text-decoration:none;font-size:0.78rem;font-weight:500;transition:color .3s}
+.nav-back:hover{color:var(--teal-light)}
+.nav-cta{background:linear-gradient(135deg,var(--teal),#2aadac);color:#0d0010;border:none;border-radius:50px;padding:.45rem 1.2rem;font-family:'Lexend',sans-serif;font-size:.75rem;font-weight:700;cursor:pointer;text-decoration:none}
+.article-hero{margin-top:66px;position:relative;height:60vh;min-height:420px;overflow:hidden;display:flex;align-items:flex-end}
+.article-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(13,0,16,1) 0%,rgba(13,0,16,0.55) 40%,rgba(13,0,16,0.15) 100%)}
+.hero-gradient{position:absolute;inset:0;background:linear-gradient(135deg,#0a1828 0%,#1a2838 50%,#0a2030 100%);opacity:.75}
+.hero-meta{position:relative;z-index:2;padding:0 8% 3rem;width:100%}
+.art-category{display:inline-block;background:linear-gradient(135deg,#2aadac,var(--teal));color:#0d0010;padding:.25rem .85rem;border-radius:50px;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1rem}
+.art-title{font-size:clamp(1.8rem,4vw,3.2rem);font-weight:800;line-height:1.15;max-width:800px;margin-bottom:1rem}
+.art-info{display:flex;gap:1.5rem;flex-wrap:wrap;font-size:.75rem;color:rgba(255,255,255,0.5)}
+.article-wrap{max-width:780px;margin:0 auto;padding:4rem 5%}
+.article-body h2{font-size:1.4rem;font-weight:700;margin:2.5rem 0 1rem;background:linear-gradient(135deg,var(--teal-light),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.article-body h3{font-size:1.1rem;font-weight:600;margin:2rem 0 .75rem;color:var(--teal-light)}
+.article-body p{color:rgba(255,255,255,0.78);margin-bottom:1.2rem;font-size:.97rem;font-weight:300;line-height:1.85}
+.article-body strong{color:#fff;font-weight:600}
+.article-body em{color:var(--teal-pale);font-style:normal}
+.stat-box{background:linear-gradient(135deg,rgba(78,203,202,0.12),rgba(42,173,172,0.06));border:1px solid rgba(78,203,202,0.25);border-radius:var(--radius);padding:1.5rem 2rem;margin:2rem 0;position:relative;overflow:hidden}
+.stat-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--teal-light))}
+.stat-box .stat-num{font-size:2.2rem;font-weight:900;background:linear-gradient(135deg,var(--teal-light),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
+.stat-box .stat-desc{font-size:.82rem;color:var(--text-muted);margin-top:.3rem}
+.quote-block{border-left:3px solid var(--teal);padding:1.2rem 1.5rem;margin:2rem 0;background:rgba(78,203,202,0.06);border-radius:0 12px 12px 0}
+.quote-block p{font-size:1.05rem;font-style:italic;color:var(--teal-pale);margin:0;font-weight:300}
+.quote-source{font-size:.72rem;color:var(--text-muted);margin-top:.5rem}
+.action-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
+.action-card{background:var(--dark-card);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:1.1rem 1.25rem}
+.action-card .ac-icon{font-size:1.3rem;margin-bottom:.5rem}
+.action-card .ac-title{font-size:.85rem;font-weight:600;margin-bottom:.3rem}
+.action-card .ac-text{font-size:.75rem;color:rgba(255,255,255,.55);font-weight:300;line-height:1.5}
+.alert-box{background:linear-gradient(135deg,rgba(233,30,140,0.1),rgba(180,0,100,0.05));border:1px solid rgba(233,30,140,0.3);border-radius:var(--radius);padding:1.5rem 2rem;margin:2rem 0;position:relative;overflow:hidden}
+.alert-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--pink),#c2157a)}
+.alert-box .alert-title{font-size:.85rem;font-weight:700;color:var(--pink);margin-bottom:.75rem;display:flex;align-items:center;gap:.5rem}
+.alert-list{list-style:none;margin:0}
+.alert-list li{display:flex;align-items:flex-start;gap:.75rem;padding:.5rem 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:.88rem;color:rgba(255,255,255,.72);font-weight:300}
+.alert-list li:last-child{border-bottom:none}
+.alert-list li .al-icon{flex-shrink:0;margin-top:.05rem}
+.frases-box{background:rgba(78,203,202,0.05);border:1px solid rgba(78,203,202,0.2);border-radius:var(--radius);padding:1.5rem 2rem;margin:2rem 0}
+.frases-box .frases-titulo{font-size:.78rem;font-weight:700;color:var(--teal);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
+.frase-item{display:flex;align-items:flex-start;gap:.85rem;padding:.75rem 0;border-bottom:1px solid rgba(255,255,255,0.05)}
+.frase-item:last-child{border-bottom:none}
+.frase-comilla{font-size:1.8rem;font-weight:900;color:var(--teal);line-height:1;flex-shrink:0;margin-top:-.15rem;font-family:'Dancing Script',cursive}
+.frase-texto{font-size:.88rem;color:rgba(255,255,255,.78);font-weight:300;line-height:1.6;font-style:italic}
+.cta-box{background:linear-gradient(135deg,rgba(78,203,202,0.12),rgba(42,173,172,0.06));border:1px solid rgba(78,203,202,0.3);border-radius:20px;padding:2rem 2.5rem;margin:3rem 0;text-align:center;position:relative;overflow:hidden}
+.cta-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--teal-light),var(--teal))}
+.cta-pill{width:70px;height:40px;background:linear-gradient(135deg,var(--teal-light),var(--teal),#2aadac);border-radius:50px;margin:0 auto 1rem;box-shadow:0 0 25px var(--teal-glow);display:flex;align-items:center;justify-content:center;font-family:'Dancing Script',cursive;font-size:.75rem;color:rgba(13,0,16,.9);font-weight:700}
+.cta-box h3{font-size:1.2rem;font-weight:700;margin-bottom:.6rem}
+.cta-box p{color:var(--text-muted);font-size:.85rem;font-weight:300;margin-bottom:1.2rem}
+.btn-cta{background:linear-gradient(135deg,var(--teal),#2aadac);color:#0d0010;text-decoration:none;border-radius:50px;padding:.75rem 2rem;font-family:'Lexend',sans-serif;font-size:.82rem;font-weight:700;display:inline-block;box-shadow:0 0 25px var(--teal-glow)}
+.btn-cta-secondary{background:transparent;color:var(--teal);text-decoration:none;border-radius:50px;padding:.7rem 1.8rem;font-family:'Lexend',sans-serif;font-size:.82rem;font-weight:600;display:inline-block;border:1px solid rgba(78,203,202,0.4);margin-left:.75rem}
+.disclaimer{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.2rem 1.5rem;margin:2rem 0;font-size:.72rem;color:rgba(255,255,255,.35);line-height:1.6}
+.disclaimer strong{color:rgba(255,255,255,.5)}
+.menotrack-strip{display:flex;align-items:center;justify-content:space-between;gap:1rem;background:rgba(78,203,202,0.08);border:1px solid rgba(78,203,202,0.2);border-radius:16px;padding:1.1rem 1.4rem;margin:2.5rem 0;flex-wrap:wrap}
+.mt-text{display:flex;align-items:center;gap:.85rem;flex:1;min-width:0}
+.mt-icon{font-size:1.6rem;flex-shrink:0}
+.mt-title{font-size:.88rem;font-weight:700;color:#fff;margin-bottom:.15rem}
+.mt-sub{font-size:.75rem;color:rgba(255,255,255,.5);font-weight:300;line-height:1.4}
+.mt-btn{background:linear-gradient(135deg,#4ECBCA,#2aadac);color:#0d0010;text-decoration:none;border-radius:50px;padding:.55rem 1.3rem;font-size:.78rem;font-weight:700;white-space:nowrap;flex-shrink:0}
+.recursos-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
+.recurso-card{background:var(--dark-card);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:1.1rem 1.25rem}
+.recurso-card .rc-icon{font-size:1.3rem;margin-bottom:.5rem}
+.recurso-card .rc-title{font-size:.85rem;font-weight:600;margin-bottom:.3rem;color:var(--teal-light)}
+.recurso-card .rc-text{font-size:.75rem;color:rgba(255,255,255,.55);font-weight:300;line-height:1.5}
+.related{padding:4rem 5%;border-top:1px solid rgba(255,255,255,0.07);max-width:1100px;margin:0 auto}
+.related-title{font-size:1.1rem;font-weight:700;margin-bottom:1.5rem;color:var(--teal-light)}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.2rem}
+.related-card{background:var(--dark-card);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius);overflow:hidden;text-decoration:none;color:inherit;display:block;transition:all .3s}
+.related-card:hover{border-color:rgba(78,203,202,0.35);transform:translateY(-4px)}
+.related-img{aspect-ratio:16/9;overflow:hidden;background:rgba(78,203,202,0.08)}
+.related-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.related-card:hover .related-img img{transform:scale(1.05)}
+.related-body{padding:1rem}
+.related-cat{font-size:.65rem;font-weight:700;color:var(--teal);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem}
+.related-card-title{font-size:.85rem;font-weight:600;line-height:1.35}
+footer{background:rgba(0,0,0,.4);border-top:1px solid rgba(78,203,202,0.12);padding:2rem 5%;text-align:center}
+.footer-logo{font-family:'Dancing Script',cursive;font-size:1.6rem;font-weight:700;background:linear-gradient(135deg,#fff,var(--teal-light),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.4rem}
+.footer-legal{font-size:.68rem;color:rgba(255,255,255,.25);max-width:600px;margin:0 auto;line-height:1.6}
+@media(max-width:600px){.action-grid{grid-template-columns:1fr}.recursos-grid{grid-template-columns:1fr}.related-grid{grid-template-columns:1fr}.art-title{font-size:1.6rem}.article-wrap{padding:2.5rem 5%}.menotrack-strip{flex-direction:column;align-items:flex-start}.mt-btn{width:100%;text-align:center}.btn-cta-secondary{margin-left:0;margin-top:.5rem;display:block}}
+.fuentes-wrap{margin:2rem 0 0}
+.fuentes-details{border:1px solid rgba(78,203,202,.2);border-radius:12px;overflow:hidden}
+.fuentes-summary{display:flex;align-items:center;gap:.75rem;padding:1rem 1.25rem;cursor:pointer;list-style:none;background:rgba(78,203,202,.05);font-size:.82rem;font-weight:600;color:var(--teal);transition:background .2s;user-select:none}
+.fuentes-summary::-webkit-details-marker{display:none}
+.fuentes-summary:hover{background:rgba(78,203,202,.1)}
+.fuentes-chevron{margin-left:auto;font-size:1rem;transition:transform .25s}
+.fuentes-details[open] .fuentes-chevron{transform:rotate(90deg)}
+.fuentes-body{padding:1.25rem 1.5rem;border-top:1px solid rgba(78,203,202,.12)}
+.fuentes-note{font-size:.72rem;color:rgba(255,255,255,.4);margin-bottom:.75rem;font-style:italic}
+.fuentes-list{padding-left:1.1rem;margin:0}
+.fuentes-list li{font-size:.76rem;color:rgba(255,255,255,.55);margin-bottom:.6rem;line-height:1.5}
+.fuentes-list li a{color:var(--teal);text-decoration:none;word-break:break-all}
+.fuentes-list li a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html">C-tech®</a>
+  <a class="nav-back" href="index.html">← Volver al inicio</a>
+  <a class="nav-cta" href="index.html#sobre-ctech">Conoce C-Tech</a>
+</nav>
+
+<div class="article-hero">
+  <div class="hero-gradient"></div>
+  <img src="art-red-apoyo.png" alt="Mujer conversando con su familia, clima de confianza y escucha en el hogar">
+  <div class="hero-overlay"></div>
+  <div class="hero-meta">
+    <div class="art-category">💬 P5 · Pregúntale a Clara</div>
+    <h1 class="art-title">Cómo hablar con tu familia sobre los cambios del climaterio</h1>
+    <div class="art-info">
+      <span>📅 Junio 2026</span><span>⏱ 7 min de lectura</span><span>🔬 NAMS · PubMed · IOF · Medigraphic</span>
+    </div>
+  </div>
+</div>
+
+<div class="article-wrap">
+  <div class="article-body">
+
+    <p>Una de las preguntas que más me llega — en mensajes, en redes, en conversaciones con lectoras — no es sobre los bochornos ni sobre el calcio. Es esta: <strong>"Clara, ¿cómo le explico a mi familia lo que me está pasando?"</strong></p>
+
+    <p>Y lo entiendo perfectamente. Puedes tener toda la información médica del mundo, pero si en tu casa nadie entiende lo que estás viviendo, el climaterio se vuelve una experiencia doblemente agotadora: cargas con los síntomas <em>y</em> cargas con la soledad de vivirlos en silencio.</p>
+
+    <p>Hoy quiero hablar de algo que la ciencia confirma pero que pocas veces se dice en voz alta: <strong>tu red de apoyo no es un lujo emocional. Es parte de lo que te ayuda a transitar esta etapa de forma más saludable</strong>. Y construirla empieza por una conversación.</p>
+
+    <h2>Por qué es tan difícil hablar del climaterio en casa</h2>
+
+    <p>El climaterio carga con un estigma silencioso. Durante décadas, los síntomas de esta etapa fueron minimizados, ridiculizados o simplemente ignorados. "Son cosas de tu edad." "Exageras." "Todas lo pasan, ¿cuál es el problema?" Ese discurso cultural cala hondo — y muchas veces nos lo aplicamos nosotras mismas antes de que alguien más lo diga.</p>
+
+    <p>A eso se suma que en muchos hogares mexicanos el tema de la salud femenina — especialmente todo lo que rodea a los ciclos, los cambios hormonales y la "edad madura" — simplemente no se habla. No por maldad, sino porque nadie enseñó a hablarlo. Las generaciones anteriores lo llevaron en silencio, y nosotras heredamos ese silencio.</p>
+
+    <p>El resultado: <em>síntomas reales que se viven como vergüenza, cambios legítimos que se interpretan como "mal humor", y una mujer que siente que tiene que funcionar igual que siempre mientras por dentro todo está en reconfiguración</em>.</p>
+
+    <div class="stat-box">
+      <div class="stat-num">60%</div>
+      <div class="stat-desc">de las mujeres en climaterio reporta sentirse incomprendida por su pareja o familia respecto a sus síntomas, según datos de encuestas en población latinoamericana referenciadas en Medigraphic. El aislamiento percibido amplifica el impacto emocional de los síntomas físicos.</div>
+    </div>
+
+    <p>Romper ese patrón no requiere una terapia familiar ni una reunión solemne. A veces basta con encontrar las palabras correctas en el momento correcto.</p>
+
+    <h2>Cómo hablarle a tu pareja: frases concretas que abren puertas</h2>
+
+    <p>La pareja suele ser quien más directamente convive con los síntomas del climaterio — y quien menos herramientas tiene para interpretarlos. Los cambios de humor, el insomnio, la falta de deseo sexual, la irritabilidad: vistos desde afuera, sin contexto, pueden sentirse como un alejamiento, como un problema de pareja, cuando en realidad son síntomas de un proceso fisiológico.</p>
+
+    <p>El primer paso es nombrarlo. No dar por sentado que tu pareja "ya sabe" o "ya debería entender". La mayoría no lo sabe, y no porque no le importe — sino porque nadie les explicó tampoco.</p>
+
+    <div class="frases-box">
+      <div class="frases-titulo">Frases que puedes usar — o adaptar a tu estilo</div>
+      <div class="frase-item">
+        <span class="frase-comilla">"</span>
+        <span class="frase-texto">Quiero contarte algo que me está pasando, porque creo que últimamente te puede haber afectado sin que supieras por qué. Estoy en una etapa que se llama climaterio, y produce cambios reales en mi cuerpo y en mi ánimo. No es que estés haciendo algo mal. Es que mi cuerpo está cambiando."</span>
+      </div>
+      <div class="frase-item">
+        <span class="frase-comilla">"</span>
+        <span class="frase-texto">Cuando me irrito más de lo que quisiera, no es contigo. Mi sistema nervioso está más sensible porque mis hormonas están cambiando. Lo que más me ayuda en esos momentos es que no lo tomes personal y que me des un poco de espacio."</span>
+      </div>
+      <div class="frase-item">
+        <span class="frase-comilla">"</span>
+        <span class="frase-texto">Hay noches que duermo muy mal por los bochornos. Por eso a veces amanezco agotada. No necesito que lo soluciones — solo que lo sepas y que me tengas un poco más de paciencia."</span>
+      </div>
+      <div class="frase-item">
+        <span class="frase-comilla">"</span>
+        <span class="frase-texto">Me gustaría que vinieras conmigo a la próxima consulta. Así el médico puede explicarte lo que me está pasando, y yo no tengo que ser la única que lo entienda en esta casa."</span>
+      </div>
+    </div>
+
+    <p>No necesitas dar una clase magistral sobre hormonas. Basta con abrir una puerta: <strong>"esto es lo que me pasa, y me ayudaría que lo supieras"</strong>. El resto puede construirse con el tiempo.</p>
+
+    <h2>Cómo hablar con tus hijos sin alarmarlos</h2>
+
+    <p>Con los hijos — sean adolescentes o ya adultos — el tono cambia, pero la necesidad de nombrar lo que pasa es la misma. Los hijos son observadores atentos: notan los cambios en el humor, en la energía, en el sueño. Si no tienen información, llenan ese vacío con interpretaciones propias — y casi siempre se echan la culpa de algo que no tiene nada que ver con ellos.</p>
+
+    <p><strong>Con hijos adolescentes</strong>, la conversación puede ser breve y directa. No hace falta entrar en detalles fisiológicos. Algo como: "Estoy pasando por una etapa en la que mi cuerpo se está adaptando a cambios hormonales. A veces me canso más, o me altera más rápido de lo que quisiera. No tiene nada que ver con lo que tú haces. Solo quería que lo supieras para que no te lo tomes personal."</p>
+
+    <p><strong>Con hijos adultos</strong>, puedes ser más específica si lo deseas. A veces los hijos adultos — especialmente las hijas — se convierten en un apoyo invaluable cuando entienden lo que está pasando. También pueden ser un puente para hablar del tema con otros miembros de la familia, o acompañarte a una consulta si así lo decides.</p>
+
+    <div class="quote-block">
+      <p>"El apoyo social percibido — sentir que hay personas que te escuchan y te entienden — está directamente asociado con menor intensidad de síntomas del climaterio, menor angustia emocional y mayor calidad de vida reportada."</p>
+      <div class="quote-source">— Cray LA et al. (2020). Social support and menopause symptom experience. PubMed PMID: 32032279</div>
+    </div>
+
+    <h2>La importancia de tu red de amigas</h2>
+
+    <p>Hay algo que solo pueden darte tus amigas: la validación de quien lo está viviendo o ya lo vivió. Esa frase de "a mí también me pasó" tiene un peso terapéutico que ningún libro puede reproducir.</p>
+
+    <p>La investigación es consistente en esto: <strong>el apoyo social entre pares reduce el aislamiento emocional, valida la experiencia vivida y actúa como amortiguador del impacto de los síntomas</strong>. Cuando hablamos de lo que nos pasa, dejamos de cargar solas con ello.</p>
+
+    <p>Si tienes amigas en etapas similares, ábrete. Pregúntales. Comparte. Muchas están esperando que alguien diga la primera frase. Y si en tu círculo cercano no hay mujeres en climaterio, considera ampliar tu red a través de comunidades — digitales o presenciales — donde este tema sea el centro y no el tabú.</p>
+
+    <div class="action-grid">
+      <div class="action-card">
+        <div class="ac-icon">💬</div>
+        <div class="ac-title">Habla sin esperar que te pregunten</div>
+        <div class="ac-text">No tienes que esperar a que alguien note que algo pasa. Puedes tomar la iniciativa tú. Elegir el momento y las palabras te da control sobre la conversación.</div>
+      </div>
+      <div class="action-card">
+        <div class="ac-icon">👂</div>
+        <div class="ac-title">Pide escucha, no soluciones</div>
+        <div class="ac-text">Muchas veces lo que necesitamos no es que nos arreglen sino que nos escuchen. Decirlo explícitamente — "no necesito que lo resuelvas, solo que me escuches" — facilita mucho la conversación.</div>
+      </div>
+      <div class="action-card">
+        <div class="ac-icon">📚</div>
+        <div class="ac-title">Comparte información</div>
+        <div class="ac-text">A veces es más fácil mandar un artículo que dar una explicación. Compartir una nota, un video o una infografía puede iniciar la conversación sin que sientas que tienes que "dar clase".</div>
+      </div>
+      <div class="action-card">
+        <div class="ac-icon">🔄</div>
+        <div class="ac-title">No es una sola conversación</div>
+        <div class="ac-text">No tienes que decirlo todo en un solo momento. La comunicación sobre el climaterio puede ser gradual — ir construyendo comprensión conforme tu familia también va aprendiendo.</div>
+      </div>
+    </div>
+
+    <h2>Cuándo involucrar a tu médico — y por qué llevar a alguien contigo</h2>
+
+    <p>Hay un recurso que muy pocas mujeres utilizan, y que puede cambiar completamente la dinámica familiar: <strong>llevar a tu pareja, a una hija adulta o a alguien de confianza a la consulta médica</strong>.</p>
+
+    <p>Cuando tu médico explica lo que es el climaterio, cuáles son sus síntomas y por qué ocurren, el mensaje llega con una autoridad diferente a cuando lo dices tú. No porque tú no tengas razón — sino porque escuchar eso de un profesional de salud a menudo rompe resistencias que la comunicación cotidiana no puede.</p>
+
+    <p>Además, llevar a alguien contigo a la consulta tiene otras ventajas concretas: esa persona puede hacer preguntas que tú no pensaste, puede recordar información que se te escapa en la consulta, y se convierte en un aliado informado para el día a día.</p>
+
+    <div class="alert-box">
+      <div class="alert-title">✅ Señales de que ya es momento de hablar con tu médico</div>
+      <ul class="alert-list">
+        <li><span class="al-icon">🔹</span> Tus síntomas están afectando de forma significativa tu vida diaria o tus relaciones</li>
+        <li><span class="al-icon">🔹</span> Sientes que el aislamiento o la incomprensión en casa está amplificando tu malestar</li>
+        <li><span class="al-icon">🔹</span> Tu pareja o familia no cree que lo que describes sea "para tanto"</li>
+        <li><span class="al-icon">🔹</span> Quieres que alguien de tu entorno tenga información médica de primera mano</li>
+        <li><span class="al-icon">🔹</span> Estás evaluando opciones de manejo — alimentación, suplementación, actividad física — y quieres tomar decisiones informadas en familia</li>
+      </ul>
+    </div>
+
+    <p>Sobre el acompañamiento nutricional: en esta etapa, cubrir los requerimientos de calcio y vitamina D3 es especialmente importante para el hueso, la función muscular y el bienestar general. Si el acceso a alimentos ricos en estos nutrientes es limitado o irregular, un suplemento OTC de libre acceso como <strong>C-Tech</strong> puede ser un complemento práctico. No es un tratamiento hormonal ni psicológico — es nutrición de soporte para una etapa que lo exige.</p>
+
+    <div class="menotrack-strip">
+      <div class="mt-text">
+        <div class="mt-icon">📊</div>
+        <div>
+          <div class="mt-title">Llega a tu consulta con datos reales</div>
+          <div class="mt-sub">MenoTrack te ayuda a registrar tus síntomas día a día. Cuando vayas al médico — sola o acompañada — tendrás un historial concreto en tu mano.</div>
+        </div>
+      </div>
+      <a class="mt-btn" href="https://polar-multimedia.github.io/flowtrack/" target="_blank" rel="noopener">Abrir MenoTrack →</a>
+    </div>
+
+    <h2>Recursos: comunidades y grupos de apoyo en México</h2>
+
+    <p>Si quieres ampliar tu red más allá de lo inmediato, hay espacios creados exactamente para eso. Compartir con mujeres que están en la misma etapa — o que ya la atravesaron — ofrece una perspectiva que las conversaciones familiares no siempre pueden dar.</p>
+
+    <div class="recursos-grid">
+      <div class="recurso-card">
+        <div class="rc-icon">🏥</div>
+        <div class="rc-title">ISSSTE / IMSS — Grupos de climaterio</div>
+        <div class="rc-text">Algunos hospitales del IMSS e ISSSTE cuentan con grupos de apoyo para mujeres en climaterio coordinados por médicos o psicólogos. Consulta en tu unidad más cercana si existe este servicio.</div>
+      </div>
+      <div class="recurso-card">
+        <div class="rc-icon">📱</div>
+        <div class="rc-title">Comunidades en Facebook y WhatsApp</div>
+        <div class="rc-text">Grupos como "Menopausia México", "Climaterio sin tabú" y similares reúnen a miles de mujeres que comparten experiencias, preguntas y recursos de manera anónima y segura.</div>
+      </div>
+      <div class="recurso-card">
+        <div class="rc-icon">🎙️</div>
+        <div class="rc-title">Podcasts en español</div>
+        <div class="rc-text">Una buena forma de iniciar la conversación en casa: escuchar juntos un episodio de algún podcast de salud femenina y usarlo como punto de partida para hablar del tema.</div>
+      </div>
+      <div class="recurso-card">
+        <div class="rc-icon">🌐</div>
+        <div class="rc-title">FemeNews — Tu espacio aquí</div>
+        <div class="rc-text">Este portal está hecho para ti. Comparte los artículos con tu familia, con tus amigas, con quien quieras que entienda mejor lo que estás viviendo. La información es la primera herramienta.</div>
+      </div>
+    </div>
+
+    <p>Y una última cosa, que es quizás la más importante: <strong>no tienes que estar bien todo el tiempo para hablar del climaterio</strong>. Puedes hablar desde el cansancio, desde la confusión, desde el "todavía no lo entiendo del todo pero quiero que sepas que algo me está pasando". Eso también es válido. Eso también es suficiente.</p>
+
+    <p>Tu familia no necesita entenderlo todo de golpe. Tu red de apoyo no tiene que ser perfecta. Solo necesita existir. Y la primera conversación — por difícil que parezca — es la que abre la puerta a todo lo demás.</p>
+
+    <div class="cta-box">
+      <div class="cta-pill">C-T</div>
+      <h3>Registra lo que sientes. Llévalo a tu consulta.</h3>
+      <p>MenoTrack es la herramienta gratuita para seguir tus síntomas día a día y llegar mejor preparada a cada conversación — con tu médico y con las personas que más quieres.</p>
+      <a class="btn-cta" href="https://polar-multimedia.github.io/flowtrack/" target="_blank" rel="noopener">Descarga MenoTrack</a>
+      <a class="btn-cta-secondary" href="index.html">Leer más artículos</a>
+    </div>
+
+    <div class="disclaimer">
+      <strong>Nota importante:</strong> Este contenido es de carácter informativo y no sustituye la consulta médica. Consulta a tu médico o profesional de salud ante cualquier síntoma o decisión relacionada con tu salud durante el climaterio.
+    </div>
+
+    <div class="fuentes-wrap">
+      <details class="fuentes-details">
+        <summary class="fuentes-summary">
+          <span>📚</span> Ver fuentes
+          <span class="fuentes-chevron">›</span>
+        </summary>
+        <div class="fuentes-body">
+          <p class="fuentes-note">Todas las fuentes referenciadas en este artículo son publicaciones científicas verificables o recursos de organizaciones de salud reconocidas.</p>
+          <ul class="fuentes-list">
+            <li>North American Menopause Society (NAMS). <em>Mental Health and Menopause.</em> <a href="https://www.menopause.org/for-women/menopauseflashes/mental-health-and-menopause" target="_blank" rel="noopener">https://www.menopause.org/for-women/menopauseflashes/mental-health-and-menopause</a></li>
+            <li>Cray LA, et al. <em>Perimenopausal quality of life and the role of stress, social support, and symptoms.</em> Menopause. 2020. PubMed PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/32032279/" target="_blank" rel="noopener">32032279</a></li>
+            <li>International Osteoporosis Foundation (IOF). <em>What is Osteoporosis?</em> <a href="https://www.osteoporosis.foundation/patients/about-osteoporosis/what-is-osteoporosis" target="_blank" rel="noopener">https://www.osteoporosis.foundation/patients/about-osteoporosis/what-is-osteoporosis</a></li>
+            <li>Monterrosa-Castro A, et al. <em>Calidad de vida en mujeres en climaterio y su relación con el apoyo social.</em> Medigraphic. <a href="https://www.medigraphic.com/cgi-bin/new/resumen.cgi?IDARTICULO=37401" target="_blank" rel="noopener">https://www.medigraphic.com/cgi-bin/new/resumen.cgi?IDARTICULO=37401</a></li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+  </div>
+</div>
+
+<section class="related">
+  <div class="related-title">Sigue leyendo en FemeNews</div>
+  <div class="related-grid">
+    <a class="related-card" href="articulo-animo-climaterio.html">
+      <div class="related-img"><img src="art-animo.png" alt="El climaterio y el ánimo"></div>
+      <div class="related-body">
+        <div class="related-cat">💚 Ánimo</div>
+        <div class="related-card-title">El climaterio y el ánimo: por qué te sientes diferente</div>
+      </div>
+    </a>
+    <a class="related-card" href="articulo-estres-climaterio.html">
+      <div class="related-img"><img src="art-estres.png" alt="Estrés y climaterio"></div>
+      <div class="related-body">
+        <div class="related-cat">💚 Estrés</div>
+        <div class="related-card-title">Estrés y climaterio: el círculo vicioso que debes romper</div>
+      </div>
+    </a>
+    <a class="related-card" href="articulo-niebla-mental.html">
+      <div class="related-img"><img src="art-niebla.png" alt="Niebla mental en el climaterio"></div>
+      <div class="related-body">
+        <div class="related-cat">🧠 Cognición</div>
+        <div class="related-card-title">Niebla mental en el climaterio: cuando tu mente se siente entre algodones</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">C-tech®</div>
+  <p class="footer-legal">FemeNews es una plataforma de contenido informativo sobre salud femenina producida por C-Tech. Este contenido es de carácter educativo y no sustituye la orientación médica profesional. Consulta siempre a tu médico ante cualquier síntoma o decisión de salud.</p>
+</footer>
+
+</body>
+</html>

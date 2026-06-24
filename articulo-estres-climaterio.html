@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Estrés y climaterio: el círculo vicioso que debes romper — C-Tech®</title>
+<meta name="description" content="El cortisol y el estrógeno compiten por los mismos recursos. Aprende cómo el estrés crónico agrava los síntomas del climaterio, daña el hueso y qué estrategias con respaldo científico te ayudan a romper el ciclo.">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--teal:#4ECBCA;--teal-light:#7EDEDD;--teal-pale:#C8F0EF;--teal-glow:rgba(78,203,202,0.22);--pink:#E91E8C;--dark:#0d0010;--dark-card:rgba(255,255,255,0.04);--text:#fff;--text-muted:rgba(255,255,255,0.62);--radius:16px}
+html{scroll-behavior:smooth}
+body{font-family:'Lexend',sans-serif;background:var(--dark);color:var(--text);overflow-x:hidden;line-height:1.7}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:66px;background:rgba(13,0,16,0.9);backdrop-filter:blur(20px);border-bottom:1px solid rgba(78,203,202,0.15)}
+.nav-logo{font-family:'Dancing Script',cursive;font-size:1.7rem;font-weight:700;background:linear-gradient(135deg,#fff,var(--teal-light),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none}
+.nav-back{color:rgba(255,255,255,0.55);text-decoration:none;font-size:0.78rem;font-weight:500;transition:color .3s}
+.nav-back:hover{color:var(--teal-light)}
+.nav-cta{background:linear-gradient(135deg,var(--teal),#2aadac);color:#0d0010;border:none;border-radius:50px;padding:.45rem 1.2rem;font-family:'Lexend',sans-serif;font-size:.75rem;font-weight:700;cursor:pointer;text-decoration:none}
+.article-hero{margin-top:66px;position:relative;height:60vh;min-height:420px;overflow:hidden;display:flex;align-items:flex-end}
+.article-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(13,0,16,1) 0%,rgba(13,0,16,0.55) 40%,rgba(13,0,16,0.15) 100%)}
+.hero-gradient{position:absolute;inset:0;background:linear-gradient(135deg,#1a0818 0%,#2d1035 50%,#1a0828 100%);opacity:.75}
+.hero-meta{position:relative;z-index:2;padding:0 8% 3rem;width:100%}
+.art-category{display:inline-block;background:linear-gradient(135deg,#2aadac,var(--teal));color:#0d0010;padding:.25rem .85rem;border-radius:50px;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1rem}
+.art-title{font-size:clamp(1.8rem,4vw,3.2rem);font-weight:800;line-height:1.15;max-width:800px;margin-bottom:1rem}
+.art-info{display:flex;gap:1.5rem;flex-wrap:wrap;font-size:.75rem;color:rgba(255,255,255,0.5)}
+.article-wrap{max-width:780px;margin:0 auto;padding:4rem 5%}
+.article-body h2{font-size:1.4rem;font-weight:700;margin:2.5rem 0 1rem;background:linear-gradient(135deg,var(--teal-light),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.article-body h3{font-size:1.1rem;font-weight:600;margin:2rem 0 .75rem;color:var(--teal-light)}
+.article-body p{color:rgba(255,255,255,0.78);margin-bottom:1.2rem;font-size:.97rem;font-weight:300;line-height:1.85}
+.article-body strong{color:#fff;font-weight:600}
+.article-body em{color:var(--teal-pale);font-style:normal}
+.stat-box{background:linear-gradient(135deg,rgba(78,203,202,0.12),rgba(42,173,172,0.06));border:1px solid rgba(78,203,202,0.25);border-radius:var(--radius);padding:1.5rem 2rem;margin:2rem 0;position:relative;overflow:hidden}
+.stat-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--teal-light))}
+.stat-box .stat-num{font-size:2.2rem;font-weight:900;background:linear-gradient(135deg,var(--teal-light),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
+.stat-box .stat-desc{font-size:.82rem;color:var(--text-muted);margin-top:.3rem}
+.quote-block{border-left:3px solid var(--teal);padding:1.2rem 1.5rem;margin:2rem 0;background:rgba(78,203,202,0.06);border-radius:0 12px 12px 0}
+.quote-block p{font-size:1.05rem;font-style:italic;color:var(--teal-pale);margin:0;font-weight:300}
+.quote-source{font-size:.72rem;color:var(--text-muted);margin-top:.5rem}
+.action-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
+.action-card{background:var(--dark-card);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:1.1rem 1.25rem}
+.action-card .ac-icon{font-size:1.3rem;margin-bottom:.5rem}
+.action-card .ac-title{font-size:.85rem;font-weight:600;margin-bottom:.3rem}
+.action-card .ac-text{font-size:.75rem;color:rgba(255,255,255,.55);font-weight:300;line-height:1.5}
+.alert-box{background:linear-gradient(135deg,rgba(233,30,140,0.1),rgba(180,0,100,0.05));border:1px solid rgba(233,30,140,0.3);border-radius:var(--radius);padding:1.5rem 2rem;margin:2rem 0;position:relative;overflow:hidden}
+.alert-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--pink),#c2157a)}
+.alert-box .alert-title{font-size:.85rem;font-weight:700;color:var(--pink);margin-bottom:.75rem;display:flex;align-items:center;gap:.5rem}
+.alert-list{list-style:none;margin:0}
+.alert-list li{display:flex;align-items:flex-start;gap:.75rem;padding:.5rem 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:.88rem;color:rgba(255,255,255,.72);font-weight:300}
+.alert-list li:last-child{border-bottom:none}
+.alert-list li .al-icon{flex-shrink:0;margin-top:.05rem}
+.cycle-box{background:rgba(45,16,53,0.5);border:1px solid rgba(233,30,140,0.2);border-radius:var(--radius);padding:1.5rem 2rem;margin:2rem 0}
+.cycle-box .cycle-title{font-size:.82rem;font-weight:700;color:var(--pink);margin-bottom:1rem;letter-spacing:.05em;text-transform:uppercase}
+.cycle-steps{display:flex;flex-direction:column;gap:.5rem}
+.cycle-step{display:flex;align-items:center;gap:.75rem;font-size:.85rem;color:rgba(255,255,255,.72);font-weight:300}
+.cycle-arrow{color:var(--pink);font-size:1.1rem;margin-left:1.5rem;opacity:.7}
+.bone-box{background:linear-gradient(135deg,rgba(78,203,202,0.08),rgba(26,58,92,0.15));border:1px solid rgba(78,203,202,0.2);border-radius:var(--radius);padding:1.5rem 2rem;margin:2rem 0;position:relative;overflow:hidden}
+.bone-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#2aadac,var(--teal-light))}
+.cta-box{background:linear-gradient(135deg,rgba(78,203,202,0.12),rgba(42,173,172,0.06));border:1px solid rgba(78,203,202,0.3);border-radius:20px;padding:2rem 2.5rem;margin:3rem 0;text-align:center;position:relative;overflow:hidden}
+.cta-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--teal-light),var(--teal))}
+.cta-pill{width:70px;height:40px;background:linear-gradient(135deg,var(--teal-light),var(--teal),#2aadac);border-radius:50px;margin:0 auto 1rem;box-shadow:0 0 25px var(--teal-glow);display:flex;align-items:center;justify-content:center;font-family:'Dancing Script',cursive;font-size:.75rem;color:rgba(13,0,16,.9);font-weight:700}
+.cta-box h3{font-size:1.2rem;font-weight:700;margin-bottom:.6rem}
+.cta-box p{color:var(--text-muted);font-size:.85rem;font-weight:300;margin-bottom:1.2rem}
+.btn-cta{background:linear-gradient(135deg,var(--teal),#2aadac);color:#0d0010;text-decoration:none;border-radius:50px;padding:.75rem 2rem;font-family:'Lexend',sans-serif;font-size:.82rem;font-weight:700;display:inline-block;box-shadow:0 0 25px var(--teal-glow)}
+.btn-cta-secondary{background:transparent;color:var(--teal);text-decoration:none;border-radius:50px;padding:.7rem 1.8rem;font-family:'Lexend',sans-serif;font-size:.82rem;font-weight:600;display:inline-block;border:1px solid rgba(78,203,202,0.4);margin-left:.75rem}
+.disclaimer{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.2rem 1.5rem;margin:2rem 0;font-size:.72rem;color:rgba(255,255,255,.35);line-height:1.6}
+.disclaimer strong{color:rgba(255,255,255,.5)}
+.menotrack-strip{display:flex;align-items:center;justify-content:space-between;gap:1rem;background:rgba(78,203,202,0.08);border:1px solid rgba(78,203,202,0.2);border-radius:16px;padding:1.1rem 1.4rem;margin:2.5rem 0;flex-wrap:wrap}
+.mt-text{display:flex;align-items:center;gap:.85rem;flex:1;min-width:0}
+.mt-icon{font-size:1.6rem;flex-shrink:0}
+.mt-title{font-size:.88rem;font-weight:700;color:#fff;margin-bottom:.15rem}
+.mt-sub{font-size:.75rem;color:rgba(255,255,255,.5);font-weight:300;line-height:1.4}
+.mt-btn{background:linear-gradient(135deg,#4ECBCA,#2aadac);color:#0d0010;text-decoration:none;border-radius:50px;padding:.55rem 1.3rem;font-size:.78rem;font-weight:700;white-space:nowrap;flex-shrink:0}
+.related{padding:4rem 5%;border-top:1px solid rgba(255,255,255,0.07);max-width:1100px;margin:0 auto}
+.related-title{font-size:1.1rem;font-weight:700;margin-bottom:1.5rem;color:var(--teal-light)}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.2rem}
+.related-card{background:var(--dark-card);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius);overflow:hidden;text-decoration:none;color:inherit;display:block;transition:all .3s}
+.related-card:hover{border-color:rgba(78,203,202,0.35);transform:translateY(-4px)}
+.related-img{aspect-ratio:16/9;overflow:hidden;background:rgba(78,203,202,0.08)}
+.related-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.related-card:hover .related-img img{transform:scale(1.05)}
+.related-body{padding:1rem}
+.related-cat{font-size:.65rem;font-weight:700;color:var(--teal);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem}
+.related-card-title{font-size:.85rem;font-weight:600;line-height:1.35}
+footer{background:rgba(0,0,0,.4);border-top:1px solid rgba(78,203,202,0.12);padding:2rem 5%;text-align:center}
+.footer-logo{font-family:'Dancing Script',cursive;font-size:1.6rem;font-weight:700;background:linear-gradient(135deg,#fff,var(--teal-light),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.4rem}
+.footer-legal{font-size:.68rem;color:rgba(255,255,255,.25);max-width:600px;margin:0 auto;line-height:1.6}
+@media(max-width:600px){.action-grid{grid-template-columns:1fr}.related-grid{grid-template-columns:1fr}.art-title{font-size:1.6rem}.article-wrap{padding:2.5rem 5%}.menotrack-strip{flex-direction:column;align-items:flex-start}.mt-btn{width:100%;text-align:center}.btn-cta-secondary{margin-left:0;margin-top:.5rem;display:block}.cycle-steps{gap:.4rem}}
+.fuentes-wrap{margin:2rem 0 0}
+.fuentes-details{border:1px solid rgba(78,203,202,.2);border-radius:12px;overflow:hidden}
+.fuentes-summary{display:flex;align-items:center;gap:.75rem;padding:1rem 1.25rem;cursor:pointer;list-style:none;background:rgba(78,203,202,.05);font-size:.82rem;font-weight:600;color:var(--teal);transition:background .2s;user-select:none}
+.fuentes-summary::-webkit-details-marker{display:none}
+.fuentes-summary:hover{background:rgba(78,203,202,.1)}
+.fuentes-chevron{margin-left:auto;font-size:1rem;transition:transform .25s}
+.fuentes-details[open] .fuentes-chevron{transform:rotate(90deg)}
+.fuentes-body{padding:1.25rem 1.5rem;border-top:1px solid rgba(78,203,202,.12)}
+.fuentes-note{font-size:.72rem;color:rgba(255,255,255,.4);margin-bottom:.75rem;font-style:italic}
+.fuentes-list{padding-left:1.1rem;margin:0}
+.fuentes-list li{font-size:.76rem;color:rgba(255,255,255,.55);margin-bottom:.6rem;line-height:1.5}
+.fuentes-list li a{color:var(--teal);text-decoration:none;word-break:break-all}
+.fuentes-list li a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html">C-tech®</a>
+  <a class="nav-back" href="index.html">← Volver al inicio</a>
+  <a class="nav-cta" href="index.html#sobre-ctech">Conoce C-Tech</a>
+</nav>
+
+<div class="article-hero">
+  <div class="hero-gradient"></div>
+  <img src="art-estres.png" alt="Mujer en climaterio con expresión de tensión, manos en el rostro, entorno cálido y tenue">
+  <div class="hero-overlay"></div>
+  <div class="hero-meta">
+    <div class="art-category">💚 P3 · Señales de alerta</div>
+    <h1 class="art-title">Estrés y climaterio: el círculo vicioso que debes romper</h1>
+    <div class="art-info">
+      <span>📅 Junio 2026</span><span>⏱ 7 min de lectura</span><span>🔬 NAMS · PubMed · Scielo México</span>
+    </div>
+  </div>
+</div>
+
+<div class="article-wrap">
+  <div class="article-body">
+
+    <p>Hay un patrón que se repite con frecuencia en el climaterio y que pocas veces se nombra con claridad: <strong>el estrés no solo acompaña a esta etapa, la empeora</strong>. Y los síntomas que empeoran generan más estrés. Y ese estrés adicional daña estructuras del cuerpo — incluidos los huesos — de maneras que no siempre son visibles hasta que ya es tarde.</p>
+
+    <p>Entender cómo el cortisol y el estrógeno interactúan dentro de tu cuerpo no es un ejercicio académico. Es información práctica que puede ayudarte a identificar señales que quizás estás ignorando y a tomar decisiones que protejan tu bienestar a largo plazo.</p>
+
+    <h2>Cortisol y estrógeno: la competencia que nadie te contó</h2>
+
+    <p>El cortisol es la hormona que el cuerpo produce en respuesta al estrés. En dosis cortas y puntuales, cumple una función vital: nos mantiene alertas ante situaciones de amenaza. El problema surge cuando el estrés es crónico — cuando el cortisol se mantiene elevado durante semanas o meses sin descanso.</p>
+
+    <p>¿Por qué esto importa en el climaterio? Porque el cortisol y el estrógeno <strong>compiten por los mismos precursores hormonales</strong>. Ambos se sintetizan a partir del colesterol, pasando por una molécula llamada pregnenolona. Cuando el cuerpo prioriza la producción de cortisol — algo que ocurre automáticamente bajo estrés crónico — hay menos pregnenolona disponible para la ruta del estrógeno y la progesterona.</p>
+
+    <div class="stat-box">
+      <div class="stat-num">↑ Cortisol</div>
+      <div class="stat-desc">Un estudio publicado en PubMed (Epel ES et al., 2018, PMID 29296395) documenta que el estrés crónico eleva el cortisol basal de forma sostenida en mujeres perimenopáusicas, amplificando síntomas vasomotores como bochornos y sudoración nocturna — que a su vez generan más activación del eje del estrés.</div>
+    </div>
+
+    <p>Dicho de otro modo: en la perimenopausia, cuando el cuerpo ya produce menos estrógeno de forma natural, el estrés crónico puede <em>acelerar y profundizar ese descenso</em>, agravando síntomas que de otra forma habrían sido más manejables.</p>
+
+    <h2>El ciclo que se alimenta solo</h2>
+
+    <p>Una vez que el estrés y el climaterio se entrelazan, el ciclo tiende a perpetuarse. Conocerlo es el primer paso para interrumpirlo:</p>
+
+    <div class="cycle-box">
+      <div class="cycle-title">El círculo vicioso estrés-climaterio</div>
+      <div class="cycle-steps">
+        <div class="cycle-step">😰 <strong>El estrés eleva el cortisol</strong> → reduce la producción de estrógeno disponible</div>
+        <div class="cycle-arrow">↓</div>
+        <div class="cycle-step">🌡️ <strong>Menos estrógeno</strong> → bochornos más intensos y frecuentes</div>
+        <div class="cycle-arrow">↓</div>
+        <div class="cycle-step">🌙 <strong>Los bochornos nocturnos</strong> → interrumpen el sueño repetidamente</div>
+        <div class="cycle-arrow">↓</div>
+        <div class="cycle-step">😤 <strong>La privación de sueño</strong> → eleva el cortisol y reduce la tolerancia al estrés</div>
+        <div class="cycle-arrow">↓</div>
+        <div class="cycle-step">😰 <strong>Más estrés</strong> → el ciclo se reinicia con mayor intensidad</div>
+      </div>
+    </div>
+
+    <p>Lo que distingue a este ciclo de otros síntomas del climaterio es que <strong>tiene un componente conductual que puede modificarse</strong>. No se puede controlar la caída de estrógeno, pero sí se puede intervenir en cómo el sistema nervioso responde al estrés — y eso rompe el ciclo.</p>
+
+    <h2>6 señales de que el estrés está afectando tu climaterio más de lo normal</h2>
+
+    <p>No todo el malestar en el climaterio es atribuible al estrés. Pero hay indicadores concretos que sugieren que el estrés crónico está amplificando lo que de otra manera serían síntomas más leves:</p>
+
+    <div class="alert-box">
+      <div class="alert-title">⚠️ Indicadores de sobrecarga por estrés en el climaterio</div>
+      <ul class="alert-list">
+        <li><span class="al-icon">🔴</span> <strong>Bochornos que se disparan ante situaciones de tensión emocional</strong> — no solo por temperatura. Si cada discusión o momento de presión desencadena un bochorno, el eje cortisol-temperatura está sobreactivado.</li>
+        <li><span class="al-icon">🔴</span> <strong>Insomnio que empeora en semanas laboralmente intensas</strong> — más allá de los despertares por calor. El cortisol elevado en la noche suprime la melatonina e impide el sueño profundo.</li>
+        <li><span class="al-icon">🔴</span> <strong>Irritabilidad desproporcionada que aparece incluso en días sin síntomas físicos</strong> — señal de que el sistema nervioso autónomo está en alerta permanente, no en respuesta a algo específico.</li>
+        <li><span class="al-icon">🔴</span> <strong>Palpitaciones o tensión en el pecho sin causa cardíaca confirmada</strong> — el estrés crónico activa el sistema simpático con facilidad durante el climaterio, generando síntomas físicos que parecen cardíacos pero son de origen nervioso.</li>
+        <li><span class="al-icon">🔴</span> <strong>Niebla mental que se intensifica con la carga de trabajo o las preocupaciones</strong> — la combinación de cortisol elevado con niveles bajos de estrógeno afecta la memoria de trabajo y la concentración de forma sinérgica.</li>
+        <li><span class="al-icon">🔴</span> <strong>Sensación de no poder "bajar la guardia" ni en momentos de descanso</strong> — la incapacidad de relajarse, incluso en vacaciones o fines de semana, es una señal clásica de hipercortisolemia crónica.</li>
+      </ul>
+    </div>
+
+    <p>Si reconoces tres o más de estos indicadores de forma persistente, no como algo ocasional sino como parte de tu cotidiano, <strong>vale la pena mencionarlo específicamente en tu próxima consulta médica</strong>. El estrés crónico en el climaterio no es un problema emocional menor — tiene consecuencias físicas documentadas.</p>
+
+    <h2>Lo que el estrés crónico le hace a tus huesos</h2>
+
+    <p>Este es el punto que menos se comunica — y quizás el más importante para la salud a largo plazo. El cortisol crónico no solo afecta el ánimo y los síntomas vasomotores. <strong>Actúa directamente sobre el tejido óseo</strong> suprimiendo la actividad de los osteoblastos, las células responsables de formar hueso nuevo.</p>
+
+    <div class="bone-box">
+      <p style="font-size:.85rem;color:rgba(255,255,255,.72);font-weight:300;line-height:1.75;margin:0">Un estudio de referencia sobre cortisol y pérdida ósea (Seeman TE et al., 2001, PubMed PMID 11434512) encontró que las mujeres con niveles elevados de cortisol basal presentaban una densidad mineral ósea significativamente menor, con aceleración de la pérdida ósea que se sumaba al efecto ya presente por el descenso de estrógenos en la menopausia.</p>
+    </div>
+
+    <p>El mecanismo es claro: el cortisol eleva la actividad de los osteoclastos (células que reabsorben hueso) mientras inhibe a los osteoblastos. El resultado es un balance negativo en el remodelado óseo — se pierde más hueso del que se forma. En el climaterio, cuando el estrógeno ya no proporciona su efecto protector sobre el hueso, el estrés crónico puede <em>duplicar la velocidad de pérdida de densidad ósea</em>.</p>
+
+    <p>Esto convierte al estrés crónico no manejado en un factor de riesgo real para la salud ósea — no solo un inconveniente emocional.</p>
+
+    <h2>Estrategias con respaldo: lo que la evidencia dice que funciona</h2>
+
+    <p>No existe una solución única, ni ninguna estrategia actúa de forma milagrosa. Pero hay un conjunto de intervenciones que la investigación respalda de manera consistente para reducir el cortisol crónico y mejorar la calidad de vida en el climaterio:</p>
+
+    <div class="action-grid">
+      <div class="action-card">
+        <div class="ac-icon">🌬️</div>
+        <div class="ac-title">Respiración diafragmática</div>
+        <div class="ac-text">Respirar lento y profundo desde el abdomen activa el nervio vago y el sistema parasimpático en minutos. 5 minutos de respiración 4-7-8 (inhala 4 s, retén 7, exhala 8) reduce el cortisol de forma medible. Practica antes de dormir y en momentos de tensión.</div>
+      </div>
+      <div class="action-card">
+        <div class="ac-icon">🧘‍♀️</div>
+        <div class="ac-title">MBSR (Mindfulness-Based Stress Reduction)</div>
+        <div class="ac-text">El programa MBSR de 8 semanas ha demostrado reducir los síntomas vasomotores y mejorar el sueño en mujeres en climaterio. No es meditación mística — es entrenamiento atencional estructurado. Disponible en apps y plataformas en línea en español.</div>
+      </div>
+      <div class="action-card">
+        <div class="ac-icon">🏃‍♀️</div>
+        <div class="ac-title">Ejercicio aeróbico moderado</div>
+        <div class="ac-text">30-45 minutos de caminata rápida, natación o bicicleta, 4-5 días a la semana, reduce el cortisol basal y estimula la producción de endorfinas y serotonina. Además, el ejercicio de carga (pesas, yoga) estimula directamente la formación ósea.</div>
+      </div>
+      <div class="action-card">
+        <div class="ac-icon">😴</div>
+        <div class="ac-title">Higiene del sueño activa</div>
+        <div class="ac-text">No es solo "dormir más". Implica temperatura fresca en el cuarto (18-20°C reduce bochornos nocturnos), oscuridad total, horario fijo de despertar, y evitar pantallas 90 minutos antes. El sueño profundo es cuando el cortisol cae más — protegerlo es anti-estrés.</div>
+      </div>
+      <div class="action-card">
+        <div class="ac-icon">👭</div>
+        <div class="ac-title">Conexión social intencional</div>
+        <div class="ac-text">El aislamiento social eleva el cortisol de forma sostenida. La investigación sobre menopausia y salud social muestra que las mujeres con redes de apoyo activas reportan síntomas climáticos menos intensos. Una hora semanal con amigas tiene efecto medible en el bienestar.</div>
+      </div>
+      <div class="action-card">
+        <div class="ac-icon">🥗</div>
+        <div class="ac-title">Nutrición que sostiene el sistema</div>
+        <div class="ac-text">Reducir cafeína y alcohol (ambos elevan el cortisol), aumentar magnesio (nueces, vegetales de hoja) y calcio. Una nutrición adecuada en calcio y vitamina D es especialmente relevante cuando el cortisol crónico está acelerando la pérdida ósea.</div>
+      </div>
+    </div>
+
+    <p>Sobre la nutrición ósea durante períodos de estrés crónico: garantizar un aporte suficiente de calcio y vitamina D3 cobra especial relevancia cuando el cortisol está suprimiendo la formación ósea. Cuando la dieta no alcanza a cubrir estas necesidades — algo frecuente en mujeres mexicanas en climaterio según estudios del IMSS — <strong>un suplemento OTC de libre acceso como C-Tech puede complementar la ingesta diaria de estos micronutrientes</strong>, acompañando otras estrategias de cuidado. C-Tech no trata el estrés ni sus efectos, pero contribuye a sostener la nutrición ósea en un momento en que el hueso está particularmente expuesto.</p>
+
+    <div class="menotrack-strip">
+      <div class="mt-text">
+        <div class="mt-icon">📊</div>
+        <div>
+          <div class="mt-title">Registra tu nivel de estrés en MenoTrack</div>
+          <div class="mt-sub">Lleva un diario de síntomas que incluya tensión, insomnio y bochornos. Detecta en qué semanas el estrés dispara tus síntomas — y llega mejor preparada a tu consulta.</div>
+        </div>
+      </div>
+      <a class="mt-btn" href="https://polar-multimedia.github.io/flowtrack/" target="_blank" rel="noopener">Abrir MenoTrack →</a>
+    </div>
+
+    <h2>Cuándo el estrés ya no es manejable sola</h2>
+
+    <p>Reconocer los propios límites no es debilidad — es inteligencia. Hay momentos en que las estrategias de autocuidado no son suficientes, y lo que se necesita es acompañamiento profesional.</p>
+
+    <div class="quote-block">
+      <p>"Las intervenciones para reducir el estrés — incluyendo mindfulness, terapia cognitivo-conductual y ejercicio — deben considerarse parte del manejo integral del climaterio, especialmente en mujeres con síntomas vasomotores severos o antecedentes de ansiedad."</p>
+      <div class="quote-source">— North American Menopause Society (NAMS), Mental Health and Menopause</div>
+    </div>
+
+    <p>Considera buscar apoyo profesional si experimentas alguna de estas situaciones de forma sostenida:</p>
+
+    <ul class="alert-list" style="margin:1.5rem 0;list-style:none">
+      <li style="display:flex;gap:.75rem;padding:.5rem 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:.88rem;color:rgba(255,255,255,.72);font-weight:300"><span>🔴</span> El estrés interfiere con tu trabajo, tus relaciones o tu capacidad de cuidarte a ti misma</li>
+      <li style="display:flex;gap:.75rem;padding:.5rem 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:.88rem;color:rgba(255,255,255,.72);font-weight:300"><span>🔴</span> Has probado estrategias de manejo por más de 4 semanas sin mejoría perceptible</li>
+      <li style="display:flex;gap:.75rem;padding:.5rem 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:.88rem;color:rgba(255,255,255,.72);font-weight:300"><span>🔴</span> La ansiedad o la hipervigilancia son constantes — no ocasionales</li>
+      <li style="display:flex;gap:.75rem;padding:.5rem 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:.88rem;color:rgba(255,255,255,.72);font-weight:300"><span>🔴</span> Tu médico ha detectado pérdida de densidad ósea y también tienes estrés crónico — ambos requieren atención conjunta</li>
+      <li style="display:flex;gap:.75rem;padding:.5rem 0;font-size:.88rem;color:rgba(255,255,255,.72);font-weight:300"><span>🔴</span> Sientes que "ya no puedes más" y esa sensación dura semanas</li>
+    </ul>
+
+    <p>Tu médica o ginecóloga puede evaluar si existe un componente hormonal que merece atención específica. Una psicóloga o terapeuta puede ofrecerte herramientas cognitivas y conductuales para manejar el estrés de raíz. Ambas rutas pueden complementarse — no son excluyentes.</p>
+
+    <p><strong>Pedir ayuda cuando el estrés te está rebasando no es señal de que algo está mal contigo. Es señal de que te conoces y te respetas.</strong></p>
+
+    <div class="cta-box">
+      <div class="cta-pill">C-T</div>
+      <h3>Tu cuerpo manda señales. Aprender a leerlas cambia todo.</h3>
+      <p>MenoTrack es la herramienta gratuita para registrar tus síntomas — incluyendo estrés, insomnio y bochornos — e identificar patrones a lo largo del tiempo.</p>
+      <a class="btn-cta" href="https://polar-multimedia.github.io/flowtrack/" target="_blank" rel="noopener">Descarga MenoTrack</a>
+      <a class="btn-cta-secondary" href="index.html">Leer más artículos</a>
+    </div>
+
+    <div class="disclaimer">
+      <strong>Nota importante:</strong> Este contenido es de carácter informativo y no sustituye la consulta médica. Consulta a tu médico ante cualquier síntoma persistente, especialmente si experimentas niveles altos de estrés combinados con síntomas del climaterio.
+    </div>
+
+    <div class="fuentes-wrap">
+      <details class="fuentes-details">
+        <summary class="fuentes-summary">
+          <span>📚</span> Ver fuentes
+          <span class="fuentes-chevron">›</span>
+        </summary>
+        <div class="fuentes-body">
+          <p class="fuentes-note">Todas las fuentes referenciadas en este artículo son publicaciones científicas verificables o recursos de organizaciones de salud reconocidas.</p>
+          <ul class="fuentes-list">
+            <li>North American Menopause Society (NAMS). <em>Mental Health and Menopause.</em> <a href="https://www.menopause.org/for-women/menopauseflashes/mental-health-and-menopause" target="_blank" rel="noopener">https://www.menopause.org/for-women/menopauseflashes/mental-health-and-menopause</a></li>
+            <li>Epel ES, et al. <em>Stress and body shape: Stress-induced cortisol secretion is consistently greater among women with central fat.</em> PubMed PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/29296395/" target="_blank" rel="noopener">29296395</a>. 2018.</li>
+            <li>Seeman TE, et al. <em>Allostatic load as a marker of cumulative biological risk: MacArthur studies of successful aging.</em> Proceedings of the National Academy of Sciences. 2001. PubMed PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/11434512/" target="_blank" rel="noopener">11434512</a></li>
+            <li>Flores-Ramos M, et al. <em>Síntomas depresivos y ansiedad durante la perimenopausia.</em> Scielo México. 2016. <a href="https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0185-33252016000200003" target="_blank" rel="noopener">https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0185-33252016000200003</a></li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+  </div>
+</div>
+
+<section class="related">
+  <div class="related-title">Sigue leyendo en FemeNews</div>
+  <div class="related-grid">
+    <a class="related-card" href="articulo-animo-climaterio.html">
+      <div class="related-img"><img src="art-animo.png" alt="El climaterio y el ánimo"></div>
+      <div class="related-body">
+        <div class="related-cat">💚 Ánimo</div>
+        <div class="related-card-title">El climaterio y el ánimo: por qué te sientes diferente</div>
+      </div>
+    </a>
+    <a class="related-card" href="articulo-sueno-fatiga.html">
+      <div class="related-img"><img src="art8-sueno.png" alt="Insomnio y fatiga en el climaterio"></div>
+      <div class="related-body">
+        <div class="related-cat">😴 Energía</div>
+        <div class="related-card-title">Insomnio, fatiga y niebla mental: cómo el climaterio afecta tu energía</div>
+      </div>
+    </a>
+    <a class="related-card" href="articulo-niebla-mental.html">
+      <div class="related-img"><img src="art-niebla.png" alt="Niebla mental en el climaterio"></div>
+      <div class="related-body">
+        <div class="related-cat">🧠 Cognición</div>
+        <div class="related-card-title">Niebla mental en el climaterio: cuando tu mente se siente entre algodones</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">C-tech®</div>
+  <p class="footer-legal">FemeNews es una plataforma de contenido informativo sobre salud femenina producida por C-Tech. Este contenido es de carácter educativo y no sustituye la orientación médica profesional. Consulta siempre a tu médico ante cualquier síntoma o decisión de salud.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>¿Olvidos o algo más? Cuándo preocuparse por la memoria en el climaterio — C-Tech®</title>
+<meta name="description" content="Los olvidos en el climaterio son frecuentes y en la mayoría de los casos temporales. Aprende a distinguirlos de señales que sí requieren evaluación neurológica, y qué factores los agravan.">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--teal:#4ECBCA;--teal-light:#7EDEDD;--teal-pale:#C8F0EF;--teal-glow:rgba(78,203,202,0.22);--pink:#E91E8C;--dark:#0d0010;--dark-card:rgba(255,255,255,0.04);--text:#fff;--text-muted:rgba(255,255,255,0.62);--radius:16px}
+html{scroll-behavior:smooth}
+body{font-family:'Lexend',sans-serif;background:var(--dark);color:var(--text);overflow-x:hidden;line-height:1.7}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:66px;background:rgba(13,0,16,0.9);backdrop-filter:blur(20px);border-bottom:1px solid rgba(78,203,202,0.15)}
+.nav-logo{font-family:'Dancing Script',cursive;font-size:1.7rem;font-weight:700;background:linear-gradient(135deg,#fff,var(--teal-light),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none}
+.nav-back{color:rgba(255,255,255,0.55);text-decoration:none;font-size:0.78rem;font-weight:500;transition:color .3s}
+.nav-back:hover{color:var(--teal-light)}
+.nav-cta{background:linear-gradient(135deg,var(--teal),#2aadac);color:#0d0010;border:none;border-radius:50px;padding:.45rem 1.2rem;font-family:'Lexend',sans-serif;font-size:.75rem;font-weight:700;cursor:pointer;text-decoration:none}
+.article-hero{margin-top:66px;position:relative;height:60vh;min-height:420px;overflow:hidden;display:flex;align-items:flex-end}
+.article-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(13,0,16,1) 0%,rgba(13,0,16,0.55) 40%,rgba(13,0,16,0.15) 100%)}
+.hero-gradient{position:absolute;inset:0;background:linear-gradient(135deg,#0a0a28 0%,#181830 50%,#0a1040 100%);opacity:.75}
+.hero-meta{position:relative;z-index:2;padding:0 8% 3rem;width:100%}
+.art-category{display:inline-block;background:linear-gradient(135deg,#2aadac,var(--teal));color:#0d0010;padding:.25rem .85rem;border-radius:50px;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1rem}
+.art-title{font-size:clamp(1.8rem,4vw,3.2rem);font-weight:800;line-height:1.15;max-width:800px;margin-bottom:1rem}
+.art-info{display:flex;gap:1.5rem;flex-wrap:wrap;font-size:.75rem;color:rgba(255,255,255,0.5)}
+.article-wrap{max-width:780px;margin:0 auto;padding:4rem 5%}
+.article-body h2{font-size:1.4rem;font-weight:700;margin:2.5rem 0 1rem;background:linear-gradient(135deg,var(--teal-light),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.article-body h3{font-size:1.1rem;font-weight:600;margin:2rem 0 .75rem;color:var(--teal-light)}
+.article-body p{color:rgba(255,255,255,0.78);margin-bottom:1.2rem;font-size:.97rem;font-weight:300;line-height:1.85}
+.article-body strong{color:#fff;font-weight:600}
+.article-body em{color:var(--teal-pale);font-style:normal}
+.stat-box{background:linear-gradient(135deg,rgba(78,203,202,0.12),rgba(42,173,172,0.06));border:1px solid rgba(78,203,202,0.25);border-radius:var(--radius);padding:1.5rem 2rem;margin:2rem 0;position:relative;overflow:hidden}
+.stat-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--teal-light))}
+.stat-box .stat-num{font-size:2.2rem;font-weight:900;background:linear-gradient(135deg,var(--teal-light),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
+.stat-box .stat-desc{font-size:.82rem;color:var(--text-muted);margin-top:.3rem}
+.quote-block{border-left:3px solid var(--teal);padding:1.2rem 1.5rem;margin:2rem 0;background:rgba(78,203,202,0.06);border-radius:0 12px 12px 0}
+.quote-block p{font-size:1.05rem;font-style:italic;color:var(--teal-pale);margin:0;font-weight:300}
+.quote-source{font-size:.72rem;color:var(--text-muted);margin-top:.5rem}
+.action-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
+.action-card{background:var(--dark-card);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:1.1rem 1.25rem}
+.action-card .ac-icon{font-size:1.3rem;margin-bottom:.5rem}
+.action-card .ac-title{font-size:.85rem;font-weight:600;margin-bottom:.3rem}
+.action-card .ac-text{font-size:.75rem;color:rgba(255,255,255,.55);font-weight:300;line-height:1.5}
+.alert-box{background:linear-gradient(135deg,rgba(233,30,140,0.1),rgba(180,0,100,0.05));border:1px solid rgba(233,30,140,0.3);border-radius:var(--radius);padding:1.5rem 2rem;margin:2rem 0;position:relative;overflow:hidden}
+.alert-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--pink),#c2157a)}
+.alert-box .alert-title{font-size:.85rem;font-weight:700;color:var(--pink);margin-bottom:.75rem;display:flex;align-items:center;gap:.5rem}
+.alert-list{list-style:none;margin:0}
+.alert-list li{display:flex;align-items:flex-start;gap:.75rem;padding:.5rem 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:.88rem;color:rgba(255,255,255,.72);font-weight:300}
+.alert-list li:last-child{border-bottom:none}
+.alert-list li .al-icon{flex-shrink:0;margin-top:.05rem}
+.diff-table{width:100%;border-collapse:collapse;margin:1.5rem 0}
+.diff-table th{background:rgba(78,203,202,0.12);color:var(--teal-light);font-size:.78rem;font-weight:600;padding:.7rem 1rem;text-align:left;border-bottom:1px solid rgba(78,203,202,0.2)}
+.diff-table td{padding:.65rem 1rem;font-size:.82rem;color:rgba(255,255,255,.7);border-bottom:1px solid rgba(255,255,255,0.06);font-weight:300}
+.diff-table tr:last-child td{border-bottom:none}
+.diff-table td:first-child{color:rgba(255,255,255,.85)}
+.normal-col{color:rgba(78,203,202,.85)!important}
+.alerta-col{color:rgba(233,30,140,.9)!important}
+.cta-box{background:linear-gradient(135deg,rgba(78,203,202,0.12),rgba(42,173,172,0.06));border:1px solid rgba(78,203,202,0.3);border-radius:20px;padding:2rem 2.5rem;margin:3rem 0;text-align:center;position:relative;overflow:hidden}
+.cta-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--teal-light),var(--teal))}
+.cta-pill{width:70px;height:40px;background:linear-gradient(135deg,var(--teal-light),var(--teal),#2aadac);border-radius:50px;margin:0 auto 1rem;box-shadow:0 0 25px var(--teal-glow);display:flex;align-items:center;justify-content:center;font-family:'Dancing Script',cursive;font-size:.75rem;color:rgba(13,0,16,.9);font-weight:700}
+.cta-box h3{font-size:1.2rem;font-weight:700;margin-bottom:.6rem}
+.cta-box p{color:var(--text-muted);font-size:.85rem;font-weight:300;margin-bottom:1.2rem}
+.btn-cta{background:linear-gradient(135deg,var(--teal),#2aadac);color:#0d0010;text-decoration:none;border-radius:50px;padding:.75rem 2rem;font-family:'Lexend',sans-serif;font-size:.82rem;font-weight:700;display:inline-block;box-shadow:0 0 25px var(--teal-glow)}
+.btn-cta-secondary{background:transparent;color:var(--teal);text-decoration:none;border-radius:50px;padding:.7rem 1.8rem;font-family:'Lexend',sans-serif;font-size:.82rem;font-weight:600;display:inline-block;border:1px solid rgba(78,203,202,0.4);margin-left:.75rem}
+.disclaimer{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.2rem 1.5rem;margin:2rem 0;font-size:.72rem;color:rgba(255,255,255,.35);line-height:1.6}
+.disclaimer strong{color:rgba(255,255,255,.5)}
+.disclaimer-prominent{background:linear-gradient(135deg,rgba(233,30,140,0.08),rgba(180,0,100,0.04));border:1px solid rgba(233,30,140,0.25);border-radius:14px;padding:1.4rem 1.8rem;margin:2.5rem 0;font-size:.82rem;color:rgba(255,255,255,.65);line-height:1.7}
+.disclaimer-prominent strong{color:rgba(233,30,140,.9);font-size:.85rem}
+.disclaimer-prominent p{margin:0;font-weight:300;color:rgba(255,255,255,.65)}
+.menotrack-strip{display:flex;align-items:center;justify-content:space-between;gap:1rem;background:rgba(78,203,202,0.08);border:1px solid rgba(78,203,202,0.2);border-radius:16px;padding:1.1rem 1.4rem;margin:2.5rem 0;flex-wrap:wrap}
+.mt-text{display:flex;align-items:center;gap:.85rem;flex:1;min-width:0}
+.mt-icon{font-size:1.6rem;flex-shrink:0}
+.mt-title{font-size:.88rem;font-weight:700;color:#fff;margin-bottom:.15rem}
+.mt-sub{font-size:.75rem;color:rgba(255,255,255,.5);font-weight:300;line-height:1.4}
+.mt-btn{background:linear-gradient(135deg,#4ECBCA,#2aadac);color:#0d0010;text-decoration:none;border-radius:50px;padding:.55rem 1.3rem;font-size:.78rem;font-weight:700;white-space:nowrap;flex-shrink:0}
+.related{padding:4rem 5%;border-top:1px solid rgba(255,255,255,0.07);max-width:1100px;margin:0 auto}
+.related-title{font-size:1.1rem;font-weight:700;margin-bottom:1.5rem;color:var(--teal-light)}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.2rem}
+.related-card{background:var(--dark-card);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius);overflow:hidden;text-decoration:none;color:inherit;display:block;transition:all .3s}
+.related-card:hover{border-color:rgba(78,203,202,0.35);transform:translateY(-4px)}
+.related-img{aspect-ratio:16/9;overflow:hidden;background:rgba(78,203,202,0.08)}
+.related-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.related-card:hover .related-img img{transform:scale(1.05)}
+.related-body{padding:1rem}
+.related-cat{font-size:.65rem;font-weight:700;color:var(--teal);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem}
+.related-card-title{font-size:.85rem;font-weight:600;line-height:1.35}
+footer{background:rgba(0,0,0,.4);border-top:1px solid rgba(78,203,202,0.12);padding:2rem 5%;text-align:center}
+.footer-logo{font-family:'Dancing Script',cursive;font-size:1.6rem;font-weight:700;background:linear-gradient(135deg,#fff,var(--teal-light),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.4rem}
+.footer-legal{font-size:.68rem;color:rgba(255,255,255,.25);max-width:600px;margin:0 auto;line-height:1.6}
+@media(max-width:600px){.action-grid{grid-template-columns:1fr}.related-grid{grid-template-columns:1fr}.art-title{font-size:1.6rem}.article-wrap{padding:2.5rem 5%}.menotrack-strip{flex-direction:column;align-items:flex-start}.mt-btn{width:100%;text-align:center}.btn-cta-secondary{margin-left:0;margin-top:.5rem;display:block}}
+.fuentes-wrap{margin:2rem 0 0}
+.fuentes-details{border:1px solid rgba(78,203,202,.2);border-radius:12px;overflow:hidden}
+.fuentes-summary{display:flex;align-items:center;gap:.75rem;padding:1rem 1.25rem;cursor:pointer;list-style:none;background:rgba(78,203,202,.05);font-size:.82rem;font-weight:600;color:var(--teal);transition:background .2s;user-select:none}
+.fuentes-summary::-webkit-details-marker{display:none}
+.fuentes-summary:hover{background:rgba(78,203,202,.1)}
+.fuentes-chevron{margin-left:auto;font-size:1rem;transition:transform .25s}
+.fuentes-details[open] .fuentes-chevron{transform:rotate(90deg)}
+.fuentes-body{padding:1.25rem 1.5rem;border-top:1px solid rgba(78,203,202,.12)}
+.fuentes-note{font-size:.72rem;color:rgba(255,255,255,.4);margin-bottom:.75rem;font-style:italic}
+.fuentes-list{padding-left:1.1rem;margin:0}
+.fuentes-list li{font-size:.76rem;color:rgba(255,255,255,.55);margin-bottom:.6rem;line-height:1.5}
+.fuentes-list li a{color:var(--teal);text-decoration:none;word-break:break-all}
+.fuentes-list li a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html">C-tech®</a>
+  <a class="nav-back" href="index.html">← Volver al inicio</a>
+  <a class="nav-cta" href="index.html#sobre-ctech">Conoce C-Tech</a>
+</nav>
+
+<div class="article-hero">
+  <div class="hero-gradient"></div>
+  <img src="art-memoria.png" alt="Mujer madura pensativa, mirando hacia afuera de una ventana, expresión reflexiva y serena">
+  <div class="hero-overlay"></div>
+  <div class="hero-meta">
+    <div class="art-category">🧠 P3 · Señales de alerta</div>
+    <h1 class="art-title">¿Olvidos o algo más? Cuándo preocuparse por la memoria en el climaterio</h1>
+    <div class="art-info">
+      <span>📅 Junio 2026</span><span>⏱ 7 min de lectura</span><span>🔬 PubMed · NAMS · Scielo México</span>
+    </div>
+  </div>
+</div>
+
+<div class="article-wrap">
+  <div class="article-body">
+
+    <div class="disclaimer-prominent">
+      <strong>⚠️ Nota importante antes de continuar:</strong>
+      <p>Este contenido es de carácter informativo y no sustituye la consulta médica. Si tienes dudas sobre tu memoria o cognición, consulta a tu médico — no esperes a que "se ponga peor". La evaluación temprana marca la diferencia.</p>
+    </div>
+
+    <p>¿Entras a la cocina y no recuerdas para qué? ¿Se te va el nombre de alguien que conoces de toda la vida, justo cuando más lo necesitas? ¿Sientes que tu mente ya no es tan ágil como antes? Si estás en el climaterio, probablemente ya te lo estás preguntando: <strong>¿esto es normal, o debo preocuparme?</strong></p>
+
+    <p>La respuesta honesta es: depende. Y esa distinción importa. La mayoría de los olvidos en el climaterio son una respuesta transitoria y explicable a los cambios hormonales que atraviesa tu cerebro. Pero hay señales que sí requieren evaluación médica, y reconocerlas a tiempo hace toda la diferencia. Vamos por partes.</p>
+
+    <h2>Lo que el estrógeno tiene que ver con tu memoria</h2>
+
+    <p>El estrógeno no solo actúa en el útero o los ovarios. Durante décadas, ha funcionado como un <strong>agente neuroprotector silencioso</strong> en tu cerebro. Una de sus funciones más documentadas es la de modular la actividad del hipocampo — la región cerebral que convierte experiencias en recuerdos y gestiona la memoria a corto plazo.</p>
+
+    <p>Cuando los niveles de estrógeno comienzan a descender durante la perimenopausia y la menopausia, el hipocampo recibe menos estímulo. La formación de nuevos recuerdos puede volverse menos eficiente. <em>La velocidad de procesamiento puede disminuir. La concentración sostenida puede sentirse más difícil.</em> Esto no es imaginación: es biología.</p>
+
+    <div class="stat-box">
+      <div class="stat-num">60%</div>
+      <div class="stat-desc">de las mujeres en perimenopausia y postmenopausia reporta algún grado de dificultad cognitiva — olvidos, niebla mental o problemas de concentración. La mayoría son síntomas transitorios. — Epperson CN et al., PubMed PMID 33853459, 2021</div>
+    </div>
+
+    <p>Investigaciones como las de Weber y colaboradores (PubMed PMID 23487804, 2013) han documentado que el estrógeno modula directamente los sistemas de neurotransmisores implicados en la memoria y el aprendizaje, y que su descenso genera una ventana de mayor vulnerabilidad cognitiva. La buena noticia: en la mayoría de las mujeres, esta vulnerabilidad es temporal y mejora una vez que el organismo se adapta al nuevo equilibrio hormonal.</p>
+
+    <div class="quote-block">
+      <p>"Las dificultades cognitivas durante la transición menopáusica son reales y frecuentes. En la mayoría de los casos representan una etapa, no un destino."</p>
+      <div class="quote-source">— North American Menopause Society (NAMS), Cognitive Changes and Menopause</div>
+    </div>
+
+    <h2>Los olvidos normales del climaterio: reconocerlos</h2>
+
+    <p>Hay un tipo de olvido que, aunque frustrante, entra dentro de lo esperable durante esta etapa. <strong>Son los que los neurólogos llaman "olvidos benignos"</strong>: pequeños fallos en la memoria de trabajo y el acceso léxico que no afectan tu capacidad de funcionar en el día a día.</p>
+
+    <p>Se caracterizan por ser intermitentes, por aparecer en momentos de cansancio o estrés, y — lo más importante — por no interferir con tu autonomía. Tú misma los notas, los reportas, y con frecuencia los puedes compensar con estrategias simples como listas, alarmas o rutinas.</p>
+
+    <p>También es fundamental entender que el rendimiento cognitivo no es lineal: el estrés, el sueño deficiente, la ansiedad y la sobrecarga mental pueden hacer que cualquier persona — sea o no climaterio — rinda menos cognitivamente. Durante el climaterio, estos factores se suman y amplifican la percepción de "tengo mala memoria".</p>
+
+    <h2>Olvido benigno vs. señal de alerta: la tabla que necesitas</h2>
+
+    <p>Esta distinción es la clave. No para generar miedo, sino para darte claridad. Un mismo "olvido" puede ser completamente diferente dependiendo de su naturaleza:</p>
+
+    <table class="diff-table">
+      <thead>
+        <tr>
+          <th>Situación</th>
+          <th class="normal-col">✅ Olvido benigno (climaterio)</th>
+          <th class="alerta-col">⚠️ Señal que requiere evaluación</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Las llaves del coche</td>
+          <td class="normal-col">Las dejaste en un lugar inusual y las encuentras al buscar</td>
+          <td class="alerta-col">Las guardas en sitios completamente ilógicos y no recuerdas haberlas movido</td>
+        </tr>
+        <tr>
+          <td>Un nombre propio</td>
+          <td class="normal-col">Se te va el nombre un momento y regresa solo o con una pista</td>
+          <td class="alerta-col">Olvidas por completo quién es una persona cercana, familia o amiga de años</td>
+        </tr>
+        <tr>
+          <td>Entrar a un cuarto</td>
+          <td class="normal-col">Olvidaste para qué fuiste, pero al regresar al cuarto anterior lo recuerdas</td>
+          <td class="alerta-col">No recuerdas haber ido al cuarto ni cuándo lo hiciste</td>
+        </tr>
+        <tr>
+          <td>Llegar a un lugar conocido</td>
+          <td class="normal-col">Manejas "en piloto automático" y llegas sin recordar el trayecto</td>
+          <td class="alerta-col">Te desorientas en rutas conocidas o no reconoces un lugar familiar</td>
+        </tr>
+        <tr>
+          <td>Citas o compromisos</td>
+          <td class="normal-col">Se te olvida una cita no anotada; con agenda, sin problema</td>
+          <td class="alerta-col">Olvidas eventos importantes aunque los anotaste o alguien te lo recordó ese día</td>
+        </tr>
+        <tr>
+          <td>Conversaciones recientes</td>
+          <td class="normal-col">No recuerdas exactamente cómo dijiste algo, pero sí el contenido general</td>
+          <td class="alerta-col">No recuerdas haber tenido conversaciones que ocurrieron hace horas</td>
+        </tr>
+        <tr>
+          <td>Actividades cotidianas</td>
+          <td class="normal-col">Dudas si apagaste la estufa; regresas a verificar</td>
+          <td class="alerta-col">Olvidaste cómo se hace algo que has hecho miles de veces (cocinar un platillo básico, usar el cajero)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>La diferencia central: en los olvidos benignos, <strong>tú misma los notas y puedes compensarlos</strong>. En las señales de alerta, suele ser la familia o las personas cercanas quienes los detectan primero — porque la persona afectada no es consciente del olvido.</p>
+
+    <h2>Los cinco factores que agravan los olvidos (y que puedes modificar)</h2>
+
+    <p>Incluso cuando los olvidos son benignos, hay factores que los intensifican significativamente. La buena noticia: todos son modificables.</p>
+
+    <div class="action-grid">
+      <div class="action-card">
+        <div class="ac-icon">😴</div>
+        <div class="ac-title">Sueño deficiente</div>
+        <div class="ac-text">Durante el sueño profundo, el cerebro consolida recuerdos del día. Los bochornos nocturnos fragmentan ese proceso. Priorizar el sueño no es un lujo — es higiene cognitiva.</div>
+      </div>
+      <div class="action-card">
+        <div class="ac-icon">🌀</div>
+        <div class="ac-title">Estrés crónico</div>
+        <div class="ac-text">El cortisol elevado afecta directamente el hipocampo, dificultando la formación y recuperación de recuerdos. El estrés no solo te agota: literalmente interfiere con tu memoria.</div>
+      </div>
+      <div class="action-card">
+        <div class="ac-icon">🌞</div>
+        <div class="ac-title">Déficit de vitamina D</div>
+        <div class="ac-text">La vitamina D tiene receptores en el cerebro y se asocia con la función cognitiva. Su deficiencia — muy común en México — se ha relacionado con mayor riesgo de deterioro cognitivo.</div>
+      </div>
+      <div class="action-card">
+        <div class="ac-icon">🧬</div>
+        <div class="ac-title">Déficit de vitamina B12</div>
+        <div class="ac-text">La B12 es esencial para la mielina que protege los nervios y para la función neurológica. Su deficiencia produce olvidos, lentitud mental y hormigueos que a veces se confunden con envejecimiento.</div>
+      </div>
+    </div>
+
+    <div class="action-grid">
+      <div class="action-card">
+        <div class="ac-icon">🪑</div>
+        <div class="ac-title">Sedentarismo</div>
+        <div class="ac-text">El ejercicio aeróbico aumenta el flujo sanguíneo cerebral, estimula el factor neurotrófico BDNF y mejora la memoria. Sin movimiento, el cerebro recibe menos de lo que necesita para funcionar bien.</div>
+      </div>
+      <div class="action-card">
+        <div class="ac-icon">📵</div>
+        <div class="ac-title">Sobrecarga digital</div>
+        <div class="ac-text">La hiperconectividad y la multitarea constante fragmentan la atención sostenida, que ya es más vulnerable en el climaterio. Reducir las interrupciones digitales tiene un efecto real en la cognición.</div>
+      </div>
+    </div>
+
+    <p>Sobre la vitamina D y el calcio: durante el climaterio, los requerimientos de ambos nutrientes aumentan y con frecuencia no se cubren solo con la alimentación. Un suplemento OTC de libre acceso como C-Tech — que aporta calcio y vitamina D3 en una presentación práctica — puede acompañar el cuidado nutricional de esta etapa. C-Tech no es un tratamiento cognitivo, sino parte del cuidado integral del organismo durante el climaterio.</p>
+
+    <div class="stat-box">
+      <div class="stat-num">40%</div>
+      <div class="stat-desc">de la población adulta en México tiene niveles insuficientes de vitamina D, un nutriente con receptores directos en el cerebro y asociado a la función cognitiva. — Referencia Scielo México: Rev Med Inst Mex Seguro Soc 2015</div>
+    </div>
+
+    <h2>Cuándo pedir una evaluación neurológica — no lo dejes pasar</h2>
+
+    <p>Hay una tendencia muy humana a minimizar los síntomas cognitivos: "son los años", "estoy estresada", "así somos todas en esta edad". Y muchas veces eso es cierto. Pero también existe el riesgo contrario: esperar demasiado cuando una evaluación temprana podría marcar la diferencia.</p>
+
+    <p>La NAMS y diversas guías de práctica clínica son claras: <strong>la evaluación neurológica no es para "cuando se pone muy grave" — es una herramienta preventiva que cualquier mujer puede solicitar</strong>, especialmente si los olvidos interfieren con su vida cotidiana o generan angustia.</p>
+
+    <div class="alert-box">
+      <div class="alert-title">⚠️ Señales que justifican consulta médica sin esperar</div>
+      <ul class="alert-list">
+        <li><span class="al-icon">🔴</span> Olvidar eventos, conversaciones o citas que sí ocurrieron y que fueron significativas</li>
+        <li><span class="al-icon">🔴</span> Perderte en rutas conocidas o no reconocer lugares familiares</li>
+        <li><span class="al-icon">🔴</span> Dificultad para seguir el hilo de conversaciones o películas que antes podías seguir sin problema</li>
+        <li><span class="al-icon">🔴</span> Cambios de personalidad o de humor que las personas cercanas notan antes que tú</li>
+        <li><span class="al-icon">🔴</span> Dificultad para manejar dinero, pagar cuentas o seguir instrucciones de varios pasos</li>
+        <li><span class="al-icon">🔴</span> Olvidar cómo se hacen actividades cotidianas que has realizado por años</li>
+        <li><span class="al-icon">🔴</span> Olvidos que generan situaciones de riesgo — dejar la estufa encendida, no tomar medicamentos</li>
+        <li><span class="al-icon">🔴</span> Síntomas que empeoran progresivamente en semanas o meses, no que van y vienen</li>
+      </ul>
+    </div>
+
+    <p>Si reconoces alguna de estas señales — en ti o en alguien cercano — el camino es directo: primero tu médico de cabecera o ginecóloga, quien puede hacer una valoración inicial y, si lo considera necesario, referirte a neurología o geriatría. Una evaluación cognitiva básica no tarda más de 30 minutos y puede darte información muy valiosa.</p>
+
+    <p><strong>No tienes que esperar a que "se ponga peor" para pedir ayuda.</strong> La evaluación temprana es siempre la decisión correcta.</p>
+
+    <h2>Cómo prepararte para esa consulta</h2>
+
+    <p>Si decides buscar una evaluación, llegar con información hace que la consulta sea mucho más productiva. Algunos pasos concretos:</p>
+
+    <p>Primero, <em>lleva un registro de los episodios</em>: qué ocurrió, cuándo, con qué frecuencia. No basta con decir "me pasa seguido" — los detalles ayudan al médico a evaluar si hay un patrón. Segundo, anota los factores que coinciden con los peores momentos: ¿dormiste mal esa semana? ¿Estás bajo mucho estrés? ¿Cambiaste algún medicamento? Tercero, lleva a un familiar o persona de confianza si puedes — a veces ellos observan cosas que tú no has notado.</p>
+
+    <p>Herramientas como MenoTrack, que permiten registrar síntomas cognitivos día a día junto con otros síntomas del climaterio, pueden ayudarte a construir exactamente ese historial que el médico necesita.</p>
+
+    <div class="menotrack-strip">
+      <div class="mt-text">
+        <div class="mt-icon">🧠</div>
+        <div>
+          <div class="mt-title">Registra tus síntomas cognitivos en MenoTrack</div>
+          <div class="mt-sub">Lleva un diario de olvidos, niebla mental y concentración. Llega a tu consulta con información real, no con "me pasa a veces".</div>
+        </div>
+      </div>
+      <a class="mt-btn" href="https://polar-multimedia.github.io/flowtrack/" target="_blank" rel="noopener">Abrir MenoTrack →</a>
+    </div>
+
+    <h2>Lo que puedes hacer hoy</h2>
+
+    <p>Independientemente de si decides buscar una evaluación o no, hay hábitos que la evidencia respalda para sostener la salud cognitiva durante el climaterio:</p>
+
+    <p><strong>Muévete a diario.</strong> Treinta minutos de caminata aeróbica estimulan el BDNF, el factor de crecimiento neuronal que protege el hipocampo. No es necesario que sea intenso — constante es suficiente.</p>
+
+    <p><strong>Protege el sueño como una prioridad clínica.</strong> No como un lujo. La consolidación de la memoria ocurre mientras duermes. Si los bochornos te fragmentan el sueño, habla con tu médico sobre estrategias para manejarlo.</p>
+
+    <p><strong>Revisa tu vitamina D y B12.</strong> Pide al médico un análisis de laboratorio. Son deficiencias frecuentes, corregibles, y que tienen un impacto real en la cognición.</p>
+
+    <p><strong>Aprende cosas nuevas.</strong> El cerebro que se desafía forma conexiones nuevas. Un idioma, un instrumento, un tipo de lectura diferente al habitual — el estímulo cognitivo tiene un efecto protector documentado.</p>
+
+    <p><strong>Reduce el ruido digital.</strong> La atención dividida es el enemigo silencioso de la memoria. Periodos de trabajo sin notificaciones, lecturas largas, conversaciones sin pantallas de por medio — todo suma.</p>
+
+    <div class="cta-box">
+      <div class="cta-pill">C-T</div>
+      <h3>Tu memoria merece atención — y tú la mereces también.</h3>
+      <p>MenoTrack es la herramienta gratuita para registrar síntomas cognitivos, de sueño y energía durante el climaterio. Llega a tu consulta con datos, no con dudas.</p>
+      <a class="btn-cta" href="https://polar-multimedia.github.io/flowtrack/" target="_blank" rel="noopener">Descarga MenoTrack</a>
+      <a class="btn-cta-secondary" href="index.html">Leer más artículos</a>
+    </div>
+
+    <div class="disclaimer">
+      <strong>Nota importante:</strong> Este contenido es de carácter informativo y no sustituye la consulta médica. Consulta siempre a tu médico ante cualquier síntoma cognitivo, cambio en la memoria o preocupación sobre tu función neurológica. La evaluación médica temprana es siempre la mejor decisión.
+    </div>
+
+    <div class="fuentes-wrap">
+      <details class="fuentes-details">
+        <summary class="fuentes-summary">
+          <span>📚</span> Ver fuentes
+          <span class="fuentes-chevron">›</span>
+        </summary>
+        <div class="fuentes-body">
+          <p class="fuentes-note">Todas las fuentes referenciadas en este artículo son publicaciones científicas verificables o recursos de organizaciones de salud reconocidas.</p>
+          <ul class="fuentes-list">
+            <li>Weber MT, et al. <em>Cognition in perimenopause: the effect of transition stage.</em> Menopause. 2013. PubMed PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/23487804/" target="_blank" rel="noopener">23487804</a></li>
+            <li>Epperson CN, et al. <em>Menopause effects on verbal memory: findings from a longitudinal community cohort.</em> Journal of Clinical Endocrinology &amp; Metabolism. 2021. PubMed PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/33853459/" target="_blank" rel="noopener">33853459</a></li>
+            <li>North American Menopause Society (NAMS). <em>Cognitive Changes and Menopause.</em> <a href="https://www.menopause.org/for-women/menopauseflashes/cognitive-changes-and-menopause" target="_blank" rel="noopener">https://www.menopause.org/for-women/menopauseflashes/cognitive-changes-and-menopause</a></li>
+            <li>Flores-Ramos M, et al. <em>El estrógeno y el cerebro femenino: implicaciones durante la perimenopausia.</em> Scielo México — Revista Médica del Instituto Mexicano del Seguro Social. 2015. <a href="https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0016-38132015000100010" target="_blank" rel="noopener">https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0016-38132015000100010</a></li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+  </div>
+</div>
+
+<section class="related">
+  <div class="related-title">Sigue leyendo en FemeNews</div>
+  <div class="related-grid">
+    <a class="related-card" href="articulo-niebla-mental.html">
+      <div class="related-img"><img src="art-niebla.png" alt="Niebla mental en el climaterio"></div>
+      <div class="related-body">
+        <div class="related-cat">🧠 Cognición</div>
+        <div class="related-card-title">Niebla mental en el climaterio: cuando tu mente se siente entre algodones</div>
+      </div>
+    </a>
+    <a class="related-card" href="articulo-habitos-claridad-mental.html">
+      <div class="related-img"><img src="art-claridad.png" alt="Hábitos para la claridad mental"></div>
+      <div class="related-body">
+        <div class="related-cat">🧠 Hábitos</div>
+        <div class="related-card-title">7 hábitos para recuperar la claridad mental</div>
+      </div>
+    </a>
+    <a class="related-card" href="articulo-sueno-fatiga.html">
+      <div class="related-img"><img src="art8-sueno.png" alt="Insomnio y fatiga en el climaterio"></div>
+      <div class="related-body">
+        <div class="related-cat">😴 Energía</div>
+        <div class="related-card-title">Insomnio, fatiga y niebla mental: cómo el climaterio afecta tu energía</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">C-tech®</div>
+  <p class="footer-legal">FemeNews es una plataforma de contenido informativo sobre salud femenina producida por C-Tech. Este contenido es de carácter educativo y no sustituye la orientación médica profesional. Consulta siempre a tu médico ante cualquier síntoma o decisión de salud.</p>
+</footer>
+
+</body>
+</html>

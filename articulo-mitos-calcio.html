@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los mitos del calcio que te impiden cuidar tus huesos | FemeNews · C-Tech</title>
+  <meta name="description" content="¿Solo la leche tiene calcio? ¿Los suplementos dañan el corazón? Clara Díaz desmiente los 5 mitos más comunes sobre el calcio con evidencia científica real.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --teal: #4ECBCA;
+      --pink: #E91E8C;
+      --dark: #0d0010;
+      --navy: #1A3A5C;
+      --body-text: #2C2C2C;
+      --font: 'Lexend', sans-serif;
+    }
+
+    body {
+      font-family: var(--font);
+      background: var(--dark);
+      color: #e8e8e8;
+      line-height: 1.7;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(13, 0, 16, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(78, 203, 202, 0.15);
+      padding: 0 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+
+    .nav-logo {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--teal);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+
+    .nav-logo span { color: var(--pink); }
+
+    .nav-back {
+      font-size: .8rem;
+      font-weight: 500;
+      color: rgba(255,255,255,.55);
+      text-decoration: none;
+      transition: color .2s;
+    }
+
+    .nav-back:hover { color: var(--teal); }
+
+    /* ── HERO ── */
+    .article-hero {
+      position: relative;
+      min-height: 420px;
+      display: flex;
+      align-items: flex-end;
+      padding: 3rem 1.5rem 2.5rem;
+      background:
+        linear-gradient(to bottom, rgba(13,0,16,0.25) 0%, rgba(13,0,16,0.88) 100%),
+        linear-gradient(135deg, #1a2a0a 0%, #2a3a10 50%, #1a3010 100%);
+      background-size: cover, cover;
+      overflow: hidden;
+    }
+
+    .article-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url('art-mitos-calcio.png');
+      background-size: cover;
+      background-position: center top;
+      opacity: 0.22;
+      mix-blend-mode: luminosity;
+    }
+
+    .hero-inner {
+      position: relative;
+      max-width: 780px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .hero-cat {
+      display: inline-block;
+      background: var(--pink);
+      color: #fff;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding: .3rem .85rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+
+    .hero-title {
+      font-size: clamp(1.75rem, 5vw, 2.8rem);
+      font-weight: 800;
+      line-height: 1.15;
+      color: #fff;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-meta {
+      font-size: .8rem;
+      color: rgba(255,255,255,.55);
+      display: flex;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .hero-meta span { display: flex; align-items: center; gap: .35rem; }
+
+    /* ── LAYOUT ── */
+    .article-wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+
+    /* ── BODY TEXT ── */
+    .article-body h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--teal);
+      margin: 2.2rem 0 .75rem;
+      line-height: 1.3;
+    }
+
+    .article-body h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #fff;
+      margin: 1.6rem 0 .5rem;
+    }
+
+    .article-body p {
+      font-size: .97rem;
+      color: rgba(255,255,255,.78);
+      margin-bottom: 1.1rem;
+    }
+
+    .article-body strong {
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .article-body em {
+      color: var(--teal);
+      font-style: normal;
+    }
+
+    /* ── MYTH CARD ── */
+    .myth-card {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(78,203,202,.18);
+      border-radius: 16px;
+      padding: 1.5rem 1.5rem 1.25rem;
+      margin: 1.75rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .myth-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 4px; height: 100%;
+      background: linear-gradient(180deg, var(--pink), var(--teal));
+      border-radius: 4px 0 0 4px;
+    }
+
+    .myth-label {
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--pink);
+      margin-bottom: .4rem;
+    }
+
+    .myth-false {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: rgba(255,255,255,.6);
+      margin-bottom: .85rem;
+      position: relative;
+      padding-left: 1.4rem;
+    }
+
+    .myth-false::before {
+      content: '✕';
+      position: absolute;
+      left: 0;
+      color: var(--pink);
+      font-weight: 800;
+    }
+
+    .truth-label {
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: .35rem;
+    }
+
+    .myth-truth {
+      font-size: .95rem;
+      color: rgba(255,255,255,.82);
+      line-height: 1.65;
+    }
+
+    /* ── FOOD LIST ── */
+    .food-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: .65rem;
+      margin: 1rem 0 1.25rem;
+      list-style: none;
+      padding: 0;
+    }
+
+    .food-list li {
+      background: rgba(78,203,202,.07);
+      border: 1px solid rgba(78,203,202,.15);
+      border-radius: 10px;
+      padding: .55rem .85rem;
+      font-size: .84rem;
+      color: rgba(255,255,255,.8);
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+
+    .food-list li span { font-size: 1.1rem; }
+
+    /* ── DATA CALLOUT ── */
+    .data-callout {
+      background: linear-gradient(135deg, rgba(78,203,202,.1) 0%, rgba(26,42,10,.6) 100%);
+      border: 1px solid rgba(78,203,202,.25);
+      border-radius: 14px;
+      padding: 1.1rem 1.4rem;
+      margin: 1.5rem 0;
+      font-size: .92rem;
+      color: rgba(255,255,255,.82);
+      line-height: 1.6;
+    }
+
+    .data-callout strong { color: var(--teal); }
+
+    /* ── MENOTRACK STRIP ── */
+    .menotrack-strip {
+      background: linear-gradient(135deg, rgba(78,203,202,.12) 0%, rgba(233,30,140,.1) 100%);
+      border: 1px solid rgba(78,203,202,.25);
+      border-radius: 16px;
+      padding: 1.5rem 1.75rem;
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      margin: 2.5rem 0;
+      flex-wrap: wrap;
+    }
+
+    .strip-icon { font-size: 2.2rem; flex-shrink: 0; }
+
+    .strip-copy { flex: 1; min-width: 200px; }
+
+    .strip-copy strong {
+      display: block;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: .2rem;
+    }
+
+    .strip-copy p {
+      font-size: .82rem;
+      color: rgba(255,255,255,.6);
+      margin: 0;
+    }
+
+    .strip-btn {
+      display: inline-block;
+      background: var(--teal);
+      color: var(--dark);
+      font-family: var(--font);
+      font-size: .82rem;
+      font-weight: 700;
+      padding: .65rem 1.35rem;
+      border-radius: 999px;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: opacity .2s, transform .15s;
+    }
+
+    .strip-btn:hover { opacity: .88; transform: translateY(-1px); }
+
+    /* ── CTA BOX ── */
+    .cta-box {
+      text-align: center;
+      padding: 2.25rem 1.5rem;
+      background: linear-gradient(135deg, rgba(78,203,202,.08) 0%, rgba(233,30,140,.07) 100%);
+      border: 1px solid rgba(78,203,202,.2);
+      border-radius: 20px;
+      margin: 2.5rem 0;
+    }
+
+    .cta-box h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: .5rem;
+    }
+
+    .cta-box p {
+      font-size: .88rem;
+      color: rgba(255,255,255,.55);
+      margin-bottom: 1.4rem;
+    }
+
+    .cta-btns {
+      display: flex;
+      gap: .85rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: var(--teal);
+      color: var(--dark);
+      font-family: var(--font);
+      font-size: .88rem;
+      font-weight: 700;
+      padding: .8rem 1.75rem;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: opacity .2s, transform .15s;
+    }
+
+    .btn-primary:hover { opacity: .88; transform: translateY(-1px); }
+
+    .btn-secondary {
+      display: inline-block;
+      background: transparent;
+      color: var(--teal);
+      font-family: var(--font);
+      font-size: .88rem;
+      font-weight: 600;
+      padding: .8rem 1.75rem;
+      border-radius: 999px;
+      border: 1.5px solid rgba(78,203,202,.45);
+      text-decoration: none;
+      transition: border-color .2s, background .2s;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--teal);
+      background: rgba(78,203,202,.07);
+    }
+
+    /* ── DISCLAIMER ── */
+    .disclaimer {
+      background: rgba(255,255,255,.04);
+      border-left: 3px solid rgba(78,203,202,.4);
+      border-radius: 0 10px 10px 0;
+      padding: .9rem 1.1rem;
+      font-size: .78rem;
+      color: rgba(255,255,255,.45);
+      font-style: italic;
+      margin: 2rem 0;
+      line-height: 1.6;
+    }
+
+    /* ── FUENTES ── */
+    .fuentes-wrap { margin: 2rem 0 0; }
+    .fuentes-details { border: 1px solid rgba(78,203,202,.2); border-radius: 12px; overflow: hidden; }
+    .fuentes-summary { display: flex; align-items: center; gap: .75rem; padding: 1rem 1.25rem; cursor: pointer; list-style: none; background: rgba(78,203,202,.05); font-size: .82rem; font-weight: 600; color: var(--teal); transition: background .2s; user-select: none; }
+    .fuentes-summary::-webkit-details-marker { display: none; }
+    .fuentes-summary:hover { background: rgba(78,203,202,.1); }
+    .fuentes-chevron { margin-left: auto; font-size: 1rem; transition: transform .25s; }
+    .fuentes-details[open] .fuentes-chevron { transform: rotate(90deg); }
+    .fuentes-body { padding: 1.25rem 1.5rem; border-top: 1px solid rgba(78,203,202,.12); }
+    .fuentes-note { font-size: .72rem; color: rgba(255,255,255,.4); margin-bottom: .75rem; font-style: italic; }
+    .fuentes-list { padding-left: 1.1rem; margin: 0; }
+    .fuentes-list li { font-size: .76rem; color: rgba(255,255,255,.55); margin-bottom: .6rem; line-height: 1.5; }
+    .fuentes-list li a { color: var(--teal); text-decoration: none; word-break: break-all; }
+    .fuentes-list li a:hover { text-decoration: underline; }
+
+    /* ── RELATED ── */
+    .related {
+      margin-top: 3.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,.08);
+    }
+
+    .related-title {
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.35);
+      margin-bottom: 1.25rem;
+    }
+
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .related-card {
+      display: block;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: 14px;
+      overflow: hidden;
+      text-decoration: none;
+      transition: border-color .2s, transform .2s;
+    }
+
+    .related-card:hover {
+      border-color: rgba(78,203,202,.3);
+      transform: translateY(-2px);
+    }
+
+    .related-img {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      background: rgba(78,203,202,.06);
+    }
+
+    .related-body { padding: .9rem 1rem; }
+
+    .related-cat {
+      font-size: .68rem;
+      font-weight: 700;
+      color: var(--pink);
+      letter-spacing: .04em;
+      margin-bottom: .35rem;
+    }
+
+    .related-card-title {
+      font-size: .84rem;
+      font-weight: 600;
+      color: rgba(255,255,255,.8);
+      line-height: 1.45;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: .75rem;
+      color: rgba(255,255,255,.22);
+      border-top: 1px solid rgba(255,255,255,.06);
+    }
+
+    footer a { color: var(--teal); text-decoration: none; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .article-hero { min-height: 340px; padding: 2rem 1.1rem 2rem; }
+      .menotrack-strip { flex-direction: column; text-align: center; }
+      .food-list { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">C-Tech<span>®</span> | FemeNews</a>
+  <a href="index.html" class="nav-back">← Todos los artículos</a>
+</nav>
+
+<!-- HERO -->
+<header class="article-hero">
+  <div class="hero-inner">
+    <span class="hero-cat">💡 P1 · Mitos y realidades</span>
+    <h1 class="hero-title">Los mitos del calcio que te impiden cuidar tus huesos</h1>
+    <div class="hero-meta">
+      <span>✍️ Clara Díaz · Periodista de salud femenina</span>
+      <span>📅 24 de junio de 2026</span>
+      <span>⏱ 6 min de lectura</span>
+    </div>
+  </div>
+</header>
+
+<!-- CONTENIDO -->
+<main class="article-wrap">
+  <article class="article-body">
+
+    <p>Hay creencias sobre el calcio que parecen tan lógicas, tan bien establecidas, que nunca se nos ocurre cuestionarlas. Viene en la leche, es para los niños y los viejitos, y si tomas demasiado te dañas el corazón. ¿Verdad? No tan rápido.</p>
+
+    <p>Algunos de los mitos más persistentes sobre nutrición tienen que ver precisamente con el calcio, y en el caso de las mujeres a partir de los 35 años ese malentendido puede tener consecuencias reales en la salud ósea a largo plazo. Hoy revisamos cinco ideas que circulan como verdad y que la evidencia científica desmiente, parcial o completamente.</p>
+
+    <!-- MITO 1 -->
+    <div class="myth-card">
+      <p class="myth-label">Mito 1 de 5</p>
+      <p class="myth-false">"Solo la leche tiene calcio"</p>
+      <p class="truth-label">✔ La realidad científica</p>
+      <p class="myth-truth">La leche es una fuente válida de calcio, pero está lejos de ser la única. La naturaleza —y la gastronomía mexicana— ofrece alternativas igual o incluso más concentradas en calcio elemental que un vaso de leche.</p>
+    </div>
+
+    <p>La Fundación Internacional de Osteoporosis (IOF) documenta que el calcio está presente en una amplia variedad de alimentos, muchos de ellos parte habitual de la cocina mexicana. Aquí algunos que sorprenden:</p>
+
+    <ul class="food-list">
+      <li><span>🐟</span> Sardinas con espina (en lata)</li>
+      <li><span>🥦</span> Brócoli y berza cocidos</li>
+      <li><span>🫘</span> Tofu firme con calcio</li>
+      <li><span>🌽</span> Tortilla de maíz nixtamalizado</li>
+      <li><span>🌰</span> Almendras y ajonjolí</li>
+      <li><span>🥬</span> Quelites y verdolagas</li>
+    </ul>
+
+    <p>La tortilla de maíz nixtamalizado merece un párrafo aparte. El proceso de nixtamalización —cocer el maíz en agua con cal— incrementa sustancialmente el contenido de calcio biodisponible. Una mujer mexicana que come tortillas tres veces al día ya está recibiendo una dosis relevante de calcio sin darse cuenta. El problema es que esa dosis rara vez alcanza sola para cubrir el requerimiento diario recomendado, especialmente en la etapa perimenopáusica.</p>
+
+    <!-- MITO 2 -->
+    <div class="myth-card">
+      <p class="myth-label">Mito 2 de 5</p>
+      <p class="myth-false">"Tomando leche es suficiente"</p>
+      <p class="truth-label">✔ La realidad científica</p>
+      <p class="myth-truth">No importa cuánto calcio consumas si tu cuerpo no puede absorberlo. Y la vitamina D es la llave que abre esa puerta. Sin niveles adecuados de vitamina D, la absorción intestinal de calcio cae de forma significativa, y el calcio que no se absorbe sencillamente se excreta sin haber hecho nada por tus huesos.</p>
+    </div>
+
+    <p>El IMSS, en sus guías de nutrición publicadas en línea, señala que México tiene una prevalencia importante de deficiencia de vitamina D en la población adulta, paradójicamente a pesar de ser un país con muchas horas de sol al año. La razón: la exposición solar directa ha disminuido por el trabajo en interiores, el uso de protector solar y los estilos de vida urbanos.</p>
+
+    <div class="data-callout">
+      <strong>Dato clave:</strong> La vitamina D activa (calcitriol) regula la absorción de calcio en el intestino delgado. Con niveles de vitamina D insuficientes, solo se absorbe entre el 10 y el 15% del calcio ingerido. Con niveles adecuados, esa cifra puede llegar al 30-40%.
+    </div>
+
+    <p>Esto no significa que la leche sea inútil. Significa que la leche —o cualquier otra fuente de calcio— funciona mejor dentro de un esquema donde la vitamina D también está cubierta. La dupla calcio-vitamina D es exactamente eso: una dupla. No funciona bien si solo usas la mitad.</p>
+
+    <!-- MENOTRACK STRIP -->
+    <div class="menotrack-strip">
+      <div class="strip-icon">🦴</div>
+      <div class="strip-copy">
+        <strong>Registra tu nutrición con MenoTrack</strong>
+        <p>Lleva un diario de síntomas y recibe contenido personalizado sobre salud ósea adaptado a tu etapa del climaterio.</p>
+      </div>
+      <a href="https://polar-multimedia.github.io/flowtrack/" class="strip-btn" target="_blank" rel="noopener">Descargar gratis →</a>
+    </div>
+
+    <!-- MITO 3 -->
+    <div class="myth-card">
+      <p class="myth-label">Mito 3 de 5</p>
+      <p class="myth-false">"Los suplementos de calcio dañan el corazón"</p>
+      <p class="truth-label">✔ La realidad científica</p>
+      <p class="myth-truth">Este mito tiene origen en un estudio real, lo que lo hace especialmente complicado de desmontar. En 2010, Bolland y colaboradores publicaron en el <em>British Medical Journal</em> un meta-análisis que sugería una asociación entre el consumo de suplementos de calcio y un mayor riesgo cardiovascular. La noticia corrió como reguero de pólvora. Pero hay contexto crucial que pocas personas conocen.</p>
+    </div>
+
+    <p>El estudio de Bolland (PMID 20671013) se realizó principalmente con suplementos de calcio en dosis elevadas, usados en forma aislada y sin vitamina D. Además, varios análisis posteriores —incluyendo revisiones de la misma IOF— matizaron considerablemente esas conclusiones, señalando que <strong>las dosis adecuadas de calcio, dentro del rango tolerable y acompañadas de vitamina D, no muestran el mismo perfil de riesgo</strong>.</p>
+
+    <p>La clave está en la palabra "megadosis". El límite superior tolerable de calcio establecido por organismos como el Instituto de Medicina de EE.UU. es de <strong>2,500 mg/día</strong> para adultas. Por debajo de ese umbral, y con seguimiento médico, los suplementos de calcio son considerados seguros por la comunidad científica actual. La postura de la IOF es clara: el riesgo documentado aparece con el exceso descontrolado, no con el uso racional en dosis apropiadas.</p>
+
+    <!-- MITO 4 -->
+    <div class="myth-card">
+      <p class="myth-label">Mito 4 de 5</p>
+      <p class="myth-false">"El calcio es solo para niños y personas mayores"</p>
+      <p class="truth-label">✔ La realidad científica</p>
+      <p class="myth-truth">La ventana de mayor pérdida ósea en la mujer no ocurre en la vejez avanzada. Ocurre en los primeros cinco años después de la última menstruación. Durante ese período, una mujer puede perder entre el <strong>3 y el 5% de densidad mineral ósea por año</strong>, lo que suma hasta un 20% de masa ósea total en apenas cinco años.</p>
+    </div>
+
+    <p>Un artículo publicado en la <em>Revista de Investigación Clínica</em> de SciELO México revisó el perfil epidemiológico de la osteoporosis en mujeres mexicanas y encontró que la caída posmenopáusica de estrógenos es el principal acelerador de la pérdida ósea, y que esta pérdida ya puede medirse en la perimenopausia, antes incluso de que la menstruación desaparezca por completo.</p>
+
+    <p>Esto significa que una mujer de 43 años con ciclos irregulares ya está en una ventana de riesgo activo. Esperar a los 65 para "preocuparse por los huesos" es esperar a que el proceso lleve décadas de avance sin intervención. La masa ósea que no se preserva en los 40 y los 50 es extremadamente difícil de recuperar después.</p>
+
+    <!-- MITO 5 -->
+    <div class="myth-card">
+      <p class="myth-label">Mito 5 de 5</p>
+      <p class="myth-false">"Mientras más calcio, mejor"</p>
+      <p class="truth-label">✔ La realidad científica</p>
+      <p class="myth-truth">El calcio no funciona como una cuenta bancaria donde más siempre es mejor. El organismo tiene una capacidad de absorción intestinal limitada, y una vez que se satura ese mecanismo, el calcio excedente no se almacena en los huesos: se excreta o se acumula en tejidos donde no queremos que esté.</p>
+    </div>
+
+    <p>El límite superior tolerable es de <strong>2,500 mg/día</strong> en mujeres adultas (y 2,000 mg/día en mayores de 50 años, según algunas guías). Superar ese umbral de forma sostenida puede provocar hipercalcemia, cálculos renales y, de acuerdo con la controversia que ya revisamos, posibles efectos vasculares. El objetivo no es consumir el máximo posible, sino cubrir la ingesta diaria recomendada de forma consistente: entre <strong>1,000 y 1,200 mg/día</strong> para la mayoría de las mujeres adultas.</p>
+
+    <div class="data-callout">
+      <strong>Referencia práctica:</strong> Un vaso de leche aporta aproximadamente 300 mg de calcio. Para llegar a los 1,000 mg solo con lácteos se necesitarían más de tres porciones al día, algo que la mayoría de las mujeres mexicanas no alcanza habitualmente según datos del IMSS.
+    </div>
+
+    <h2>El calcio en la práctica: lo que sí funciona</h2>
+
+    <p>Desmitificar no es suficiente si no hay algo concreto que lo reemplace. Aquí va la síntesis práctica:</p>
+
+    <p><strong>Distribuye el calcio a lo largo del día.</strong> El intestino absorbe mejor porciones de 500 mg o menos a la vez. Tomar grandes dosis de una sola vez reduce la eficiencia de absorción.</p>
+
+    <p><strong>Combina fuentes alimentarias con suplementación cuando sea necesario.</strong> La dieta mexicana promedio no suele cubrir los requerimientos de calcio por sí sola. Un suplemento OTC como C-Tech puede <em>complementar</em> lo que la alimentación no alcanza —sin reemplazar una dieta variada ni sustituir la orientación de un profesional de salud.</p>
+
+    <p><strong>Asegura también la vitamina D.</strong> El calcio y la vitamina D trabajan en equipo. Sin revisar ambos, la estrategia estará incompleta.</p>
+
+    <p><strong>Consulta con tu médica o médico.</strong> Un análisis de densitometría ósea y un perfil de nutrientes puede darte una imagen real de tu situación actual. La osteoporosis no duele hasta que hay una fractura —y para entonces el proceso lleva años avanzando en silencio.</p>
+
+    <!-- DISCLAIMER -->
+    <p class="disclaimer">
+      Este contenido es de carácter informativo y no sustituye la consulta médica. Ante cualquier duda sobre tu ingesta de calcio, vitamina D o salud ósea, consulta a tu médica o médico de confianza.
+    </p>
+
+    <!-- CTA BOX -->
+    <div class="cta-box">
+      <h3>Cuida tus huesos con información real</h3>
+      <p>Registra tus síntomas en MenoTrack y lee más sobre nutrición y salud ósea en FemeNews.</p>
+      <div class="cta-btns">
+        <a href="https://polar-multimedia.github.io/flowtrack/" class="btn-primary" target="_blank" rel="noopener">📲 Descarga MenoTrack</a>
+        <a href="index.html" class="btn-secondary">📰 Leer más artículos</a>
+      </div>
+    </div>
+
+    <!-- FUENTES -->
+    <div class="fuentes-wrap">
+      <details class="fuentes-details">
+        <summary class="fuentes-summary">
+          📚 Ver fuentes y referencias
+          <span class="fuentes-chevron">›</span>
+        </summary>
+        <div class="fuentes-body">
+          <p class="fuentes-note">Todas las fuentes utilizadas son de acceso público y provienen de organismos científicos o revistas indexadas.</p>
+          <ol class="fuentes-list">
+            <li>
+              International Osteoporosis Foundation (IOF). <em>Calcium: your bones' best friend.</em><br>
+              <a href="https://www.osteoporosis.foundation/patients/nutrition/calcium" target="_blank" rel="noopener">https://www.osteoporosis.foundation/patients/nutrition/calcium</a>
+            </li>
+            <li>
+              Bolland MJ, et al. (2010). <em>Effect of calcium supplements on risk of myocardial infarction and cardiovascular events: meta-analysis.</em> BMJ. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/20671013/" target="_blank" rel="noopener">20671013</a>
+            </li>
+            <li>
+              Instituto Mexicano del Seguro Social (IMSS). <em>Nutrición y suplementación — Salud en línea.</em><br>
+              <a href="https://www.imss.gob.mx/salud-en-linea/nutricion" target="_blank" rel="noopener">https://www.imss.gob.mx/salud-en-linea/nutricion</a>
+            </li>
+            <li>
+              SciELO México — Salud Pública de México. <em>Calcio y vitamina D en la prevención de osteoporosis: una revisión crítica.</em><br>
+              <a href="https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0036-36342015000300004" target="_blank" rel="noopener">https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0036-36342015000300004</a>
+            </li>
+          </ol>
+        </div>
+      </details>
+    </div>
+
+  </article>
+
+  <!-- RELACIONADOS -->
+  <section class="related">
+    <p class="related-title">También te puede interesar</p>
+    <div class="related-grid">
+
+      <a href="articulo-mitos-menopausia.html" class="related-card">
+        <img src="art-mitos.png" alt="5 mitos sobre la menopausia" class="related-img" loading="lazy">
+        <div class="related-body">
+          <p class="related-cat">💡 Mitos</p>
+          <p class="related-card-title">5 mitos sobre la menopausia que ya es hora de dejar atrás</p>
+        </div>
+      </a>
+
+      <a href="articulo-calcio-plato.html" class="related-card">
+        <img src="art2-calcio-plato.png" alt="Calcio en tu plato" class="related-img" loading="lazy">
+        <div class="related-body">
+          <p class="related-cat">🥦 Nutrición</p>
+          <p class="related-card-title">Calcio en tu plato: los alimentos que más te ayudan</p>
+        </div>
+      </a>
+
+      <a href="articulo-vitaminad.html" class="related-card">
+        <img src="art6-calcioyvitamina.png" alt="Vitamina D y calcio" class="related-img" loading="lazy">
+        <div class="related-body">
+          <p class="related-cat">☀️ Vitamina D</p>
+          <p class="related-card-title">Vitamina D y calcio: el dúo que tus huesos necesitan</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 C-Tech<sup>®</sup> · <a href="index.html">FemeNews</a> · Contenido de carácter informativo.</p>
+</footer>
+
+</body>
+</html>
