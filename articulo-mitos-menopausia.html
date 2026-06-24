@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5 mitos sobre la menopausia que ya es hora de dejar atrás | FemeNews · C-Tech</title>
+  <meta name="description" content="Creencias heredadas, miedos innecesarios, años de confusión. Clara Díaz desmiente los 5 mitos más comunes sobre la menopausia con evidencia científica real.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --teal: #4ECBCA;
+      --pink: #E91E8C;
+      --dark: #0d0010;
+      --navy: #1A3A5C;
+      --body-text: #2C2C2C;
+      --font: 'Lexend', sans-serif;
+    }
+
+    body {
+      font-family: var(--font);
+      background: var(--dark);
+      color: #e8e8e8;
+      line-height: 1.7;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(13, 0, 16, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(78, 203, 202, 0.15);
+      padding: 0 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+
+    .nav-logo {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--teal);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+
+    .nav-logo span {
+      color: var(--pink);
+    }
+
+    .nav-back {
+      font-size: .8rem;
+      font-weight: 500;
+      color: rgba(255,255,255,.55);
+      text-decoration: none;
+      transition: color .2s;
+    }
+
+    .nav-back:hover { color: var(--teal); }
+
+    /* ── HERO ── */
+    .article-hero {
+      position: relative;
+      min-height: 420px;
+      display: flex;
+      align-items: flex-end;
+      padding: 3rem 1.5rem 2.5rem;
+      background:
+        linear-gradient(to bottom, rgba(13,0,16,0.3) 0%, rgba(13,0,16,0.85) 100%),
+        linear-gradient(135deg, #1a0025 0%, #2d1060 50%, #4a1080 100%);
+      background-size: cover, cover;
+      overflow: hidden;
+    }
+
+    .article-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url('art-mitos.png');
+      background-size: cover;
+      background-position: center top;
+      opacity: 0.22;
+      mix-blend-mode: luminosity;
+    }
+
+    .hero-inner {
+      position: relative;
+      max-width: 780px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .hero-cat {
+      display: inline-block;
+      background: var(--pink);
+      color: #fff;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding: .3rem .85rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+
+    .hero-title {
+      font-size: clamp(1.75rem, 5vw, 2.8rem);
+      font-weight: 800;
+      line-height: 1.15;
+      color: #fff;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-meta {
+      font-size: .8rem;
+      color: rgba(255,255,255,.55);
+      display: flex;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .hero-meta span { display: flex; align-items: center; gap: .35rem; }
+
+    /* ── LAYOUT ── */
+    .article-wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+
+    /* ── BODY TEXT ── */
+    .article-body h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--teal);
+      margin: 2.2rem 0 .75rem;
+      line-height: 1.3;
+    }
+
+    .article-body h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #fff;
+      margin: 1.6rem 0 .5rem;
+    }
+
+    .article-body p {
+      font-size: .97rem;
+      color: rgba(255,255,255,.78);
+      margin-bottom: 1.1rem;
+    }
+
+    .article-body strong {
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .article-body em {
+      color: var(--teal);
+      font-style: normal;
+    }
+
+    /* ── MYTH CARD ── */
+    .myth-card {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(78,203,202,.18);
+      border-radius: 16px;
+      padding: 1.5rem 1.5rem 1.25rem;
+      margin: 1.75rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .myth-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 4px; height: 100%;
+      background: linear-gradient(180deg, var(--pink), var(--teal));
+      border-radius: 4px 0 0 4px;
+    }
+
+    .myth-label {
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--pink);
+      margin-bottom: .4rem;
+    }
+
+    .myth-false {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: rgba(255,255,255,.6);
+      margin-bottom: .85rem;
+      position: relative;
+      padding-left: 1.4rem;
+    }
+
+    .myth-false::before {
+      content: '✕';
+      position: absolute;
+      left: 0;
+      color: var(--pink);
+      font-weight: 800;
+    }
+
+    .truth-label {
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: .35rem;
+    }
+
+    .myth-truth {
+      font-size: .95rem;
+      color: rgba(255,255,255,.82);
+      line-height: 1.65;
+    }
+
+    /* ── MENOTRACK STRIP ── */
+    .menotrack-strip {
+      background: linear-gradient(135deg, rgba(78,203,202,.12) 0%, rgba(233,30,140,.1) 100%);
+      border: 1px solid rgba(78,203,202,.25);
+      border-radius: 16px;
+      padding: 1.5rem 1.75rem;
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      margin: 2.5rem 0;
+      flex-wrap: wrap;
+    }
+
+    .strip-icon { font-size: 2.2rem; flex-shrink: 0; }
+
+    .strip-copy {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .strip-copy strong {
+      display: block;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: .2rem;
+    }
+
+    .strip-copy p {
+      font-size: .82rem;
+      color: rgba(255,255,255,.6);
+      margin: 0;
+    }
+
+    .strip-btn {
+      display: inline-block;
+      background: var(--teal);
+      color: var(--dark);
+      font-family: var(--font);
+      font-size: .82rem;
+      font-weight: 700;
+      padding: .65rem 1.35rem;
+      border-radius: 999px;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: opacity .2s, transform .15s;
+    }
+
+    .strip-btn:hover { opacity: .88; transform: translateY(-1px); }
+
+    /* ── CTA BOX ── */
+    .cta-box {
+      text-align: center;
+      padding: 2.25rem 1.5rem;
+      background: linear-gradient(135deg, rgba(78,203,202,.08) 0%, rgba(233,30,140,.07) 100%);
+      border: 1px solid rgba(78,203,202,.2);
+      border-radius: 20px;
+      margin: 2.5rem 0;
+    }
+
+    .cta-box h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: .5rem;
+    }
+
+    .cta-box p {
+      font-size: .88rem;
+      color: rgba(255,255,255,.55);
+      margin-bottom: 1.4rem;
+    }
+
+    .cta-btns {
+      display: flex;
+      gap: .85rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: var(--teal);
+      color: var(--dark);
+      font-family: var(--font);
+      font-size: .88rem;
+      font-weight: 700;
+      padding: .8rem 1.75rem;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: opacity .2s, transform .15s;
+    }
+
+    .btn-primary:hover { opacity: .88; transform: translateY(-1px); }
+
+    .btn-secondary {
+      display: inline-block;
+      background: transparent;
+      color: var(--teal);
+      font-family: var(--font);
+      font-size: .88rem;
+      font-weight: 600;
+      padding: .8rem 1.75rem;
+      border-radius: 999px;
+      border: 1.5px solid rgba(78,203,202,.45);
+      text-decoration: none;
+      transition: border-color .2s, background .2s;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--teal);
+      background: rgba(78,203,202,.07);
+    }
+
+    /* ── DISCLAIMER ── */
+    .disclaimer {
+      background: rgba(255,255,255,.04);
+      border-left: 3px solid rgba(78,203,202,.4);
+      border-radius: 0 10px 10px 0;
+      padding: .9rem 1.1rem;
+      font-size: .78rem;
+      color: rgba(255,255,255,.45);
+      font-style: italic;
+      margin: 2rem 0;
+      line-height: 1.6;
+    }
+
+    /* ── FUENTES ── */
+    .fuentes-wrap { margin: 2rem 0 0; }
+
+    .fuentes-details {
+      border: 1px solid rgba(78,203,202,.2);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .fuentes-summary {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      padding: 1rem 1.25rem;
+      cursor: pointer;
+      list-style: none;
+      background: rgba(78,203,202,.05);
+      font-size: .82rem;
+      font-weight: 600;
+      color: var(--teal);
+      transition: background .2s;
+      user-select: none;
+    }
+
+    .fuentes-summary::-webkit-details-marker { display: none; }
+    .fuentes-summary:hover { background: rgba(78,203,202,.1); }
+
+    .fuentes-chevron {
+      margin-left: auto;
+      font-size: 1rem;
+      transition: transform .25s;
+    }
+
+    .fuentes-details[open] .fuentes-chevron { transform: rotate(90deg); }
+
+    .fuentes-body {
+      padding: 1.25rem 1.5rem;
+      border-top: 1px solid rgba(78,203,202,.12);
+    }
+
+    .fuentes-note {
+      font-size: .72rem;
+      color: rgba(255,255,255,.4);
+      margin-bottom: .75rem;
+      font-style: italic;
+    }
+
+    .fuentes-list { padding-left: 1.1rem; margin: 0; }
+
+    .fuentes-list li {
+      font-size: .76rem;
+      color: rgba(255,255,255,.55);
+      margin-bottom: .6rem;
+      line-height: 1.5;
+    }
+
+    .fuentes-list li a {
+      color: var(--teal);
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .fuentes-list li a:hover { text-decoration: underline; }
+
+    /* ── RELATED ── */
+    .related {
+      margin-top: 3.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,.08);
+    }
+
+    .related-title {
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.35);
+      margin-bottom: 1.25rem;
+    }
+
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .related-card {
+      display: block;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: 14px;
+      overflow: hidden;
+      text-decoration: none;
+      transition: border-color .2s, transform .2s;
+    }
+
+    .related-card:hover {
+      border-color: rgba(78,203,202,.3);
+      transform: translateY(-2px);
+    }
+
+    .related-img {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      background: rgba(78,203,202,.06);
+    }
+
+    .related-body { padding: .9rem 1rem; }
+
+    .related-cat {
+      font-size: .68rem;
+      font-weight: 700;
+      color: var(--pink);
+      letter-spacing: .04em;
+      margin-bottom: .35rem;
+    }
+
+    .related-card-title {
+      font-size: .84rem;
+      font-weight: 600;
+      color: rgba(255,255,255,.8);
+      line-height: 1.45;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: .75rem;
+      color: rgba(255,255,255,.22);
+      border-top: 1px solid rgba(255,255,255,.06);
+    }
+
+    footer a { color: var(--teal); text-decoration: none; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .article-hero { min-height: 340px; padding: 2rem 1.1rem 2rem; }
+      .menotrack-strip { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">C-Tech<span>®</span> | FemeNews</a>
+  <a href="index.html" class="nav-back">← Todos los artículos</a>
+</nav>
+
+<!-- HERO -->
+<header class="article-hero">
+  <div class="hero-inner">
+    <span class="hero-cat">💡 P1 · Mitos y realidades</span>
+    <h1 class="hero-title">5 mitos sobre la menopausia que ya es hora de dejar atrás</h1>
+    <div class="hero-meta">
+      <span>✍️ Clara Díaz · Periodista de salud femenina</span>
+      <span>📅 24 de junio de 2026</span>
+      <span>⏱ 5 min de lectura</span>
+    </div>
+  </div>
+</header>
+
+<!-- CONTENIDO -->
+<main class="article-wrap">
+  <article class="article-body">
+
+    <p>Las creencias que rodean a la menopausia tienen algo peculiar: se transmiten de generación en generación con la misma naturalidad con la que se pasan las recetas de cocina. Y así como no todas las recetas de tu abuela resultan, no todas esas ideas resisten el escrutinio de la evidencia científica actual.</p>
+
+    <p>He conversado con decenas de mujeres mexicanas que llegan al climaterio cargando miedos prestados, expectativas erróneas y, sobre todo, mucha desinformación. Hoy quiero desmitificar cinco de las creencias más comunes para que puedas transitar esta etapa con información real en lugar de prejuicios heredados.</p>
+
+    <!-- MITO 1 -->
+    <div class="myth-card">
+      <p class="myth-label">Mito 1 de 5</p>
+      <p class="myth-false">"La menopausia llega de golpe"</p>
+      <p class="truth-label">✔ La realidad científica</p>
+      <p class="myth-truth">La menopausia no es un interruptor que alguien apaga de la noche a la mañana. Es un proceso gradual que puede extenderse entre <strong>4 y 10 años</strong>, conocido como <em>perimenopausia</em>. Durante este tiempo, los ovarios van reduciendo progresivamente la producción de estrógenos mientras los ciclos menstruales se vuelven irregulares, los síntomas aparecen de forma intermitente y el cuerpo se adapta paso a paso.</p>
+    </div>
+
+    <p>El estudio SWAN (<em>Study of Women's Health Across the Nation</em>), publicado en 2012 por la investigadora Siobán Harlow y su equipo en <em>Menopause</em>, documentó con precisión esta transición y estableció que la perimenopausia puede iniciar años antes de que la menstruación desaparezca por completo. Reconocer esta etapa es clave: los síntomas que experimentas a los 42 años pueden tener todo que ver con el climaterio, aunque tus reglas sigan llegando.</p>
+
+    <!-- MITO 2 -->
+    <div class="myth-card">
+      <p class="myth-label">Mito 2 de 5</p>
+      <p class="myth-false">"Los bochornos son lo único que cambia"</p>
+      <p class="truth-label">✔ La realidad científica</p>
+      <p class="myth-truth">Los bochornos acaparan toda la conversación, pero son apenas la punta del iceberg. La caída de estrógenos tiene un efecto sistémico: afecta la <strong>densidad ósea</strong>, el <strong>estado de ánimo</strong>, la calidad del <strong>sueño</strong>, la salud <strong>cardiovascular</strong> y la elasticidad de la <strong>piel</strong>. El cuerpo de una mujer está profundamente conectado con sus hormonas, y cuando estas cambian, el impacto se siente en múltiples sistemas al mismo tiempo.</p>
+    </div>
+
+    <p>La Sociedad Norteamericana de Menopausia (NAMS, por sus siglas en inglés) documenta un espectro amplio de cambios que incluyen ansiedad, irritabilidad, dificultad para concentrarse, sequedad vaginal, alteraciones en el colesterol y pérdida acelerada de masa ósea, especialmente durante los primeros años después de la última menstruación. Hablar solo de bochornos reduce la conversación a un síntoma visible mientras deja sin atender muchos otros igualmente importantes.</p>
+
+    <!-- MENOTRACK STRIP -->
+    <div class="menotrack-strip">
+      <div class="strip-icon">📊</div>
+      <div class="strip-copy">
+        <strong>Registra tus síntomas con MenoTrack</strong>
+        <p>Lleva un diario personalizado de tu tránsito por el climaterio y recibe contenido adaptado a lo que tú estás viviendo.</p>
+      </div>
+      <a href="https://polar-multimedia.github.io/flowtrack/" class="strip-btn" target="_blank" rel="noopener">Descargar gratis →</a>
+    </div>
+
+    <!-- MITO 3 -->
+    <div class="myth-card">
+      <p class="myth-label">Mito 3 de 5</p>
+      <p class="myth-false">"Si tu mamá lo vivió muy mal, tú también lo vivirás"</p>
+      <p class="truth-label">✔ La realidad científica</p>
+      <p class="myth-truth">La historia familiar sí ofrece pistas, pero no dicta sentencias. La genética influye en el momento aproximado en que comenzarás la perimenopausia y en cierta predisposición a algunos síntomas, pero <strong>los hábitos pesan más que los genes</strong> en la intensidad con la que se vive esta etapa. La actividad física regular, la alimentación con suficiente calcio y vitamina D, el manejo del estrés y el no fumar son factores modificables que marcan una diferencia significativa.</p>
+    </div>
+
+    <p>Investigaciones publicadas en revistas indexadas de SciELO México han explorado la relación entre el estilo de vida y la intensidad de los síntomas climatéricos en mujeres mexicanas, concluyendo que las intervenciones en hábitos pueden modular de forma considerable la experiencia subjetiva de esta transición. Esto no significa que todo depende de la "actitud positiva" —esa idea también es un mito—, sino que hay acciones concretas que sí hacen diferencia.</p>
+
+    <!-- MITO 4 -->
+    <div class="myth-card">
+      <p class="myth-label">Mito 4 de 5</p>
+      <p class="myth-false">"Después de la menopausia ya no necesitas calcio extra"</p>
+      <p class="truth-label">✔ La realidad científica</p>
+      <p class="myth-truth">Exactamente lo contrario. Antes de la menopausia, los estrógenos protegen activamente el tejido óseo. Al desaparecer ese escudo hormonal, la pérdida de densidad ósea se acelera: en los primeros cinco años después de la menopausia una mujer puede perder entre el <strong>3 y el 5% de masa ósea por año</strong>. El requerimiento de calcio elemental no disminuye —aumenta— y la capacidad del intestino para absorberlo puede reducirse con la edad, lo que hace aún más importante cubrir esa necesidad de forma activa.</p>
+    </div>
+
+    <p>La Fundación Internacional de Osteoporosis (IOF) documenta con claridad esta ventana crítica de pérdida ósea posmenopáusica y subraya la importancia de mantener una ingesta adecuada de calcio y vitamina D como parte de un enfoque integral de cuidado del esqueleto. Suplementos de calcio OTC como C-Tech pueden <em>complementar</em> una dieta que no siempre logra cubrir estos requerimientos por sí sola —especialmente en mujeres mexicanas, cuyo consumo de lácteos suele estar por debajo de las recomendaciones internacionales.</p>
+
+    <!-- MITO 5 -->
+    <div class="myth-card">
+      <p class="myth-label">Mito 5 de 5</p>
+      <p class="myth-false">"La menopausia solo le importa a las mujeres mayores"</p>
+      <p class="truth-label">✔ La realidad científica</p>
+      <p class="myth-truth">La perimenopausia puede comenzar tan pronto como a los <strong>38 o 40 años</strong>. Ciclos menstruales más cortos o irregulares, cambios de humor que parecen inexplicables, noches de sueño interrumpido o una sensación de calor ocasional podrían ser las primeras señales de una transición que tardará varios años en completarse. Esperar a los 50 para informarse es esperar demasiado.</p>
+    </div>
+
+    <p>Identificar la perimenopausia tempranamente tiene una ventaja enorme: te da tiempo de construir hábitos protectores antes de que la pérdida ósea y los cambios cardiovasculares se acentúen. Cuidar los huesos a los 40 es mucho más eficiente que intentar recuperar densidad ósea a los 60.</p>
+
+    <h2>¿Y ahora qué?</h2>
+
+    <p>Desmontar un mito no es suficiente si no hay algo concreto que lo reemplace. Mi recomendación siempre es la misma: habla con tu médica o médico sobre lo que estás experimentando, sin esperar a que los síntomas sean "suficientemente graves" para merecer atención. La perimenopausia no siempre llega con señales de neón; a veces se cuela silenciosamente en forma de cansancio o cambios de humor que atribuimos a "el estrés de siempre".</p>
+
+    <p>Llevar un registro de tus síntomas —cuándo aparecen, con qué intensidad, en qué contexto— puede ser increíblemente útil tanto para ti como para el profesional de salud que te acompaña. Por eso existe MenoTrack: para que el autoreporte deje de ser un recuerdo impreciso y se convierta en información accionable.</p>
+
+    <p>La menopausia no es el final de nada. Con información real, puede ser el inicio de una etapa muy consciente y bien cuidada.</p>
+
+    <!-- DISCLAIMER -->
+    <p class="disclaimer">
+      Este contenido es de carácter informativo y no sustituye la consulta médica. Ante cualquier síntoma o duda relacionada con tu salud, consulta a tu médica o médico de confianza.
+    </p>
+
+    <!-- CTA BOX -->
+    <div class="cta-box">
+      <h3>Sigue informada con FemeNews</h3>
+      <p>Registra tus síntomas en MenoTrack y lee más sobre salud femenina en el climaterio.</p>
+      <div class="cta-btns">
+        <a href="https://polar-multimedia.github.io/flowtrack/" class="btn-primary" target="_blank" rel="noopener">📲 Descarga MenoTrack</a>
+        <a href="index.html" class="btn-secondary">📰 Leer más artículos</a>
+      </div>
+    </div>
+
+    <!-- FUENTES -->
+    <div class="fuentes-wrap">
+      <details class="fuentes-details">
+        <summary class="fuentes-summary">
+          📚 Ver fuentes y referencias
+          <span class="fuentes-chevron">›</span>
+        </summary>
+        <div class="fuentes-body">
+          <p class="fuentes-note">Todas las fuentes utilizadas son de acceso público y provienen de organismos científicos o revistas indexadas.</p>
+          <ol class="fuentes-list">
+            <li>
+              International Osteoporosis Foundation (IOF). <em>Menopause and bone loss.</em><br>
+              <a href="https://www.osteoporosis.foundation/patients/bone-anatomy/menopause-bone-loss" target="_blank" rel="noopener">https://www.osteoporosis.foundation/patients/bone-anatomy/menopause-bone-loss</a>
+            </li>
+            <li>
+              North American Menopause Society (NAMS). <em>Menopause Flashes — recursos para pacientes.</em><br>
+              <a href="https://www.menopause.org/for-women/menopauseflashes" target="_blank" rel="noopener">https://www.menopause.org/for-women/menopauseflashes</a>
+            </li>
+            <li>
+              Harlow SD, et al. (2012). <em>Executive summary of the Stages of Reproductive Aging Workshop + 10: addressing the unfinished agenda of staging reproductive aging.</em> Menopause. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/22253205/" target="_blank" rel="noopener">22253205</a>
+            </li>
+            <li>
+              SciELO México — Gaceta Médica de México. <em>Climaterio y calidad de vida en mujeres mexicanas.</em><br>
+              <a href="https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0016-38132015000100010" target="_blank" rel="noopener">https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0016-38132015000100010</a>
+            </li>
+          </ol>
+        </div>
+      </details>
+    </div>
+
+  </article>
+
+  <!-- RELACIONADOS -->
+  <section class="related">
+    <p class="related-title">También te puede interesar</p>
+    <div class="related-grid">
+
+      <a href="articulo-bochornos.html" class="related-card">
+        <img src="art7-bochornos.png" alt="Bochornos en el climaterio" class="related-img" loading="lazy">
+        <div class="related-body">
+          <p class="related-cat">🌡️ Síntomas</p>
+          <p class="related-card-title">Bochornos en el climaterio: causas y estrategias que sí funcionan</p>
+        </div>
+      </a>
+
+      <a href="articulo-menopausia.html" class="related-card">
+        <img src="art3-menopausia.png" alt="Lo que cambia en tus huesos durante la menopausia" class="related-img" loading="lazy">
+        <div class="related-body">
+          <p class="related-cat">🦴 Huesos</p>
+          <p class="related-card-title">Lo que cambia en tus huesos durante la menopausia</p>
+        </div>
+      </a>
+
+      <a href="articulo-sueno-fatiga.html" class="related-card">
+        <img src="art8-sueno.png" alt="Insomnio y fatiga en el climaterio" class="related-img" loading="lazy">
+        <div class="related-body">
+          <p class="related-cat">😴 Energía</p>
+          <p class="related-card-title">Insomnio, fatiga y niebla mental: cómo el climaterio afecta tu energía</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 C-Tech<sup>®</sup> · <a href="index.html">FemeNews</a> · Contenido de carácter informativo.</p>
+</footer>
+
+</body>
+</html>

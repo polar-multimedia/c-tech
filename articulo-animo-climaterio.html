@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>El climaterio y el ánimo: por qué te sientes diferente y qué puedes hacer — C-Tech®</title>
+<meta name="description" content="Los cambios de humor, la ansiedad y la tristeza en el climaterio tienen una explicación hormonal real. Aprende a identificarlos, qué los distingue de la depresión clínica y qué estrategias ayudan.">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--teal:#4ECBCA;--teal-light:#7EDEDD;--teal-pale:#C8F0EF;--teal-glow:rgba(78,203,202,0.22);--pink:#E91E8C;--dark:#0d0010;--dark-card:rgba(255,255,255,0.04);--text:#fff;--text-muted:rgba(255,255,255,0.62);--radius:16px}
+html{scroll-behavior:smooth}
+body{font-family:'Lexend',sans-serif;background:var(--dark);color:var(--text);overflow-x:hidden;line-height:1.7}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:66px;background:rgba(13,0,16,0.9);backdrop-filter:blur(20px);border-bottom:1px solid rgba(78,203,202,0.15)}
+.nav-logo{font-family:'Dancing Script',cursive;font-size:1.7rem;font-weight:700;background:linear-gradient(135deg,#fff,var(--teal-light),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none}
+.nav-back{color:rgba(255,255,255,0.55);text-decoration:none;font-size:0.78rem;font-weight:500;transition:color .3s}
+.nav-back:hover{color:var(--teal-light)}
+.nav-cta{background:linear-gradient(135deg,var(--teal),#2aadac);color:#0d0010;border:none;border-radius:50px;padding:.45rem 1.2rem;font-family:'Lexend',sans-serif;font-size:.75rem;font-weight:700;cursor:pointer;text-decoration:none}
+.article-hero{margin-top:66px;position:relative;height:60vh;min-height:420px;overflow:hidden;display:flex;align-items:flex-end}
+.article-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(13,0,16,1) 0%,rgba(13,0,16,0.55) 40%,rgba(13,0,16,0.15) 100%)}
+.hero-gradient{position:absolute;inset:0;background:linear-gradient(135deg,#0d1a40 0%,#1a3a2a 50%,#0d3020 100%);opacity:.7}
+.hero-meta{position:relative;z-index:2;padding:0 8% 3rem;width:100%}
+.art-category{display:inline-block;background:linear-gradient(135deg,#2aadac,var(--teal));color:#0d0010;padding:.25rem .85rem;border-radius:50px;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1rem}
+.art-title{font-size:clamp(1.8rem,4vw,3.2rem);font-weight:800;line-height:1.15;max-width:800px;margin-bottom:1rem}
+.art-info{display:flex;gap:1.5rem;flex-wrap:wrap;font-size:.75rem;color:rgba(255,255,255,0.5)}
+.article-wrap{max-width:780px;margin:0 auto;padding:4rem 5%}
+.article-body h2{font-size:1.4rem;font-weight:700;margin:2.5rem 0 1rem;background:linear-gradient(135deg,var(--teal-light),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.article-body h3{font-size:1.1rem;font-weight:600;margin:2rem 0 .75rem;color:var(--teal-light)}
+.article-body p{color:rgba(255,255,255,0.78);margin-bottom:1.2rem;font-size:.97rem;font-weight:300;line-height:1.85}
+.article-body strong{color:#fff;font-weight:600}
+.article-body em{color:var(--teal-pale);font-style:normal}
+.stat-box{background:linear-gradient(135deg,rgba(78,203,202,0.12),rgba(42,173,172,0.06));border:1px solid rgba(78,203,202,0.25);border-radius:var(--radius);padding:1.5rem 2rem;margin:2rem 0;position:relative;overflow:hidden}
+.stat-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--teal-light))}
+.stat-box .stat-num{font-size:2.2rem;font-weight:900;background:linear-gradient(135deg,var(--teal-light),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
+.stat-box .stat-desc{font-size:.82rem;color:var(--text-muted);margin-top:.3rem}
+.quote-block{border-left:3px solid var(--teal);padding:1.2rem 1.5rem;margin:2rem 0;background:rgba(78,203,202,0.06);border-radius:0 12px 12px 0}
+.quote-block p{font-size:1.05rem;font-style:italic;color:var(--teal-pale);margin:0;font-weight:300}
+.quote-source{font-size:.72rem;color:var(--text-muted);margin-top:.5rem}
+.action-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
+.action-card{background:var(--dark-card);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:1.1rem 1.25rem}
+.action-card .ac-icon{font-size:1.3rem;margin-bottom:.5rem}
+.action-card .ac-title{font-size:.85rem;font-weight:600;margin-bottom:.3rem}
+.action-card .ac-text{font-size:.75rem;color:rgba(255,255,255,.55);font-weight:300;line-height:1.5}
+.alert-box{background:linear-gradient(135deg,rgba(233,30,140,0.1),rgba(180,0,100,0.05));border:1px solid rgba(233,30,140,0.3);border-radius:var(--radius);padding:1.5rem 2rem;margin:2rem 0;position:relative;overflow:hidden}
+.alert-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--pink),#c2157a)}
+.alert-box .alert-title{font-size:.85rem;font-weight:700;color:var(--pink);margin-bottom:.75rem;display:flex;align-items:center;gap:.5rem}
+.alert-list{list-style:none;margin:0}
+.alert-list li{display:flex;align-items:flex-start;gap:.75rem;padding:.5rem 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:.88rem;color:rgba(255,255,255,.72);font-weight:300}
+.alert-list li:last-child{border-bottom:none}
+.alert-list li .al-icon{flex-shrink:0;margin-top:.05rem}
+.diff-table{width:100%;border-collapse:collapse;margin:1.5rem 0}
+.diff-table th{background:rgba(78,203,202,0.12);color:var(--teal-light);font-size:.78rem;font-weight:600;padding:.7rem 1rem;text-align:left;border-bottom:1px solid rgba(78,203,202,0.2)}
+.diff-table td{padding:.65rem 1rem;font-size:.82rem;color:rgba(255,255,255,.7);border-bottom:1px solid rgba(255,255,255,0.06);font-weight:300}
+.diff-table tr:last-child td{border-bottom:none}
+.cta-box{background:linear-gradient(135deg,rgba(78,203,202,0.12),rgba(42,173,172,0.06));border:1px solid rgba(78,203,202,0.3);border-radius:20px;padding:2rem 2.5rem;margin:3rem 0;text-align:center;position:relative;overflow:hidden}
+.cta-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--teal-light),var(--teal))}
+.cta-pill{width:70px;height:40px;background:linear-gradient(135deg,var(--teal-light),var(--teal),#2aadac);border-radius:50px;margin:0 auto 1rem;box-shadow:0 0 25px var(--teal-glow);display:flex;align-items:center;justify-content:center;font-family:'Dancing Script',cursive;font-size:.75rem;color:rgba(13,0,16,.9);font-weight:700}
+.cta-box h3{font-size:1.2rem;font-weight:700;margin-bottom:.6rem}
+.cta-box p{color:var(--text-muted);font-size:.85rem;font-weight:300;margin-bottom:1.2rem}
+.btn-cta{background:linear-gradient(135deg,var(--teal),#2aadac);color:#0d0010;text-decoration:none;border-radius:50px;padding:.75rem 2rem;font-family:'Lexend',sans-serif;font-size:.82rem;font-weight:700;display:inline-block;box-shadow:0 0 25px var(--teal-glow)}
+.btn-cta-secondary{background:transparent;color:var(--teal);text-decoration:none;border-radius:50px;padding:.7rem 1.8rem;font-family:'Lexend',sans-serif;font-size:.82rem;font-weight:600;display:inline-block;border:1px solid rgba(78,203,202,0.4);margin-left:.75rem}
+.disclaimer{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.2rem 1.5rem;margin:2rem 0;font-size:.72rem;color:rgba(255,255,255,.35);line-height:1.6}
+.disclaimer strong{color:rgba(255,255,255,.5)}
+.menotrack-strip{display:flex;align-items:center;justify-content:space-between;gap:1rem;background:rgba(78,203,202,0.08);border:1px solid rgba(78,203,202,0.2);border-radius:16px;padding:1.1rem 1.4rem;margin:2.5rem 0;flex-wrap:wrap}
+.mt-text{display:flex;align-items:center;gap:.85rem;flex:1;min-width:0}
+.mt-icon{font-size:1.6rem;flex-shrink:0}
+.mt-title{font-size:.88rem;font-weight:700;color:#fff;margin-bottom:.15rem}
+.mt-sub{font-size:.75rem;color:rgba(255,255,255,.5);font-weight:300;line-height:1.4}
+.mt-btn{background:linear-gradient(135deg,#4ECBCA,#2aadac);color:#0d0010;text-decoration:none;border-radius:50px;padding:.55rem 1.3rem;font-size:.78rem;font-weight:700;white-space:nowrap;flex-shrink:0}
+.related{padding:4rem 5%;border-top:1px solid rgba(255,255,255,0.07);max-width:1100px;margin:0 auto}
+.related-title{font-size:1.1rem;font-weight:700;margin-bottom:1.5rem;color:var(--teal-light)}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.2rem}
+.related-card{background:var(--dark-card);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius);overflow:hidden;text-decoration:none;color:inherit;display:block;transition:all .3s}
+.related-card:hover{border-color:rgba(78,203,202,0.35);transform:translateY(-4px)}
+.related-img{aspect-ratio:16/9;overflow:hidden;background:rgba(78,203,202,0.08)}
+.related-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.related-card:hover .related-img img{transform:scale(1.05)}
+.related-body{padding:1rem}
+.related-cat{font-size:.65rem;font-weight:700;color:var(--teal);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem}
+.related-card-title{font-size:.85rem;font-weight:600;line-height:1.35}
+footer{background:rgba(0,0,0,.4);border-top:1px solid rgba(78,203,202,0.12);padding:2rem 5%;text-align:center}
+.footer-logo{font-family:'Dancing Script',cursive;font-size:1.6rem;font-weight:700;background:linear-gradient(135deg,#fff,var(--teal-light),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.4rem}
+.footer-legal{font-size:.68rem;color:rgba(255,255,255,.25);max-width:600px;margin:0 auto;line-height:1.6}
+@media(max-width:600px){.action-grid{grid-template-columns:1fr}.related-grid{grid-template-columns:1fr}.art-title{font-size:1.6rem}.article-wrap{padding:2.5rem 5%}.menotrack-strip{flex-direction:column;align-items:flex-start}.mt-btn{width:100%;text-align:center}.btn-cta-secondary{margin-left:0;margin-top:.5rem;display:block}}
+.fuentes-wrap{margin:2rem 0 0}
+.fuentes-details{border:1px solid rgba(78,203,202,.2);border-radius:12px;overflow:hidden}
+.fuentes-summary{display:flex;align-items:center;gap:.75rem;padding:1rem 1.25rem;cursor:pointer;list-style:none;background:rgba(78,203,202,.05);font-size:.82rem;font-weight:600;color:var(--teal);transition:background .2s;user-select:none}
+.fuentes-summary::-webkit-details-marker{display:none}
+.fuentes-summary:hover{background:rgba(78,203,202,.1)}
+.fuentes-chevron{margin-left:auto;font-size:1rem;transition:transform .25s}
+.fuentes-details[open] .fuentes-chevron{transform:rotate(90deg)}
+.fuentes-body{padding:1.25rem 1.5rem;border-top:1px solid rgba(78,203,202,.12)}
+.fuentes-note{font-size:.72rem;color:rgba(255,255,255,.4);margin-bottom:.75rem;font-style:italic}
+.fuentes-list{padding-left:1.1rem;margin:0}
+.fuentes-list li{font-size:.76rem;color:rgba(255,255,255,.55);margin-bottom:.6rem;line-height:1.5}
+.fuentes-list li a{color:var(--teal);text-decoration:none;word-break:break-all}
+.fuentes-list li a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html">C-tech®</a>
+  <a class="nav-back" href="index.html">← Volver al inicio</a>
+  <a class="nav-cta" href="index.html#sobre-ctech">Conoce C-Tech</a>
+</nav>
+
+<div class="article-hero">
+  <div class="hero-gradient"></div>
+  <img src="art-animo.png" alt="Mujer en climaterio, reflexiva, con expresión serena en su espacio personal">
+  <div class="hero-overlay"></div>
+  <div class="hero-meta">
+    <div class="art-category">💚 P3 · Señales de alerta</div>
+    <h1 class="art-title">El climaterio y el ánimo: por qué te sientes diferente y qué puedes hacer</h1>
+    <div class="art-info">
+      <span>📅 Junio 2026</span><span>⏱ 7 min de lectura</span><span>🔬 NAMS · PubMed · Scielo México</span>
+    </div>
+  </div>
+</div>
+
+<div class="article-wrap">
+  <div class="article-body">
+
+    <p>Hay mañanas en que te despiertas cansada de algo que no puedes nombrar. Días en que la irritación llega sin aviso, o en que una tristeza suave te acompaña sin razón aparente. Si estás en la etapa del climaterio y reconoces esas sensaciones, quiero decirte algo importante: <strong>lo que sientes es real y tiene una explicación biológica concreta</strong>.</p>
+
+    <p>No estás "exagerando". No estás "volviéndote loca". Tu cerebro está atravesando una reconfiguración hormonal profunda que afecta directamente el sistema que regula el ánimo. Entender qué ocurre puede ser el primer paso para sentirte mejor.</p>
+
+    <h2>El estrógeno y el cerebro: una conexión que nadie nos explicó</h2>
+
+    <p>El estrógeno no solo regula el ciclo menstrual. Durante décadas, ha funcionado como un modulador silencioso de tu bienestar emocional. Esto es porque el estrógeno <strong>estimula la producción y sensibilidad de la serotonina y la dopamina</strong>, los neurotransmisores asociados con el estado de ánimo, la motivación y el placer.</p>
+
+    <p>Cuando los niveles de estrógeno comienzan a descender — proceso que puede iniciar años antes de la última menstruación, en la perimenopausia — el cerebro pierde parte de ese estímulo químico. El resultado es una mayor vulnerabilidad emocional: <em>más sensibilidad al estrés, fluctuaciones de humor más marcadas, y momentos de tristeza o vacío que antes no existían</em>.</p>
+
+    <div class="stat-box">
+      <div class="stat-num">2-3×</div>
+      <div class="stat-desc">Las mujeres en perimenopausia tienen entre 2 y 3 veces más riesgo de experimentar síntomas depresivos que en otras etapas de su vida, incluso sin historia previa de depresión. — Freeman EW et al., PubMed PMID 16443213, 2006</div>
+    </div>
+
+    <p>Esto no significa que el climaterio "cause" depresión en todas las mujeres, sino que el contexto hormonal crea una ventana de mayor vulnerabilidad. Saber esto te permite observarte con mayor compasión y actuar a tiempo.</p>
+
+    <h2>Tristeza transitoria vs. depresión clínica: la diferencia importa</h2>
+
+    <p>Una de las preguntas más importantes que puedes hacerte es: <strong>¿lo que siento es una tristeza que va y viene, o es algo que se instaló y no me suelta?</strong></p>
+
+    <p>La tristeza transitoria relacionada con el climaterio tiene características claras: aparece y desaparece, suele vincularse con episodios específicos (una mala noche, un bochorno intenso, una semana de mucho estrés), y puedes tener días buenos intercalados. Es incómoda, pero no te paraliza.</p>
+
+    <p>La depresión clínica, en cambio, es diferente. Se caracteriza por una tristeza persistente que dura más de dos semanas, pérdida de interés en actividades que antes te daban placer, dificultad para funcionar en el día a día, y a veces pensamientos de inutilidad o desesperanza.</p>
+
+    <div class="quote-block">
+      <p>"Las mujeres en perimenopausia deben ser evaluadas rutinariamente para síntomas depresivos, especialmente aquellas con historia de sensibilidad hormonal previa o eventos vitales estresantes."</p>
+      <div class="quote-source">— North American Menopause Society (NAMS), Mental Health and Menopause</div>
+    </div>
+
+    <p>Si llevas más de dos semanas sintiéndote muy baja de ánimo, sin energía, sin ganas de nada — <strong>ese es el momento de hablar con un médico o profesional de salud mental</strong>. No esperes a que se pase solo. La depresión clínica tiene tratamiento efectivo.</p>
+
+    <h2>La ansiedad que aparece "de la nada"</h2>
+
+    <p>Muchas mujeres describen el mismo fenómeno: una ansiedad nueva que apareció en los últimos años, sin un motivo claro. Palpitaciones repentinas, tensión en el pecho, pensamientos acelerados, una sensación constante de estar "en alerta" sin saber por qué.</p>
+
+    <p>Esto también tiene base hormonal. El estrógeno regula el sistema nervioso autónomo — el que controla respuestas involuntarias como el ritmo cardiaco y la tensión muscular. Su descenso puede <strong>activar el sistema de respuesta al estrés con mayor facilidad</strong>, generando ansiedad incluso en situaciones que antes no te afectaban.</p>
+
+    <div class="stat-box">
+      <div class="stat-num">51%</div>
+      <div class="stat-desc">de las mujeres en perimenopausia reporta síntomas de ansiedad, comparado con el 28% en etapa premenopáusica. — Bromberger JT et al., PubMed PMID 21709500, 2011</div>
+    </div>
+
+    <p>Reconocer que tu ansiedad puede tener un origen hormonal — y no "ser tú" o "estar perdiendo el control" — cambia la relación que tienes con esa sensación. No la minimiza, pero sí te da un punto de partida para manejarla.</p>
+
+    <h2>Irritabilidad y cambios bruscos de humor: el ciclo oculto</h2>
+
+    <p>La irritabilidad es uno de los síntomas del climaterio que más confunde y más culpa genera. Esa reacción desproporcionada a algo pequeño. Ese genio que se dispara sin aviso. Esa impaciencia que antes no tenías.</p>
+
+    <p>Hay un ciclo que explica gran parte de esto: <em>los bochornos nocturnos interrumpen el sueño → la privación de sueño genera fatiga acumulada → la fatiga reduce la tolerancia emocional → la irritabilidad y los cambios de humor se intensifican</em>. Y al día siguiente, el ciclo se repite.</p>
+
+    <table class="diff-table">
+      <thead>
+        <tr><th>Lo que se ve</th><th>Lo que ocurre por dentro</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Irritabilidad por algo pequeño</td><td>Umbral de tolerancia reducido por falta de sueño</td></tr>
+        <tr><td>Llanto sin razón aparente</td><td>Fluctuación rápida de serotonina por cambios hormonales</td></tr>
+        <tr><td>Cambios de humor en minutos</td><td>Sistema nervioso autónomo hipersensible al estrés</td></tr>
+        <tr><td>Sensación de no reconocerse</td><td>Adaptación del cerebro a un nuevo equilibrio hormonal</td></tr>
+      </tbody>
+    </table>
+
+    <p>No estás "volviéndote difícil". Tu sistema nervioso está respondiendo a cambios reales. Eso no lo hace más fácil de vivir — pero sí más comprensible.</p>
+
+    <h2>Qué ayuda: estrategias con respaldo</h2>
+
+    <p>No existe una solución única, pero sí un conjunto de herramientas que la evidencia respalda para mejorar el bienestar emocional durante el climaterio.</p>
+
+    <div class="action-grid">
+      <div class="action-card">
+        <div class="ac-icon">🚶‍♀️</div>
+        <div class="ac-title">Movimiento físico</div>
+        <div class="ac-text">30 minutos de actividad moderada (caminar, nadar, yoga) al menos 4 días a la semana. El ejercicio estimula la serotonina y reduce el cortisol — efectos que el estrógeno ya no aporta igual.</div>
+      </div>
+      <div class="action-card">
+        <div class="ac-icon">👥</div>
+        <div class="ac-title">Red de apoyo</div>
+        <div class="ac-text">Hablar con personas de confianza sobre lo que sientes — pareja, amigas, grupo de mujeres — reduce el aislamiento emocional que amplifica los síntomas. No tienes que atravesarlo sola.</div>
+      </div>
+      <div class="action-card">
+        <div class="ac-icon">📋</div>
+        <div class="ac-title">Registro de síntomas</div>
+        <div class="ac-text">Identificar patrones — qué días tu ánimo cae más, qué los precede — te da información valiosa para ti y para tu médico. Herramientas como MenoTrack facilitan este registro diario.</div>
+      </div>
+      <div class="action-card">
+        <div class="ac-icon">🥦</div>
+        <div class="ac-title">Nutrición y micronutrientes</div>
+        <div class="ac-text">El calcio y la vitamina D3 no solo protegen el hueso — también contribuyen a la función nerviosa y muscular. Una alimentación variada, rica en proteínas y vegetales, sostiene el bienestar general.</div>
+      </div>
+    </div>
+
+    <p>Sobre la nutrición: <strong>el calcio y la vitamina D3 son nutrientes esenciales en el climaterio</strong> que con frecuencia se consumen por debajo de las cantidades recomendadas. Cubrir estos requerimientos — ya sea a través de alimentos o de un suplemento OTC de libre acceso como C-Tech, que los complementa de forma práctica — forma parte del cuidado integral de esta etapa. C-Tech no es un tratamiento para el ánimo, sino un acompañante nutricional que contribuye al bienestar general durante el climaterio.</p>
+
+    <div class="menotrack-strip">
+      <div class="mt-text">
+        <div class="mt-icon">📊</div>
+        <div>
+          <div class="mt-title">Registra tu ánimo en MenoTrack</div>
+          <div class="mt-sub">Lleva un diario de tus síntomas emocionales y físicos. Detecta patrones. Habla con tu médico con información real.</div>
+        </div>
+      </div>
+      <a class="mt-btn" href="https://polar-multimedia.github.io/flowtrack/" target="_blank" rel="noopener">Abrir MenoTrack →</a>
+    </div>
+
+    <h2>Cuándo buscar ayuda profesional — no lo dejes pasar</h2>
+
+    <p>Algunas señales indican que es momento de buscar atención médica o psicológica sin esperar:</p>
+
+    <div class="alert-box">
+      <div class="alert-title">⚠️ Señales para consultar a un profesional</div>
+      <ul class="alert-list">
+        <li><span class="al-icon">🔴</span> Tristeza o desesperanza que persiste más de dos semanas sin alivio</li>
+        <li><span class="al-icon">🔴</span> Pérdida de interés en actividades, personas o cosas que antes te importaban</li>
+        <li><span class="al-icon">🔴</span> Pensamientos de inutilidad, de ser una carga, o de no querer estar</li>
+        <li><span class="al-icon">🔴</span> Ansiedad tan intensa que interfiere con el trabajo o las relaciones</li>
+        <li><span class="al-icon">🔴</span> Incapacidad para dormir durante semanas seguidas</li>
+        <li><span class="al-icon">🔴</span> Cambios de humor tan extremos que afectan tu vida diaria o la de tu familia</li>
+      </ul>
+    </div>
+
+    <p>La ayuda profesional puede tomar varias formas: tu médico de cabecera o ginecóloga puede evaluar si existe un componente hormonal que requiere atención específica. Un psicólogo o terapeuta puede acompañarte con herramientas cognitivas y emocionales. Ambos enfoques pueden complementarse.</p>
+
+    <p><strong>Pedir ayuda no es debilidad. Es exactamente lo correcto.</strong></p>
+
+    <div class="cta-box">
+      <div class="cta-pill">C-T</div>
+      <h3>Tu cuerpo cambia. Tu información también debería.</h3>
+      <p>MenoTrack es la herramienta gratuita para registrar tus síntomas, identificar patrones y llegar mejor preparada a cada consulta médica.</p>
+      <a class="btn-cta" href="https://polar-multimedia.github.io/flowtrack/" target="_blank" rel="noopener">Descarga MenoTrack</a>
+      <a class="btn-cta-secondary" href="index.html">Leer más artículos</a>
+    </div>
+
+    <div class="disclaimer">
+      <strong>Nota importante:</strong> Este contenido es de carácter informativo y no sustituye la consulta médica. Si experimentas cambios de ánimo persistentes o síntomas de depresión o ansiedad, consulta a tu médico o profesional de salud mental.
+    </div>
+
+    <div class="fuentes-wrap">
+      <details class="fuentes-details">
+        <summary class="fuentes-summary">
+          <span>📚</span> Ver fuentes
+          <span class="fuentes-chevron">›</span>
+        </summary>
+        <div class="fuentes-body">
+          <p class="fuentes-note">Todas las fuentes referenciadas en este artículo son publicaciones científicas verificables o recursos de organizaciones de salud reconocidas.</p>
+          <ul class="fuentes-list">
+            <li>North American Menopause Society (NAMS). <em>Mental Health and Menopause.</em> <a href="https://www.menopause.org/for-women/menopauseflashes/mental-health-and-menopause" target="_blank" rel="noopener">https://www.menopause.org/for-women/menopauseflashes/mental-health-and-menopause</a></li>
+            <li>Freeman EW, et al. <em>Associations of hormones and menopausal status with depressed mood in women with no history of depression.</em> Archives of General Psychiatry. 2006. PubMed PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/16443213/" target="_blank" rel="noopener">16443213</a></li>
+            <li>Bromberger JT, et al. <em>Persistent mood symptoms in a multiethnic community cohort of pre- and perimenopausal women.</em> American Journal of Epidemiology. 2011. PubMed PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/21709500/" target="_blank" rel="noopener">21709500</a></li>
+            <li>Flores-Ramos M, et al. <em>Síntomas depresivos y ansiedad durante la perimenopausia.</em> Scielo México. 2016. <a href="https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0185-33252016000200003" target="_blank" rel="noopener">https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0185-33252016000200003</a></li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+  </div>
+</div>
+
+<section class="related">
+  <div class="related-title">Sigue leyendo en FemeNews</div>
+  <div class="related-grid">
+    <a class="related-card" href="articulo-sueno-fatiga.html">
+      <div class="related-img"><img src="art8-sueno.png" alt="Insomnio y fatiga en el climaterio"></div>
+      <div class="related-body">
+        <div class="related-cat">😴 Energía</div>
+        <div class="related-card-title">Insomnio, fatiga y niebla mental: cómo el climaterio afecta tu energía</div>
+      </div>
+    </a>
+    <a class="related-card" href="articulo-bochornos.html">
+      <div class="related-img"><img src="art7-bochornos.png" alt="Bochornos en el climaterio"></div>
+      <div class="related-body">
+        <div class="related-cat">🌡️ Síntomas</div>
+        <div class="related-card-title">Bochornos en el climaterio: causas y estrategias que sí funcionan</div>
+      </div>
+    </a>
+    <a class="related-card" href="articulo-mitos-menopausia.html">
+      <div class="related-img"><img src="art-mitos.png" alt="Mitos sobre la menopausia"></div>
+      <div class="related-body">
+        <div class="related-cat">💡 Mitos</div>
+        <div class="related-card-title">5 mitos sobre la menopausia que ya es hora de dejar atrás</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">C-tech®</div>
+  <p class="footer-legal">FemeNews es una plataforma de contenido informativo sobre salud femenina producida por C-Tech. Este contenido es de carácter educativo y no sustituye la orientación médica profesional. Consulta siempre a tu médico ante cualquier síntoma o decisión de salud.</p>
+</footer>
+
+</body>
+</html>

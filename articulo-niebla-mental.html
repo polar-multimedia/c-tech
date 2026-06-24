@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Niebla mental en el climaterio: cuando tu mente se siente entre algodones — C-Tech®</title>
+<meta name="description" content="¿Olvidas palabras, pierdes el hilo de una conversación o sientes que tu mente va lento? La niebla mental del climaterio es real y tiene nombre. Aquí, qué la causa y qué puedes hacer.">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--teal:#4ECBCA;--teal-light:#80e0df;--teal-pale:#c8f5f4;--teal-glow:rgba(78,203,202,0.22);--pink:#E91E8C;--pink-light:#FF69B4;--dark:#0d0010;--dark-card:rgba(255,255,255,0.04);--text:#fff;--text-muted:rgba(255,255,255,0.62);--radius:16px}
+html{scroll-behavior:smooth}
+body{font-family:'Lexend',sans-serif;background:var(--dark);color:var(--text);overflow-x:hidden;line-height:1.7}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:66px;background:rgba(13,0,16,0.9);backdrop-filter:blur(20px);border-bottom:1px solid rgba(78,203,202,0.15)}
+.nav-logo{font-family:'Dancing Script',cursive;font-size:1.7rem;font-weight:700;background:linear-gradient(135deg,#fff,var(--teal-light),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none}
+.nav-back{color:rgba(255,255,255,0.55);text-decoration:none;font-size:0.78rem;font-weight:500;transition:color .3s}
+.nav-back:hover{color:var(--teal-light)}
+.nav-cta{background:linear-gradient(135deg,var(--teal),#2aadac);color:#0d0010;border:none;border-radius:50px;padding:.45rem 1.2rem;font-family:'Lexend',sans-serif;font-size:.75rem;font-weight:700;cursor:pointer;text-decoration:none}
+.article-hero{margin-top:66px;position:relative;height:60vh;min-height:420px;overflow:hidden;display:flex;align-items:flex-end}
+.article-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,#0a1628 0%,#1a2840 50%,#0d2035 100%);opacity:.82}
+.hero-meta{position:relative;z-index:2;padding:0 8% 3rem;width:100%}
+.art-category{display:inline-block;background:linear-gradient(135deg,var(--teal),#2aadac);color:#0d0010;padding:.25rem .85rem;border-radius:50px;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1rem}
+.art-title{font-size:clamp(1.8rem,4vw,3.2rem);font-weight:800;line-height:1.15;max-width:800px;margin-bottom:1rem}
+.art-info{display:flex;gap:1.5rem;flex-wrap:wrap;font-size:.75rem;color:rgba(255,255,255,0.5)}
+.article-wrap{max-width:780px;margin:0 auto;padding:4rem 5%}
+.article-body h2{font-size:1.4rem;font-weight:700;margin:2.5rem 0 1rem;background:linear-gradient(135deg,var(--teal-light),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.article-body h3{font-size:1.1rem;font-weight:600;margin:2rem 0 .75rem;color:var(--teal-light)}
+.article-body p{color:rgba(255,255,255,0.78);margin-bottom:1.2rem;font-size:.97rem;font-weight:300;line-height:1.85}
+.article-body strong{color:#fff;font-weight:600}
+.article-body em{color:var(--teal-pale);font-style:normal}
+.stat-box{background:linear-gradient(135deg,rgba(78,203,202,0.12),rgba(42,173,172,0.06));border:1px solid rgba(78,203,202,0.25);border-radius:var(--radius);padding:1.5rem 2rem;margin:2rem 0;position:relative;overflow:hidden}
+.stat-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--teal-light))}
+.stat-box .stat-num{font-size:2.2rem;font-weight:900;background:linear-gradient(135deg,var(--teal-light),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
+.stat-box .stat-desc{font-size:.82rem;color:var(--text-muted);margin-top:.3rem}
+.quote-block{border-left:3px solid var(--teal);padding:1.2rem 1.5rem;margin:2rem 0;background:rgba(78,203,202,0.06);border-radius:0 12px 12px 0}
+.quote-block p{font-size:1.05rem;font-style:italic;color:var(--teal-pale);margin:0;font-weight:300}
+.quote-source{font-size:.72rem;color:var(--text-muted);margin-top:.5rem}
+.action-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
+.action-card{background:var(--dark-card);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:1.1rem 1.25rem}
+.action-card .ac-icon{font-size:1.3rem;margin-bottom:.5rem}
+.action-card .ac-title{font-size:.85rem;font-weight:600;margin-bottom:.3rem}
+.action-card .ac-text{font-size:.75rem;color:rgba(255,255,255,.55);font-weight:300;line-height:1.5}
+.alert-list{list-style:none;margin:1rem 0}
+.alert-list li{display:flex;align-items:flex-start;gap:.75rem;padding:.6rem 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:.88rem;color:rgba(255,255,255,.72);font-weight:300}
+.alert-list li::before{content:'⚠️';flex-shrink:0;margin-top:.05rem}
+.check-list{list-style:none;margin:1rem 0}
+.check-list li{display:flex;align-items:flex-start;gap:.75rem;padding:.55rem 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:.88rem;color:rgba(255,255,255,.72);font-weight:300}
+.check-list li::before{content:'✅';flex-shrink:0;margin-top:.05rem}
+.triangle-box{background:linear-gradient(135deg,rgba(78,203,202,0.08),rgba(42,173,172,0.04));border:1px solid rgba(78,203,202,0.2);border-radius:var(--radius);padding:1.5rem 2rem;margin:2rem 0}
+.triangle-box .tri-title{font-size:.78rem;font-weight:700;color:var(--teal);text-transform:uppercase;letter-spacing:.1em;margin-bottom:1rem}
+.triangle-nodes{display:flex;justify-content:space-around;flex-wrap:wrap;gap:1rem;text-align:center}
+.tri-node{flex:1;min-width:120px}
+.tri-node .tn-icon{font-size:1.8rem;margin-bottom:.4rem}
+.tri-node .tn-label{font-size:.82rem;font-weight:700;color:#fff;margin-bottom:.2rem}
+.tri-node .tn-desc{font-size:.72rem;color:rgba(255,255,255,.5);font-weight:300;line-height:1.4}
+.tri-arrows{display:flex;justify-content:center;gap:2rem;margin-top:1rem;font-size:.7rem;color:var(--teal);font-weight:600}
+.cta-box{background:linear-gradient(135deg,rgba(78,203,202,0.15),rgba(42,173,172,0.08));border:1px solid rgba(78,203,202,0.3);border-radius:20px;padding:2rem 2.5rem;margin:3rem 0;text-align:center;position:relative;overflow:hidden}
+.cta-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--teal-light),var(--teal))}
+.cta-box h3{font-size:1.2rem;font-weight:700;margin-bottom:.6rem}
+.cta-box p{color:var(--text-muted);font-size:.85rem;font-weight:300;margin-bottom:1.2rem}
+.btn-cta{background:linear-gradient(135deg,var(--teal),#2aadac);color:#0d0010;text-decoration:none;border-radius:50px;padding:.75rem 2rem;font-family:'Lexend',sans-serif;font-size:.82rem;font-weight:700;display:inline-block;box-shadow:0 0 25px var(--teal-glow)}
+.btn-secondary{background:transparent;color:var(--teal);text-decoration:none;border-radius:50px;padding:.65rem 1.8rem;font-family:'Lexend',sans-serif;font-size:.82rem;font-weight:600;display:inline-block;border:1px solid rgba(78,203,202,0.4);margin-left:.8rem}
+.disclaimer{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.2rem 1.5rem;margin:2rem 0;font-size:.72rem;color:rgba(255,255,255,.35);line-height:1.6}
+.disclaimer strong{color:rgba(255,255,255,.5)}
+.related{padding:4rem 5%;border-top:1px solid rgba(255,255,255,0.07);max-width:1100px;margin:0 auto}
+.related-title{font-size:1.1rem;font-weight:700;margin-bottom:1.5rem;color:var(--teal-light)}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.2rem}
+.related-card{background:var(--dark-card);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius);overflow:hidden;text-decoration:none;color:inherit;display:block;transition:all .3s}
+.related-card:hover{border-color:rgba(78,203,202,0.35);transform:translateY(-4px)}
+.related-img{aspect-ratio:16/9;overflow:hidden;background:rgba(78,203,202,0.08)}
+.related-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.related-card:hover .related-img img{transform:scale(1.05)}
+.related-body{padding:1rem}
+.related-cat{font-size:.65rem;font-weight:700;color:var(--teal);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem}
+.related-card-title{font-size:.85rem;font-weight:600;line-height:1.35}
+footer{background:rgba(0,0,0,.4);border-top:1px solid rgba(78,203,202,0.12);padding:2rem 5%;text-align:center}
+.footer-logo{font-family:'Dancing Script',cursive;font-size:1.6rem;font-weight:700;background:linear-gradient(135deg,#fff,var(--teal-light),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.4rem}
+.footer-legal{font-size:.68rem;color:rgba(255,255,255,.25);max-width:600px;margin:0 auto;line-height:1.6}
+.menotrack-strip{display:flex;align-items:center;justify-content:space-between;gap:1rem;background:rgba(78,203,202,0.08);border:1px solid rgba(78,203,202,0.2);border-radius:16px;padding:1.1rem 1.4rem;margin:2.5rem 0;flex-wrap:wrap}
+.mt-text{display:flex;align-items:center;gap:.85rem;flex:1;min-width:0}
+.mt-icon{font-size:1.6rem;flex-shrink:0}
+.mt-title{font-size:.88rem;font-weight:700;color:#fff;margin-bottom:.15rem}
+.mt-sub{font-size:.75rem;color:rgba(255,255,255,.5);font-weight:300;line-height:1.4}
+.mt-btn{background:linear-gradient(135deg,#4ECBCA,#2aadac);color:#0d0010;text-decoration:none;border-radius:50px;padding:.55rem 1.3rem;font-size:.78rem;font-weight:700;white-space:nowrap;flex-shrink:0}
+@media(max-width:600px){.action-grid{grid-template-columns:1fr}.related-grid{grid-template-columns:1fr}.art-title{font-size:1.6rem}.article-wrap{padding:2.5rem 5%}.menotrack-strip{flex-direction:column;align-items:flex-start}.mt-btn{width:100%;text-align:center}.btn-secondary{margin-left:0;margin-top:.6rem}}
+.fuentes-wrap{margin:2rem 0 0}
+.fuentes-details{border:1px solid rgba(78,203,202,.2);border-radius:12px;overflow:hidden}
+.fuentes-summary{display:flex;align-items:center;gap:.75rem;padding:1rem 1.25rem;cursor:pointer;list-style:none;background:rgba(78,203,202,.05);font-size:.82rem;font-weight:600;color:var(--teal);transition:background .2s;user-select:none}
+.fuentes-summary::-webkit-details-marker{display:none}
+.fuentes-summary:hover{background:rgba(78,203,202,.1)}
+.fuentes-chevron{margin-left:auto;font-size:1rem;transition:transform .25s}
+.fuentes-details[open] .fuentes-chevron{transform:rotate(90deg)}
+.fuentes-body{padding:1.25rem 1.5rem;border-top:1px solid rgba(78,203,202,.12)}
+.fuentes-note{font-size:.72rem;color:rgba(255,255,255,.4);margin-bottom:.75rem;font-style:italic}
+.fuentes-list{padding-left:1.1rem;margin:0}
+.fuentes-list li{font-size:.76rem;color:rgba(255,255,255,.55);margin-bottom:.6rem;line-height:1.5}
+.fuentes-list li a{color:var(--teal);text-decoration:none;word-break:break-all}
+.fuentes-list li a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html">C-tech®</a>
+  <a class="nav-back" href="index.html">← Volver al inicio</a>
+  <a class="nav-cta" href="index.html#sobre-ctech">Conoce C-Tech</a>
+</nav>
+
+<div class="article-hero">
+  <img src="art-niebla.png" alt="Mujer mirando hacia el horizonte con expresión reflexiva, luz suave de mañana">
+  <div class="hero-overlay"></div>
+  <div class="hero-meta">
+    <div class="art-category">🧠 P3 · Señales de alerta</div>
+    <h1 class="art-title">Niebla mental en el climaterio: cuando tu mente se siente entre algodones</h1>
+    <div class="art-info">
+      <span>📅 Junio 2026</span><span>⏱ 7 min de lectura</span><span>🔬 PubMed · NAMS 2023</span>
+    </div>
+  </div>
+</div>
+
+<div class="article-wrap">
+  <div class="article-body">
+
+    <p>Estás en medio de una conversación y, de pronto, la palabra que buscas simplemente… desaparece. Entras a una habitación y olvidas por qué fuiste. Lees el mismo párrafo tres veces y no te queda nada. O sientes que tu mente va a una velocidad distinta a la de antes, como si procesara la información a través de un filtro denso.</p>
+
+    <p>Si algo de esto te suena familiar, tienes nombre para lo que vives: <strong>niebla mental</strong> — o <em>brain fog</em>, como la llama la literatura científica. Y si estás en el climaterio, tiene una explicación fisiológica muy concreta.</p>
+
+    <div class="stat-box">
+      <div class="stat-num">60%</div>
+      <div class="stat-desc">de las mujeres en la transición a la menopausia reporta dificultades cognitivas subjetivas: olvidos, lentitud mental y problemas de concentración. — Epperson et al., 2021 (PMID 33853459)</div>
+    </div>
+
+    <h2>Qué es la niebla mental y por qué ocurre en el climaterio</h2>
+
+    <p>La niebla mental no es flojera, ni ansiedad fingida, ni el inicio de algo grave. Es una respuesta neurológica real a los cambios hormonales del climaterio — y está documentada.</p>
+
+    <p>El estrógeno no solo regula el ciclo menstrual. También actúa como <strong>neuroprotector</strong>: influye en la síntesis de acetilcolina (el neurotransmisor clave para la memoria y el aprendizaje), promueve el flujo sanguíneo cerebral, protege las neuronas del daño oxidativo y regula la plasticidad sináptica — la capacidad del cerebro para formar nuevas conexiones.</p>
+
+    <p>Cuando los niveles de estrógeno caen durante la perimenopausia, estos mecanismos se desregulan. El resultado es un conjunto de cambios cognitivos sutiles pero percibidos como muy disruptivos por quienes los viven. La investigación de Weber et al. (2013) fue de las primeras en documentar que este impacto no es imaginado: las mujeres en transición menopáusica muestran diferencias medibles en pruebas de memoria verbal y velocidad de procesamiento.</p>
+
+    <h2>Los síntomas concretos: ¿te identificas?</h2>
+
+    <p>La niebla mental del climaterio no es un síntoma único. Se presenta como una constelación de experiencias que pueden variar de día a día:</p>
+
+    <div class="action-grid">
+      <div class="action-card">
+        <div class="ac-icon">💬</div>
+        <div class="ac-title">Olvido de palabras</div>
+        <div class="ac-text">La palabra "exacta" que buscas se escapa. Dices "lo que uso para..." en vez de nombrar el objeto. Esto se llama anomia y es uno de los síntomas más reportados.</div>
+      </div>
+      <div class="action-card">
+        <div class="ac-icon">🧵</div>
+        <div class="ac-title">Perder el hilo</div>
+        <div class="ac-text">Inicias una oración y a mitad de camino ya no recuerdas cómo la ibas a terminar. O pierdes el punto de una conversación mientras la otra persona habla.</div>
+      </div>
+      <div class="action-card">
+        <div class="ac-icon">🐢</div>
+        <div class="ac-title">Mente "lenta"</div>
+        <div class="ac-text">Sientes que tardas más en procesar información, en tomar decisiones simples o en responder. Como si el cerebro tardara un poco más en "cargar".</div>
+      </div>
+      <div class="action-card">
+        <div class="ac-icon">📖</div>
+        <div class="ac-title">Dificultad de concentración</div>
+        <div class="ac-text">Leer, seguir una película compleja o mantener el foco en una tarea durante más de 20 minutos se vuelve un esfuerzo mayor de lo habitual.</div>
+      </div>
+    </div>
+
+    <p>Es importante decirlo claramente: <strong>estos síntomas son reales, no son "de la cabeza" y no significan que estás perdiendo la memoria</strong>. Son funcionales y, en la mayoría de los casos, transitorios.</p>
+
+    <h2>Niebla mental del climaterio vs. señales de alerta neurológica</h2>
+
+    <p>Una de las preguntas que más angustia genera es: ¿esto es el climaterio o es otra cosa? La distinción importa. La niebla mental hormonal tiene características propias que la diferencian de otras condiciones:</p>
+
+    <div class="quote-block">
+      <p>"Las quejas cognitivas durante la menopausia son típicamente subjetivas, fluctúan con el tiempo y con frecuencia mejoran una vez que la transición menopáusica se completa. No representan deterioro cognitivo progresivo."</p>
+      <div class="quote-source">— North American Menopause Society (NAMS), Cognitive Changes and Menopause</div>
+    </div>
+
+    <p>La niebla mental del climaterio suele:</p>
+    <ul class="check-list">
+      <li>Variar día a día — hay días buenos y días más difíciles</li>
+      <li>Empeorar con la falta de sueño, el estrés o los días con muchos síntomas vasomotores</li>
+      <li>Mejorar con descanso, ejercicio y una buena noche de sueño</li>
+      <li>No impedir la vida cotidiana de forma grave ni progresiva</li>
+    </ul>
+
+    <p>Habla con tu médico si notas:</p>
+    <ul class="alert-list">
+      <li>Olvidos frecuentes de eventos recientes, no solo palabras aisladas</li>
+      <li>Dificultad para realizar tareas que antes hacías sin pensar (pagar cuentas, seguir una receta)</li>
+      <li>Cambios de personalidad o de comportamiento notados por otras personas</li>
+      <li>Desorientación espacial — no reconocer lugares familiares</li>
+      <li>Síntomas que empeoran progresivamente semana a semana, sin días buenos</li>
+    </ul>
+
+    <h2>El triángulo sueño–estrógeno–cognición</h2>
+
+    <p>Uno de los factores más subestimados en la niebla mental del climaterio es el sueño. No son fenómenos independientes: se retroalimentan en un ciclo que puede volverse vicioso.</p>
+
+    <div class="triangle-box">
+      <div class="tri-title">🔺 El triángulo que se alimenta mutuamente</div>
+      <div class="triangle-nodes">
+        <div class="tri-node">
+          <div class="tn-icon">⚡</div>
+          <div class="tn-label">Caída de estrógeno</div>
+          <div class="tn-desc">Desregula el sueño REM y la termorregulación nocturna</div>
+        </div>
+        <div class="tri-node">
+          <div class="tn-icon">🌙</div>
+          <div class="tn-label">Sueño fragmentado</div>
+          <div class="tn-desc">Bochornos nocturnos interrumpen las fases restauradoras del descanso</div>
+        </div>
+        <div class="tri-node">
+          <div class="tn-icon">🧠</div>
+          <div class="tn-label">Niebla mental</div>
+          <div class="tn-desc">La privación de sueño deteriora la memoria, atención y velocidad de proceso</div>
+        </div>
+      </div>
+      <div class="tri-arrows">↕ se retroalimentan mutuamente ↕</div>
+    </div>
+
+    <p>Mejorar la calidad del sueño no resuelve todos los síntomas cognitivos del climaterio, pero es la palanca con mayor impacto inmediato. Un solo ciclo de sueño profundo de 7-8 horas puede marcar una diferencia perceptible en la claridad mental del día siguiente.</p>
+
+    <h2>Estrategias con evidencia: qué puedes hacer ahora</h2>
+
+    <h3>1. Priorizar el sueño reparador</h3>
+    <p>Esto no significa "dormir más horas" — significa <strong>mejorar la arquitectura del sueño</strong>. Horarios constantes (acostarte y levantarte a la misma hora, incluso los fines de semana), temperatura del cuarto entre 18-20°C, oscuridad completa y sin pantallas al menos 45 minutos antes de dormir. Si los bochornos nocturnos interrumpen el descanso de forma frecuente, ese ciclo merece atención médica específica.</p>
+
+    <h3>2. Ejercicio aeróbico regular</h3>
+    <p>El ejercicio aeróbico — caminar a paso rápido, nadar, andar en bicicleta, bailar — tiene uno de los respaldos más sólidos en la literatura sobre cognición y menopausia. Estimula la producción del factor neurotrófico derivado del cerebro (BDNF), que favorece la neuroplasticidad. La NAMS recomienda al menos 150 minutos semanales de actividad moderada. No hace falta un gimnasio: 30 minutos diarios de caminata intensa funciona.</p>
+
+    <h3>3. Nutrición como base neurológica</h3>
+    <p>Tres nutrientes merecen atención especial en esta etapa:</p>
+    <ul class="check-list">
+      <li><strong>Vitamina B12:</strong> esencial para la función nerviosa y la síntesis de neurotransmisores. Su absorción disminuye con la edad. Presente en carnes, huevo, lácteos y algunos alimentos fortificados.</li>
+      <li><strong>Vitamina D3:</strong> los receptores de vitamina D están presentes en el cerebro. Su deficiencia se ha asociado con mayor riesgo de síntomas cognitivos en la menopausia — y más del 70% de las mujeres mexicanas mayores de 40 tiene niveles subóptimos (Medigraphic, 2021).</li>
+      <li><strong>Calcio:</strong> además de su papel en la salud ósea — crítica en esta etapa — participa en la neurotransmisión y en la regulación celular. Complementar la dieta con un suplemento OTC de libre acceso que aporte calcio, D3 y otros micronutrientes clave puede ser una estrategia de soporte, siempre consultada con tu médico.</li>
+    </ul>
+
+    <h3>4. Llevar un diario de síntomas</h3>
+    <p>Esta es una de las herramientas más prácticas y más subestimadas. Registrar tus síntomas cognitivos — en qué momentos del día ocurren, con qué los relacionas, cómo dormiste la noche anterior — tiene dos beneficios: te ayuda a identificar patrones y detonadores, y te da información objetiva para compartir con tu médico cuando llegues a la consulta.</p>
+
+    <div class="menotrack-strip">
+      <div class="mt-text">
+        <div class="mt-icon">📓</div>
+        <div>
+          <div class="mt-title">Registra tus síntomas en MenoTrack</div>
+          <div class="mt-sub">Lleva tu diario de niebla mental, sueño y energía. La app genera tu resumen semanal para que lo lleves al médico.</div>
+        </div>
+      </div>
+      <a class="mt-btn" href="https://polar-multimedia.github.io/flowtrack/" target="_blank">Abrir MenoTrack →</a>
+    </div>
+
+    <h2>Cuándo hablar con un médico</h2>
+
+    <p>La niebla mental del climaterio, en la mayoría de los casos, no requiere tratamiento farmacológico. Pero hay situaciones en las que vale la pena buscar orientación médica:</p>
+
+    <ul class="alert-list">
+      <li>Si los síntomas cognitivos te impiden cumplir con tu trabajo, cuidar a tu familia o realizar actividades que antes hacías sin dificultad</li>
+      <li>Si la falta de sueño por bochornos nocturnos es frecuente y persistente (más de 3 veces por semana)</li>
+      <li>Si los síntomas llevan más de 3 meses y no muestran mejoría con cambios de estilo de vida</li>
+      <li>Si tienes antecedentes familiares de demencia o enfermedad neurodegenerativa y quieres descartar factores de riesgo</li>
+      <li>Si la niebla mental viene acompañada de cambios de ánimo intensos, ansiedad o síntomas depresivos</li>
+    </ul>
+
+    <p>Tu médico puede evaluar si hay factores adicionales — déficit de tiroides, anemia, deficiencia de vitamina B12, trastornos del sueño como apnea — que pueden coexistir con el climaterio y amplificar los síntomas cognitivos.</p>
+
+    <div class="cta-box">
+      <h3>Tu mente merece un registro tan serio como el de tus otros síntomas</h3>
+      <p>MenoTrack te ayuda a llevar un diario de niebla mental, energía y sueño — y a ver cómo se relacionan entre sí a lo largo del tiempo.</p>
+      <a class="btn-cta" href="https://polar-multimedia.github.io/flowtrack/" target="_blank">Descarga MenoTrack</a>
+      <a class="btn-secondary" href="index.html">Leer más artículos</a>
+    </div>
+
+    <div class="disclaimer">
+      <strong>Nota importante:</strong> Este contenido es de carácter informativo y no sustituye la consulta médica. Ante cualquier duda sobre tus síntomas, consulta a un profesional de la salud. Clara Díaz es periodista especializada en salud femenina, no médica ni profesional de la salud.
+    </div>
+
+    <div class="fuentes-wrap">
+      <details class="fuentes-details">
+        <summary class="fuentes-summary">
+          📚 Ver fuentes
+          <span class="fuentes-chevron">›</span>
+        </summary>
+        <div class="fuentes-body">
+          <p class="fuentes-note">Todas las fuentes son de acceso público y verificables. Los artículos de PubMed están indexados con su PMID para facilitar la búsqueda.</p>
+          <ol class="fuentes-list">
+            <li>Epperson CN, et al. (2021). "Cognitive changes during the menopause transition: Evidence from a large-scale study." <em>Climacteric</em>. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/33853459/" target="_blank" rel="noopener">33853459</a></li>
+            <li>Weber MT, et al. (2013). "Cognition and mood in perimenopause: a systematic review and meta-analysis." <em>Journal of Steroid Biochemistry and Molecular Biology</em>. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/23487804/" target="_blank" rel="noopener">23487804</a></li>
+            <li>North American Menopause Society (NAMS). "Cognitive Changes and Menopause." <a href="https://www.menopause.org/for-women/menopauseflashes/cognitive-changes-and-menopause" target="_blank" rel="noopener">menopause.org</a></li>
+            <li>Medigraphic. "Deficiencia de vitamina D en mujeres mexicanas en la menopausia." <a href="https://www.medigraphic.com/cgi-bin/new/resumen.cgi?IDARTICULO=37401" target="_blank" rel="noopener">medigraphic.com</a></li>
+          </ol>
+        </div>
+      </details>
+    </div>
+
+  </div>
+</div>
+
+<div class="related">
+  <div class="related-title">Sigue leyendo en FemeNews</div>
+  <div class="related-grid">
+    <a class="related-card" href="articulo-sueno-fatiga.html">
+      <div class="related-img"><img src="art8-sueno.png" alt="Insomnio y fatiga en el climaterio"></div>
+      <div class="related-body">
+        <div class="related-cat">😴 Energía</div>
+        <div class="related-card-title">Insomnio, fatiga y niebla mental: cómo el climaterio afecta tu energía</div>
+      </div>
+    </a>
+    <a class="related-card" href="articulo-animo-climaterio.html">
+      <div class="related-img"><img src="art-animo.png" alt="Ánimo y bienestar emocional en el climaterio"></div>
+      <div class="related-body">
+        <div class="related-cat">💚 Ánimo</div>
+        <div class="related-card-title">El climaterio y el ánimo: por qué te sientes diferente</div>
+      </div>
+    </a>
+    <a class="related-card" href="articulo-bochornos.html">
+      <div class="related-img"><img src="art7-bochornos.png" alt="Bochornos en el climaterio"></div>
+      <div class="related-body">
+        <div class="related-cat">🌡️ Síntomas</div>
+        <div class="related-card-title">Bochornos en el climaterio: causas y estrategias que sí funcionan</div>
+      </div>
+    </a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">C-tech®</div>
+  <div class="footer-legal">FemeNews es un espacio editorial de salud femenina. El contenido es informativo y no sustituye la consulta médica. &copy; 2026 C-Tech / Polar Multimedia.</div>
+</footer>
+
+</body>
+</html>
