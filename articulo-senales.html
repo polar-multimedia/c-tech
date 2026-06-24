@@ -79,7 +79,13 @@ footer{background:rgba(0,0,0,.4);border-top:1px solid rgba(233,30,140,0.12);padd
 .footer-logo{font-family:'Dancing Script',cursive;font-size:1.6rem;font-weight:700;background:linear-gradient(135deg,#fff,var(--pink-light),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.4rem}
 .footer-legal{font-size:.68rem;color:rgba(255,255,255,.25);max-width:600px;margin:0 auto;line-height:1.6}
 
-@media(max-width:768px){.article-hero{height:50vh;min-height:320px}.hero-meta{padding:0 5% 2rem}.art-title{font-size:1.6rem}.article-wrap{padding:2.5rem 5%}.related-grid{grid-template-columns:1fr}}
+.menotrack-strip{display:flex;align-items:center;justify-content:space-between;gap:1rem;background:rgba(78,203,202,0.08);border:1px solid rgba(78,203,202,0.2);border-radius:16px;padding:1.1rem 1.4rem;margin:2.5rem 0;flex-wrap:wrap}
+.mt-text{display:flex;align-items:center;gap:.85rem;flex:1;min-width:0}
+.mt-icon{font-size:1.6rem;flex-shrink:0}
+.mt-title{font-size:.88rem;font-weight:700;color:#fff;margin-bottom:.15rem}
+.mt-sub{font-size:.75rem;color:rgba(255,255,255,.5);font-weight:300;line-height:1.4}
+.mt-btn{background:linear-gradient(135deg,#4ECBCA,#2aadac);color:#0d0010;text-decoration:none;border-radius:50px;padding:.55rem 1.3rem;font-size:.78rem;font-weight:700;white-space:nowrap;flex-shrink:0}
+@media(max-width:768px){.article-hero{height:50vh;min-height:320px}.hero-meta{padding:0 5% 2rem}.art-title{font-size:1.6rem}.article-wrap{padding:2.5rem 5%}.related-grid{grid-template-columns:1fr}.menotrack-strip{flex-direction:column;align-items:flex-start}.mt-btn{width:100%;text-align:center}}
 </style>
 </head>
 <body>
@@ -199,6 +205,17 @@ footer{background:rgba(0,0,0,.4);border-top:1px solid rgba(233,30,140,0.12);padd
 
     <p>El calcio de la dieta promedio mexicana cubre apenas el 60-70% de los requerimientos diarios recomendados. Y en mujeres mayores de 40, la absorción intestinal de calcio disminuye de forma natural. Ahí es donde la suplementación inteligente marca la diferencia.</p>
 
+  </div>
+
+  <div class="menotrack-strip">
+    <div class="mt-text">
+      <span class="mt-icon">📱</span>
+      <div>
+        <div class="mt-title">¿Tienes estos síntomas?</div>
+        <div class="mt-sub">Regístralos gratis en MenoTrack y comparte tu historial con tu médico.</div>
+      </div>
+    </div>
+    <a class="mt-btn" href="https://polar-multimedia.github.io/flowtrack/" target="_blank" rel="noopener">Abrir MenoTrack ↗</a>
   </div>
 
   <div class="cta-box">
