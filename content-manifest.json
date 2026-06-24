@@ -1,0 +1,110 @@
+[
+  {
+    "slug": "articulo-bochornos",
+    "titulo": "Bochornos en el climaterio: causas, señales de alerta y estrategias que sí funcionan",
+    "resumen": "Qué son, por qué ocurren, cómo identificar tus detonadores y qué hacer hoy.",
+    "url": "https://polar-multimedia.github.io/c-tech/articulo-bochornos.html",
+    "imagen": "https://polar-multimedia.github.io/c-tech/art7-bochornos.png",
+    "symptoms_tags": ["bochornos", "sudoracion_nocturna", "energia", "animo"],
+    "pilar": "P3",
+    "fecha": "2026-06-23",
+    "plataforma": "hub",
+    "activo": true
+  },
+  {
+    "slug": "articulo-sueno-fatiga",
+    "titulo": "Insomnio, fatiga y niebla mental: cómo el climaterio afecta tu energía y tu mente",
+    "resumen": "El ciclo bochorno → sueño fragmentado → fatiga → niebla mental explicado con claridad.",
+    "url": "https://polar-multimedia.github.io/c-tech/articulo-sueno-fatiga.html",
+    "imagen": "https://polar-multimedia.github.io/c-tech/art8-sueno.png",
+    "symptoms_tags": ["cansancio", "niebla_mental", "sueno", "animo", "energia"],
+    "pilar": "P3",
+    "fecha": "2026-06-23",
+    "plataforma": "hub",
+    "activo": true
+  },
+  {
+    "slug": "articulo-osteoporosis-climaterio",
+    "titulo": "Osteoporosis y climaterio: la conexión que toda mujer mayor de 40 debe conocer",
+    "resumen": "Estadísticas reales, qué necesitan tus huesos ahora y cómo interpretar tu densitometría.",
+    "url": "https://polar-multimedia.github.io/c-tech/articulo-osteoporosis-climaterio.html",
+    "imagen": "https://polar-multimedia.github.io/c-tech/art9-climaterio.png",
+    "symptoms_tags": ["dolor_articular", "cansancio", "energia"],
+    "pilar": "P2",
+    "fecha": "2026-06-23",
+    "plataforma": "hub",
+    "activo": true
+  },
+  {
+    "slug": "articulo-menopausia",
+    "titulo": "Lo que cambia en tus huesos durante la menopausia — y cómo prepararte desde los 40",
+    "resumen": "La línea del tiempo ósea desde los 35 años y las acciones concretas para protegerte.",
+    "url": "https://polar-multimedia.github.io/c-tech/articulo-menopausia.html",
+    "imagen": "https://polar-multimedia.github.io/c-tech/art3-menopausia.png",
+    "symptoms_tags": ["dolor_articular", "cansancio", "energia"],
+    "pilar": "P4",
+    "fecha": "2026-04-25",
+    "plataforma": "hub",
+    "activo": true
+  },
+  {
+    "slug": "articulo-senales",
+    "titulo": "Los huesos no duelen hasta que se rompen: señales que debes conocer",
+    "resumen": "Factores de riesgo silenciosos y las señales que sí puedes detectar antes de una fractura.",
+    "url": "https://polar-multimedia.github.io/c-tech/articulo-senales.html",
+    "imagen": "https://polar-multimedia.github.io/c-tech/art1-senales.png",
+    "symptoms_tags": ["dolor_articular", "cansancio"],
+    "pilar": "P3",
+    "fecha": "2026-03-10",
+    "plataforma": "hub",
+    "activo": true
+  },
+  {
+    "slug": "articulo-calcio-plato",
+    "titulo": "Calcio en tu plato: los alimentos que más te ayudan (y los que te lo roban)",
+    "resumen": "Guía práctica de fuentes de calcio en la dieta mexicana y qué evitar para absorberlo mejor.",
+    "url": "https://polar-multimedia.github.io/c-tech/articulo-calcio-plato.html",
+    "imagen": "https://polar-multimedia.github.io/c-tech/art2-calcio-plato.png",
+    "symptoms_tags": ["energia", "dolor_articular", "cansancio"],
+    "pilar": "P4",
+    "fecha": "2026-03-01",
+    "plataforma": "hub",
+    "activo": true
+  },
+  {
+    "slug": "articulo-ejercicios",
+    "titulo": "Los 5 ejercicios que más fortalecen tus huesos",
+    "resumen": "Qué tipos de ejercicio estimulan la formación ósea y cuáles no son suficientes solos.",
+    "url": "https://polar-multimedia.github.io/c-tech/articulo-ejercicios.html",
+    "imagen": "https://polar-multimedia.github.io/c-tech/art4-ejercicios.png",
+    "symptoms_tags": ["cansancio", "energia", "dolor_articular"],
+    "pilar": "P4",
+    "fecha": "2026-02-15",
+    "plataforma": "hub",
+    "activo": true
+  },
+  {
+    "slug": "articulo-vitaminad",
+    "titulo": "Vitamina D y calcio: el dúo que tus huesos necesitan ahora",
+    "resumen": "Por qué sin vitamina D el calcio no funciona, y cómo obtener suficiente en México.",
+    "url": "https://polar-multimedia.github.io/c-tech/articulo-vitaminad.html",
+    "imagen": "https://polar-multimedia.github.io/c-tech/art6-calcioyvitamina.png",
+    "symptoms_tags": ["energia", "cansancio", "dolor_articular"],
+    "pilar": "P4",
+    "fecha": "2026-02-01",
+    "plataforma": "hub",
+    "activo": true
+  },
+  {
+    "slug": "articulo-densitometria",
+    "titulo": "Densitometría ósea: qué mide, cómo leerla y cuándo hacértela",
+    "resumen": "Todo lo que necesitas saber sobre el estudio clave para conocer tu salud ósea.",
+    "url": "https://polar-multimedia.github.io/c-tech/articulo-densitometria.html",
+    "imagen": "https://polar-multimedia.github.io/c-tech/art5-densitometria.png",
+    "symptoms_tags": ["dolor_articular", "cansancio"],
+    "pilar": "P3",
+    "fecha": "2026-01-20",
+    "plataforma": "hub",
+    "activo": true
+  }
+]
